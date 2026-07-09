@@ -248,3 +248,303 @@
     color:#A7F3D0;
 
 }
+
+/*======================================================================
+    RIGHT PANEL
+======================================================================*/
+
+.login-panel{
+
+    width:var(--right-panel-width);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--background);
+
+    padding:60px;
+
+}
+
+
+/*======================================================================
+    LOGIN CARD
+======================================================================*/
+
+.login-card{
+
+    width:var(--login-card-width);
+
+    background:var(--surface);
+
+    border-radius:24px;
+
+    padding:48px;
+
+    box-shadow:var(--shadow-lg);
+
+    border:1px solid var(--border-color);
+
+    transition:var(--transition-normal);
+
+}
+
+.login-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+/*======================================================================
+    HEADER
+======================================================================*/
+
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.login-header h2{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:var(--text-primary);
+
+    margin-bottom:12px;
+
+}
+
+.login-header p{
+
+    color:var(--text-secondary);
+
+    font-size:16px;
+
+}
+
+
+/*======================================================================
+    FORM GROUP
+======================================================================*/
+
+.input-group-custom{
+
+    margin-bottom:24px;
+
+}
+
+.input-group-custom label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+}
+
+
+/*======================================================================
+    INPUT BOX
+======================================================================*/
+
+.input-box{
+
+    position:relative;
+
+}
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--text-light);
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    height:var(--input-height);
+
+    border:1px solid var(--border-color);
+
+    border-radius:16px;
+
+    background:#FAFBFD;
+
+    padding-left:54px;
+
+    padding-right:54px;
+
+    font-size:15px;
+
+    transition:var(--transition-normal);
+
+}
+
+.input-box input:focus{
+
+    border-color:var(--primary-color);
+
+    background:white;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+
+/*======================================================================
+    PASSWORD BUTTON
+======================================================================*/
+
+.password-toggle{
+
+    position:absolute;
+
+    right:10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:transparent;
+
+    color:var(--text-light);
+
+    transition:var(--transition-fast);
+
+}
+
+.password-toggle:hover{
+
+    background:var(--primary-light);
+
+    color:var(--primary-color);
+
+}
+
+
+/*======================================================================
+    OPTIONS
+======================================================================*/
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:10px;
+
+    margin-bottom:32px;
+
+    font-size:14px;
+
+}
+
+.remember{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+}
+
+.login-options a{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+}
+
+.login-options a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/*======================================================================
+    LOGIN BUTTON
+======================================================================*/
+
+.btn-login{
+
+    width:100%;
+
+    height:var(--button-height);
+
+    border-radius:16px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:var(--transition-normal);
+
+}
+
+.btn-login:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+
+/*======================================================================
+    FOOTER
+======================================================================*/
+
+.login-footer{
+
+    text-align:center;
+
+    margin-top:36px;
+
+    color:var(--text-light);
+
+    font-size:14px;
+
+}
