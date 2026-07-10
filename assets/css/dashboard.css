@@ -430,3 +430,249 @@
     }
 
 }
+
+/* ==========================================================
+   DASHBOARD
+   PART B
+   Analytics + Table + Timeline
+==========================================================*/
+
+/* ======================================
+   Dashboard Grid
+======================================*/
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:24px;
+
+    margin-bottom:30px;
+
+}
+
+/* ======================================
+   Chart Cards
+======================================*/
+
+.chart-card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.chart-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.large-card{
+
+    min-height:420px;
+
+}
+
+#payrollChart{
+
+    height:320px;
+
+}
+
+#attendanceChart{
+
+    height:320px;
+
+}
+
+/* ======================================
+   Table Card
+======================================*/
+
+.table-card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.table-card table{
+
+    width:100%;
+
+}
+
+.table-card tbody tr{
+
+    transition:.25s;
+
+}
+
+.table-card tbody tr:hover{
+
+    background:#F8FAFC;
+
+}
+
+.table-card td{
+
+    font-size:15px;
+
+    color:var(--text-primary);
+
+}
+
+/* ======================================
+   Timeline
+======================================*/
+
+.timeline-card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.timeline{
+
+    margin-top:18px;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:18px;
+
+    position:relative;
+
+    padding-bottom:28px;
+
+}
+
+.timeline-item:last-child{
+
+    padding-bottom:0;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:7px;
+
+    top:18px;
+
+    width:2px;
+
+    height:calc(100% - 6px);
+
+    background:#E5E7EB;
+
+}
+
+.timeline-item:last-child::before{
+
+    display:none;
+
+}
+
+.dot{
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    margin-top:4px;
+
+    flex-shrink:0;
+
+}
+
+.timeline-item h4{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+    margin-bottom:6px;
+
+}
+
+.timeline-item p{
+
+    font-size:13px;
+
+    color:var(--text-secondary);
+
+}
+
+/* ======================================
+   Section Animation
+======================================*/
+
+.chart-card,
+.table-card,
+.timeline-card{
+
+    animation:fadeCard .6s ease both;
+
+}
+
+@keyframes fadeCard{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
