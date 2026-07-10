@@ -114,7 +114,7 @@
 --radius-12:12px;
 --radius-16:16px;
 --radius-20:20px;
---radius-24:24px;
+--radius-32:32px;
 --radius-round:999px;
 
 
@@ -144,7 +144,7 @@
     WIDTHS
 =========================================================*/
 
---login-card-width:460px;
+--login-card-width:500px;
 
 --left-panel-width:45%;
 
@@ -157,9 +157,9 @@
     HEIGHTS
 =========================================================*/
 
---input-height:56px;
+--input-height:60px;
 
---button-height:56px;
+--button-height:60px;
 
 }
 
