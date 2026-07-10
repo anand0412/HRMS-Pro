@@ -1,17 +1,13 @@
-/* ==========================================================
-   HRMS PRO
-   Sidebar
-========================================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const sidebar = document.getElementById("sidebar");
-
     const toggle = document.getElementById("sidebarToggle");
+    const mobileToggle = document.getElementById("mobileSidebarToggle");
+    const navItems = document.querySelectorAll(".nav-item");
 
-    if (toggle && sidebar) {
+    if(toggle){
 
-        toggle.addEventListener("click", () => {
+        toggle.addEventListener("click",()=>{
 
             sidebar.classList.toggle("collapsed");
 
@@ -19,21 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    /* Active Navigation */
+    if(mobileToggle){
 
-    const navItems = document.querySelectorAll(".nav-item");
+        mobileToggle.addEventListener("click",()=>{
 
-    navItems.forEach(item => {
+            sidebar.classList.toggle("show");
 
-        item.addEventListener("click", function () {
+        });
 
-            navItems.forEach(i => {
+    }
 
-                i.classList.remove("active");
+    navItems.forEach(item=>{
 
-            });
+        item.addEventListener("click",function(){
+
+            navItems.forEach(i=>i.classList.remove("active"));
 
             this.classList.add("active");
+
+            if(window.innerWidth<992){
+
+                sidebar.classList.remove("show");
+
+            }
 
         });
 
