@@ -62,21 +62,27 @@
     <!-- SIDEBAR -->
     <!-- ===================================================== -->
 
-   <aside id="sidebar" class="sidebar">
+  <!-- =========================
+     SIDEBAR 2.0 START
+========================= -->
 
-    <!-- ===========================
-         Brand
-    ============================ -->
+<aside id="sidebar" class="sidebar">
+
+    <!-- =========================
+         Header
+    ========================= -->
 
     <div class="sidebar-header">
 
         <div class="brand">
 
             <div class="brand-logo">
+
                 HR
+
             </div>
 
-            <div class="brand-text">
+            <div class="brand-info">
 
                 <h2>HRMS Pro</h2>
 
@@ -86,333 +92,397 @@
 
         </div>
 
-        <button id="sidebarToggle"
-                class="icon-btn"
-                title="Collapse Sidebar">
+        <button
+            id="sidebarToggle"
+            class="sidebar-toggle">
 
             <span class="material-symbols-rounded">
-                menu_open
+
+                keyboard_double_arrow_left
+
             </span>
 
         </button>
 
     </div>
 
-
-
-    <!-- ===========================
-         Navigation
-    ============================ -->
+    <!-- =========================
+         Dashboard
+    ========================= -->
 
     <nav class="sidebar-nav">
 
-        <div class="nav-group">
+        <a href="#"
+           class="menu-item active">
 
-            <p class="nav-title">
-                MAIN
-            </p>
-
-            <a href="#"
-               class="nav-item active">
+            <div class="menu-icon dashboard-icon">
 
                 <span class="material-symbols-rounded">
+
                     dashboard
+
                 </span>
 
-                <span class="nav-text">
-                    Dashboard
+            </div>
+
+            <span class="menu-title">
+
+                Dashboard
+
+            </span>
+
+            <span class="menu-badge">
+
+                New
+
+            </span>
+
+        </a>
+
+        <!-- =========================
+             PEOPLE
+        ========================= -->
+
+        <div class="menu-group open">
+
+            <button class="menu-group-header">
+
+                <div class="group-left">
+
+                    <div class="menu-icon people-icon">
+
+                        <span class="material-symbols-rounded">
+
+                            groups
+
+                        </span>
+
+                    </div>
+
+                    <span>
+
+                        People
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-rounded group-arrow">
+
+                    expand_more
+
                 </span>
 
-            </a>
+            </button>
 
-        </div>
+            <div class="submenu">
 
+                <a href="#">
 
-
-        <div class="nav-group">
-
-            <p class="nav-title">
-                PEOPLE
-            </p>
-
-            <a href="#"
-               class="nav-item">
-
-                <span class="material-symbols-rounded">
-                    badge
-                </span>
-
-                <span class="nav-text">
                     Employees
-                </span>
 
-            </a>
+                </a>
 
-            <a href="#"
-               class="nav-item">
+                <a href="#">
 
-                <span class="material-symbols-rounded">
-                    event_available
-                </span>
-
-                <span class="nav-text">
                     Attendance
-                </span>
 
-            </a>
+                </a>
 
-            <a href="#"
-               class="nav-item">
+                <a href="#">
 
-                <span class="material-symbols-rounded">
-                    beach_access
-                </span>
-
-                <span class="nav-text">
                     Leave
-                </span>
 
-            </a>
+                </a>
 
-            <a href="#"
-               class="nav-item">
+                <a href="#">
 
-                <span class="material-symbols-rounded">
-                    menu_book
-                </span>
-
-                <span class="nav-text">
                     Service Book
+
+                </a>
+
+            </div>
+
+        </div>
+
+                <!-- =========================
+             PAYROLL
+        ========================= -->
+
+        <div class="menu-group">
+
+            <button class="menu-group-header">
+
+                <div class="group-left">
+
+                    <div class="menu-icon payroll-icon">
+
+                        <span class="material-symbols-rounded">
+
+                            account_balance_wallet
+
+                        </span>
+
+                    </div>
+
+                    <span>
+
+                        Payroll
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-rounded group-arrow">
+
+                    chevron_right
+
                 </span>
 
-            </a>
+            </button>
+
+            <div class="submenu">
+
+                <a href="#">Salary Structure</a>
+
+                <a href="#">Payroll Processing</a>
+
+                <a href="#">Payslips</a>
+
+                <a href="#">Loans & Advances</a>
+
+            </div>
 
         </div>
 
 
+        <!-- =========================
+             ORGANIZATION
+        ========================= -->
 
-        <div class="nav-group">
+        <div class="menu-group">
 
-            <p class="nav-title">
-                PAYROLL
-            </p>
+            <button class="menu-group-header">
 
-            <a href="#"
-               class="nav-item">
+                <div class="group-left">
 
-                <span class="material-symbols-rounded">
-                    account_balance_wallet
+                    <div class="menu-icon organization-icon">
+
+                        <span class="material-symbols-rounded">
+
+                            apartment
+
+                        </span>
+
+                    </div>
+
+                    <span>
+
+                        Organization
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-rounded group-arrow">
+
+                    chevron_right
+
                 </span>
 
-                <span class="nav-text">
-                    Payroll
-                </span>
+            </button>
 
-            </a>
+            <div class="submenu">
 
-            <a href="#"
-               class="nav-item">
+                <a href="#">Departments</a>
 
-                <span class="material-symbols-rounded">
-                    payments
-                </span>
+                <a href="#">Designations</a>
 
-                <span class="nav-text">
-                    Salary Structure
-                </span>
+                <a href="#">Branches</a>
 
-            </a>
+                <a href="#">Shifts</a>
 
-            <a href="#"
-               class="nav-item">
-
-                <span class="material-symbols-rounded">
-                    request_quote
-                </span>
-
-                <span class="nav-text">
-                    Arrears
-                </span>
-
-            </a>
-
-            <a href="#"
-               class="nav-item">
-
-                <span class="material-symbols-rounded">
-                    currency_rupee
-                </span>
-
-                <span class="nav-text">
-                    Loans
-                </span>
-
-            </a>
+            </div>
 
         </div>
 
 
+        <!-- =========================
+             REPORTS
+        ========================= -->
 
-        <div class="nav-group">
+        <div class="menu-group">
 
-            <p class="nav-title">
-                ORGANIZATION
-            </p>
+            <button class="menu-group-header">
 
-            <a href="#"
-               class="nav-item">
+                <div class="group-left">
 
-                <span class="material-symbols-rounded">
-                    apartment
+                    <div class="menu-icon reports-icon">
+
+                        <span class="material-symbols-rounded">
+
+                            bar_chart
+
+                        </span>
+
+                    </div>
+
+                    <span>
+
+                        Reports
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-rounded group-arrow">
+
+                    chevron_right
+
                 </span>
 
-                <span class="nav-text">
-                    Departments
-                </span>
+            </button>
 
-            </a>
+            <div class="submenu">
 
-            <a href="#"
-               class="nav-item">
+                <a href="#">Attendance Report</a>
 
-                <span class="material-symbols-rounded">
-                    work
-                </span>
+                <a href="#">Leave Report</a>
 
-                <span class="nav-text">
-                    Designations
-                </span>
+                <a href="#">Payroll Report</a>
 
-            </a>
+                <a href="#">Employee Report</a>
 
-            <a href="#"
-               class="nav-item">
-
-                <span class="material-symbols-rounded">
-                    domain
-                </span>
-
-                <span class="nav-text">
-                    Company
-                </span>
-
-            </a>
+            </div>
 
         </div>
 
 
+        <!-- =========================
+             ADMINISTRATION
+        ========================= -->
 
-        <div class="nav-group">
+        <div class="menu-group">
 
-            <p class="nav-title">
-                REPORTS
-            </p>
+            <button class="menu-group-header">
 
-            <a href="#"
-               class="nav-item">
+                <div class="group-left">
 
-                <span class="material-symbols-rounded">
-                    description
+                    <div class="menu-icon admin-icon">
+
+                        <span class="material-symbols-rounded">
+
+                            admin_panel_settings
+
+                        </span>
+
+                    </div>
+
+                    <span>
+
+                        Administration
+
+                    </span>
+
+                </div>
+
+                <span class="material-symbols-rounded group-arrow">
+
+                    chevron_right
+
                 </span>
 
-                <span class="nav-text">
-                    Reports
-                </span>
+            </button>
 
-            </a>
+            <div class="submenu">
 
-            <a href="#"
-               class="nav-item">
+                <a href="#">Users</a>
 
-                <span class="material-symbols-rounded">
-                    receipt_long
-                </span>
+                <a href="#">Roles</a>
 
-                <span class="nav-text">
-                    Salary Slips
-                </span>
+                <a href="#">Permissions</a>
 
-            </a>
+                <a href="#">Audit Logs</a>
+
+            </div>
 
         </div>
 
 
+        <!-- =========================
+             SETTINGS
+        ========================= -->
 
-        <div class="nav-group">
+        <a href="#"
+           class="menu-item">
 
-            <p class="nav-title">
-                ADMINISTRATION
-            </p>
-
-            <a href="#"
-               class="nav-item">
-
-                <span class="material-symbols-rounded">
-                    admin_panel_settings
-                </span>
-
-                <span class="nav-text">
-                    Permissions
-                </span>
-
-            </a>
-
-            <a href="#"
-               class="nav-item">
+            <div class="menu-icon settings-icon">
 
                 <span class="material-symbols-rounded">
-                    manage_accounts
-                </span>
 
-                <span class="nav-text">
-                    Roles
-                </span>
-
-            </a>
-
-            <a href="#"
-               class="nav-item">
-
-                <span class="material-symbols-rounded">
                     settings
+
                 </span>
 
-                <span class="nav-text">
-                    Settings
-                </span>
+            </div>
 
-            </a>
+            <span class="menu-title">
 
-        </div>
+                Settings
+
+            </span>
+
+        </a>
 
     </nav>
 
-
-
-    <!-- ===========================
-         Sidebar Footer
-    ============================ -->
+    <!-- =========================
+         USER PROFILE
+    ========================= -->
 
     <div class="sidebar-footer">
 
-        <div class="user-card">
+        <div class="user-profile">
 
-            <img src="https://i.pravatar.cc/80?img=12"
-                 alt="User">
+            <img
+                src="https://i.pravatar.cc/100?img=12"
+                alt="Admin User">
 
-            <div>
+            <div class="user-details">
 
-                <h4>Admin User</h4>
+                <h4>
 
-                <span>System Administrator</span>
+                    Admin User
+
+                </h4>
+
+                <p>
+
+                    System Administrator
+
+                </p>
 
             </div>
+
+            <button class="profile-more">
+
+                <span class="material-symbols-rounded">
+
+                    more_vert
+
+                </span>
+
+            </button>
 
         </div>
 
     </div>
 
 </aside>
+
+<!-- =========================
+     SIDEBAR 2.0 END
+========================= -->
 
 
 
