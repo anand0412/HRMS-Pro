@@ -1,0 +1,401 @@
+/* ==========================================================
+   HRMS PRO
+   SIDEBAR
+========================================================== */
+
+.sidebar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:var(--sidebar-width);
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background:var(--sidebar-bg);
+
+    color:#fff;
+
+    transition:var(--transition);
+
+    z-index:var(--z-sidebar);
+
+    overflow:hidden;
+
+    box-shadow:
+        8px 0 30px rgba(0,0,0,.12);
+
+}
+
+/* ======================================
+   Header
+====================================== */
+
+.sidebar-header{
+
+    height:84px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 24px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.brand{
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+}
+
+.brand-logo{
+
+    width:52px;
+    height:52px;
+
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #7C3AED
+    );
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:800;
+
+    box-shadow:
+        0 8px 20px rgba(79,70,229,.35);
+
+}
+
+.brand-text h2{
+
+    font-size:20px;
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+.brand-text span{
+
+    display:block;
+
+    margin-top:4px;
+
+    font-size:12px;
+
+    color:#94A3B8;
+
+}
+
+/* ======================================
+   Navigation
+====================================== */
+
+.sidebar-nav{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:24px 18px;
+
+}
+
+.sidebar-nav::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.nav-group{
+
+    margin-bottom:28px;
+
+}
+
+.nav-title{
+
+    margin:0 14px 12px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    color:#64748B;
+
+    text-transform:uppercase;
+
+}
+
+.nav-item{
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+    height:52px;
+
+    padding:0 16px;
+
+    margin-bottom:8px;
+
+    border-radius:14px;
+
+    color:#CBD5E1;
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+.nav-item .material-symbols-rounded{
+
+    font-size:22px;
+
+}
+
+.nav-item:hover{
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    transform:translateX(4px);
+
+}
+
+.nav-item.active{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #7C3AED
+    );
+
+    color:#fff;
+
+    box-shadow:
+        0 12px 24px rgba(79,70,229,.35);
+
+}
+
+.nav-item.active::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-18px;
+
+    top:12px;
+
+    width:5px;
+    height:28px;
+
+    border-radius:50px;
+
+    background:#fff;
+
+}
+
+/* ======================================
+   Footer
+====================================== */
+
+.sidebar-footer{
+
+    padding:20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.user-card{
+
+    display:flex;
+    align-items:center;
+
+    gap:14px;
+
+    padding:14px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.05);
+
+    transition:var(--transition);
+
+}
+
+.user-card:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.user-card img{
+
+    width:52px;
+    height:52px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.user-card h4{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:4px;
+
+}
+
+.user-card span{
+
+    font-size:13px;
+
+    color:#94A3B8;
+
+}
+
+/* ======================================
+   Collapsed Sidebar
+====================================== */
+
+.sidebar.collapsed{
+
+    width:var(--sidebar-collapse);
+
+}
+
+.sidebar.collapsed .brand-text{
+
+    display:none;
+
+}
+
+.sidebar.collapsed .nav-title{
+
+    display:none;
+
+}
+
+.sidebar.collapsed .nav-text{
+
+    display:none;
+
+}
+
+.sidebar.collapsed .user-card div{
+
+    display:none;
+
+}
+
+.sidebar.collapsed .user-card{
+
+    justify-content:center;
+
+}
+
+.sidebar.collapsed .nav-item{
+
+    justify-content:center;
+
+    padding:0;
+
+}
+
+/* ======================================
+   Main Wrapper Offset
+====================================== */
+
+.main-wrapper{
+
+    margin-left:var(--sidebar-width);
+
+    transition:var(--transition);
+
+}
+
+.sidebar.collapsed + .main-wrapper{
+
+    margin-left:var(--sidebar-collapse);
+
+}
+
+/* ======================================
+   Premium Hover Glow
+====================================== */
+
+.nav-item:hover .material-symbols-rounded{
+
+    transform:scale(1.08);
+
+    transition:.25s;
+
+}
+
+.brand-logo:hover{
+
+    transform:rotate(-6deg) scale(1.05);
+
+    transition:.35s;
+
+}
+
+/* ======================================
+   Active Animation
+====================================== */
+
+.nav-item.active{
+
+    animation:activePulse .45s ease;
+
+}
+
+@keyframes activePulse{
+
+    0%{
+
+        transform:scale(.96);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}

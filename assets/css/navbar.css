@@ -1,0 +1,335 @@
+/* ==========================================================
+   HRMS PRO
+   TOP NAVBAR
+========================================================== */
+
+.top-navbar{
+
+    position:sticky;
+    top:0;
+
+    height:var(--navbar-height);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 32px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid var(--border-color);
+
+    z-index:var(--z-navbar);
+
+}
+
+/* ======================================
+   Left
+====================================== */
+
+.navbar-left{
+
+    display:flex;
+    align-items:center;
+    gap:22px;
+
+}
+
+.page-heading h1{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:var(--text-primary);
+
+    line-height:1.1;
+
+}
+
+.page-heading p{
+
+    margin-top:4px;
+
+    font-size:14px;
+
+    color:var(--text-secondary);
+
+}
+
+/* ======================================
+   Search
+====================================== */
+
+.navbar-search{
+
+    width:430px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:0 18px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:14px;
+
+    background:var(--card-bg);
+
+    transition:var(--transition);
+
+}
+
+.navbar-search:hover{
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.navbar-search:focus-within{
+
+    border-color:var(--primary);
+
+    box-shadow:
+        0 0 0 4px rgba(79,70,229,.10);
+
+}
+
+.navbar-search .material-symbols-rounded{
+
+    font-size:22px;
+
+    color:var(--gray-500);
+
+}
+
+.navbar-search input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    color:var(--text-primary);
+
+}
+
+.navbar-search input::placeholder{
+
+    color:var(--gray-400);
+
+}
+
+.navbar-search kbd{
+
+    padding:4px 8px;
+
+    border-radius:8px;
+
+    background:var(--gray-100);
+
+    border:1px solid var(--gray-200);
+
+    font-size:11px;
+
+    color:var(--gray-600);
+
+}
+
+/* ======================================
+   Right
+====================================== */
+
+.navbar-right{
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+}
+
+/* ======================================
+   Notification
+====================================== */
+
+.notification-btn{
+
+    position:relative;
+
+}
+
+/* ======================================
+   Divider
+====================================== */
+
+.navbar-divider{
+
+    width:1px;
+
+    height:42px;
+
+    background:var(--border-color);
+
+}
+
+/* ======================================
+   Profile
+====================================== */
+
+.profile-menu{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    padding:8px 14px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.profile-menu:hover{
+
+    background:var(--gray-100);
+
+}
+
+.profile-menu img{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.profile-info{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.profile-info h4{
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:var(--text-primary);
+
+}
+
+.profile-info span{
+
+    margin-top:2px;
+
+    font-size:13px;
+
+    color:var(--text-secondary);
+
+}
+
+.profile-menu .material-symbols-rounded{
+
+    color:var(--gray-500);
+
+    transition:var(--transition);
+
+}
+
+.profile-menu:hover .material-symbols-rounded{
+
+    transform:rotate(180deg);
+
+}
+
+/* ======================================
+   Mobile Toggle
+====================================== */
+
+#mobileSidebarToggle{
+
+    display:none;
+
+}
+
+/* ======================================
+   Dark Theme
+====================================== */
+
+body.dark .top-navbar{
+
+    background:rgba(17,24,39,.88);
+
+}
+
+body.dark .navbar-search{
+
+    background:#1F2937;
+
+}
+
+body.dark .profile-menu:hover{
+
+    background:#1F2937;
+
+}
+
+body.dark .navbar-search kbd{
+
+    background:#374151;
+
+    border-color:#4B5563;
+
+    color:#CBD5E1;
+
+}
+
+/* ======================================
+   Animation
+====================================== */
+
+.top-navbar{
+
+    animation:navbarDrop .45s ease;
+
+}
+
+@keyframes navbarDrop{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-16px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
