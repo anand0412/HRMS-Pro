@@ -676,3 +676,168 @@
     }
 
 }
+
+/* ==========================================================
+   Dashboard Part C
+==========================================================*/
+
+.approval-card,
+.birthday-card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.approval-list,
+.birthday-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.approval-item,
+.birthday-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:16px;
+
+}
+
+.approval-avatar{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+.approval-info{
+
+    flex:1;
+
+}
+
+.approval-info h4,
+.birthday-item h4{
+
+    font-size:15px;
+
+    margin-bottom:4px;
+
+}
+
+.approval-info p,
+.birthday-item p{
+
+    color:var(--text-secondary);
+
+    font-size:13px;
+
+}
+
+.approve-btn{
+
+    padding:10px 16px;
+
+}
+
+.birthday-item img{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.quick-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:22px;
+
+    margin-top:22px;
+
+}
+
+.quick-card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.quick-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.quick-card span{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:16px;
+
+    display:block;
+
+}
+
+.quick-card h4{
+
+    font-size:15px;
+
+}
