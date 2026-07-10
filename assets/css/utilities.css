@@ -26,7 +26,11 @@
 
     flex-direction:column;
 
+    margin-left:280px;
+
     min-width:0;
+
+    transition:var(--transition);
 
 }
 
@@ -557,5 +561,93 @@ td{
         transform:translateY(0);
 
     }
+
+}
+
+/* ==========================================================
+   Avatar Placeholder
+==========================================================*/
+
+.avatar-placeholder{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    font-size:16px;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #4F46E5,
+        #7C3AED
+    );
+
+    flex-shrink:0;
+
+    user-select:none;
+
+    box-shadow:0 8px 20px rgba(79,70,229,.25);
+
+}
+
+.avatar-placeholder.large{
+
+    width:56px;
+
+    height:56px;
+
+    font-size:18px;
+
+}
+
+.avatar-placeholder.birthday{
+
+    width:44px;
+
+    height:44px;
+
+    font-size:14px;
+
+}
+
+.avatar-placeholder.green{
+
+    background:linear-gradient(
+        135deg,
+        #10B981,
+        #059669
+    );
+
+}
+
+.avatar-placeholder.orange{
+
+    background:linear-gradient(
+        135deg,
+        #F59E0B,
+        #EA580C
+    );
+
+}
+
+.avatar-placeholder.purple{
+
+    background:linear-gradient(
+        135deg,
+        #7C3AED,
+        #4F46E5
+    );
 
 }
