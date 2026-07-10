@@ -461,3 +461,31 @@
     transform:translateY(-50%) scale(1.5);
 
 }
+
+/* ==========================================================
+   Sidebar Bottom
+==========================================================*/
+
+.sidebar-bottom{
+
+    margin-top:32px;
+
+    padding:18px 0 12px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+}
+
+.sidebar-bottom span{
+
+    font-size:12px;
+
+    letter-spacing:.5px;
+
+    color:#64748B;
+
+    user-select:none;
+
+}
