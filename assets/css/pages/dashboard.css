@@ -1143,6 +1143,14 @@ Override old welcome banner styling
 
 }
 
+.department-card canvas{
+
+    width:100% !important;
+
+    height:300px !important;
+
+}
+
 /*=========================================================
     QUICK ACTIONS
 =========================================================*/
