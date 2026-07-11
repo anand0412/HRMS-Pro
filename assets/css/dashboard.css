@@ -15,61 +15,46 @@
 
 }
 
-.welcome-card{
+/* ==========================================================
+   HERO SECTION CONTAINER
+==========================================================*/
 
-    display:grid;
+.hero-section{
 
-    grid-template-columns:2fr 1fr;
-
-    gap:28px;
-
-    padding:36px;
-
-    border-radius:28px;
-
-    background:
-        linear-gradient(135deg,#4F46E5 0%,#6366F1 50%,#7C3AED 100%);
-
-    color:#fff;
+    position:relative;
 
     overflow:hidden;
 
-    position:relative;
+    border-radius:28px;
+
+    margin-bottom:32px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4F46E5 0%,
+            #6366F1 45%,
+            #7C3AED 100%
+        );
 
     box-shadow:
         0 24px 50px rgba(79,70,229,.28);
 
 }
 
-.welcome-card::before{
+.hero-section::before{
 
     content:"";
 
     position:absolute;
 
-    width:420px;
-    height:420px;
+    width:380px;
+
+    height:380px;
 
     right:-120px;
-    top:-180px;
 
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-}
-
-.welcome-card::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:220px;
-    height:220px;
-
-    left:-60px;
-    bottom:-120px;
+    top:-140px;
 
     border-radius:50%;
 
@@ -77,187 +62,23 @@
 
 }
 
-/* ======================================
-   Left
-======================================*/
+.hero-section::after{
 
-.welcome-content{
+    content:"";
 
-    position:relative;
-    z-index:2;
+    position:absolute;
 
-}
+    width:220px;
 
-.welcome-badge{
+    height:220px;
 
-    display:inline-flex;
+    left:-80px;
 
-    align-items:center;
+    bottom:-110px;
 
-    padding:8px 18px;
+    border-radius:50%;
 
-    margin-bottom:20px;
-
-    border-radius:999px;
-
-    background:rgba(255,255,255,.16);
-
-    font-size:13px;
-
-    font-weight:600;
-
-    backdrop-filter:blur(8px);
-
-}
-
-.welcome-content h2{
-
-    font-size:36px;
-
-    font-weight:800;
-
-    line-height:1.2;
-
-    margin-bottom:16px;
-
-}
-
-.welcome-content p{
-
-    max-width:620px;
-
-    line-height:1.8;
-
-    font-size:16px;
-
-    color:rgba(255,255,255,.88);
-
-}
-
-.welcome-actions{
-
-    display:flex;
-
-    gap:16px;
-
-    margin-top:34px;
-
-}
-
-.welcome-actions .primary-btn{
-
-    background:#fff;
-
-    color:var(--primary);
-
-}
-
-.welcome-actions .primary-btn:hover{
-
-    transform:translateY(-2px);
-
-}
-
-.welcome-actions .secondary-btn{
-
-    background:rgba(255,255,255,.12);
-
-    color:#fff;
-
-    border:1px solid rgba(255,255,255,.25);
-
-}
-
-.welcome-actions .secondary-btn:hover{
-
-    background:rgba(255,255,255,.20);
-
-}
-
-/* ======================================
-   Right Cards
-======================================*/
-
-.welcome-stats{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-.today-card,
-.payroll-card{
-
-    padding:22px;
-
-    border-radius:20px;
-
-    background:rgba(255,255,255,.12);
-
-    backdrop-filter:blur(14px);
-
-    border:1px solid rgba(255,255,255,.16);
-
-}
-
-.today-card .label{
-
-    display:block;
-
-    margin-bottom:12px;
-
-    font-size:12px;
-
-    text-transform:uppercase;
-
-    letter-spacing:1px;
-
-    opacity:.8;
-
-}
-
-.today-card h3{
-
-    font-size:24px;
-
-    margin-bottom:8px;
-
-}
-
-.today-card p{
-
-    color:rgba(255,255,255,.75);
-
-}
-
-.payroll-card span{
-
-    font-size:13px;
-
-    opacity:.8;
-
-}
-
-.payroll-card h2{
-
-    margin:10px 0;
-
-    font-size:34px;
-
-    font-weight:800;
-
-}
-
-.payroll-card small{
-
-    color:rgba(255,255,255,.75);
+    background:rgba(255,255,255,.05);
 
 }
 
