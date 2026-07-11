@@ -1121,21 +1121,21 @@ Override old welcome banner styling
 
     gap:24px;
 
-    align-items:start;
-
     margin:24px 0;
+
+    align-items:stretch;
 
 }
 
 .analytics-card{
 
-    height:100%;
+    min-height:430px;
 
 }
 
 .department-card{
 
-    height:100%;
+    min-height:430px;
 
 }
 
