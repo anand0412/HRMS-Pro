@@ -1056,3 +1056,59 @@ Override old welcome banner styling
     padding:8px 14px;
 
 }
+
+.analytics-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    margin-top:20px;
+
+    border-top:1px solid #EEF2F7;
+
+    padding-top:20px;
+
+}
+
+.summary-item{
+
+    text-align:center;
+
+}
+
+.summary-item h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:6px;
+
+}
+
+.summary-item span{
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+.chart-filter{
+
+    border:1px solid #E5E7EB;
+
+    border-radius:10px;
+
+    padding:8px 12px;
+
+    font-size:14px;
+
+    background:#fff;
+
+}
