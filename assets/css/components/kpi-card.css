@@ -12,7 +12,7 @@
 
     padding:16px;
 
-    height:235px;
+    height:220px;
 
     display:flex;
 
@@ -20,13 +20,13 @@
 
     justify-content:space-between;
 
-    box-shadow:0 8px 25px rgba(15,23,42,.06);
+    box-shadow:0 8px 22px rgba(15,23,42,.05);
 
-    transition:.30s ease;
-
-    min-width:0;
+    transition:.30s;
 
     overflow:hidden;
+
+    min-width:0;
 
 }
 
@@ -59,17 +59,17 @@
 
     align-items:flex-start;
 
-    gap:12px;
+    gap:10px;
 
 }
 
 .kpi-icon{
 
-    width:40px;
+    width:38px;
 
-    height:40px;
+    height:38px;
 
-    border-radius:12px;
+    border-radius:11px;
 
     display:flex;
 
@@ -107,7 +107,7 @@
 
     margin:0;
 
-    font-size:16px;
+    font-size:15px;
 
     font-weight:700;
 
@@ -169,7 +169,7 @@
 
 .kpi-number{
 
-    font-size:48px;
+    font-size:42px;
 
     font-weight:800;
 
@@ -177,9 +177,9 @@
 
     line-height:1;
 
-    margin-top:8px;
+    margin-top:6px;
 
-    letter-spacing:-1px;
+    letter-spacing:1;
 
 }
 
@@ -191,7 +191,7 @@
 
     flex:1;
 
-    margin-top:12px;
+    margin-top:6px;
 
     display:flex;
 
@@ -222,11 +222,9 @@
 
     align-items:center;
 
-    margin-top:10px;
+    font-size:12px;
 
-    padding-top:14px;
-
-    flex-wrap:nowrap;
+    margin-top:6px;
 
 }
 
