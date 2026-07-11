@@ -874,22 +874,32 @@
                 <span class="material-symbols-rounded">groups</span>
             </div>
 
-            <div class="kpi-heading">
+            <div class="kpi-title">
+
                 <h3>Employees</h3>
-                <p>Total Employees</p>
+
+                <span>Total Employees</span>
+
             </div>
 
         </div>
 
-        <div class="kpi-trend">
-            <span class="material-symbols-rounded">trending_up</span>
+        <div class="kpi-badge">
+
+            <span class="material-symbols-rounded">
+                trending_up
+            </span>
+
             <span>12%</span>
+
         </div>
 
     </div>
 
-    <div class="kpi-value">
+    <div class="kpi-number">
+
         4,286
+
     </div>
 
     <div class="kpi-chart">
@@ -898,13 +908,9 @@
 
             <defs>
 
-                <linearGradient id="employeeGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="0%"
-                    y2="100%">
+                <linearGradient id="empFill" x1="0" y1="0" x2="0" y2="1">
 
-                    <stop offset="0%" stop-color="#2563EB" stop-opacity=".35"/>
+                    <stop offset="0%" stop-color="#2563EB" stop-opacity=".20"/>
 
                     <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
 
@@ -915,33 +921,35 @@
             <path
 
                 d="M0 55
-                   L35 46
-                   L70 50
-                   L105 35
-                   L140 38
-                   L175 20
-                   L210 27
-                   L245 14
-                   L280 18
-                   L320 8
+                   C20 45 30 65 50 52
+                   S90 20 120 38
+                   S150 25 170 45
+                   S205 18 230 42
+                   S270 60 300 34
+                   S315 30 320 34
                    L320 70
-                   L0 70 Z"
+                   L0 70
+                   Z"
 
-                fill="url(#employeeGradient)"/>
+                fill="url(#empFill)"/>
 
-            <polyline
+            <path
 
-                points="0,55 35,46 70,50 105,35 140,38 175,20 210,27 245,14 280,18 320,8"
+                d="M0 55
+                   C20 45 30 65 50 52
+                   S90 20 120 38
+                   S150 25 170 45
+                   S205 18 230 42
+                   S270 60 300 34
+                   S315 30 320 34"
 
                 fill="none"
 
                 stroke="#2563EB"
 
-                stroke-width="4"
+                stroke-width="3.5"
 
-                stroke-linecap="round"
-
-                stroke-linejoin="round"/>
+                stroke-linecap="round"/>
 
         </svg>
 
@@ -949,19 +957,21 @@
 
     <div class="kpi-footer">
 
-        <div class="kpi-footer-left">
+        <div class="kpi-month">
 
             <span class="material-symbols-rounded">
-                arrow_upward
+                north_east
             </span>
 
-            <span>142 Joined</span>
+            <strong>142</strong>
+
+            <span>This Month</span>
 
         </div>
 
-        <span class="kpi-footer-right">
+        <span class="kpi-compare">
 
-            This Month
+            vs last month
 
         </span>
 
