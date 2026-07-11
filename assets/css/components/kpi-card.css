@@ -59,17 +59,17 @@
 
     align-items:flex-start;
 
-    gap:16px;
+    gap:12px;
 
 }
 
 .kpi-icon{
 
-    width:44px;
+    width:40px;
 
-    height:44px;
+    height:40px;
 
-    border-radius:14px;
+    border-radius:12px;
 
     display:flex;
 
@@ -87,7 +87,7 @@
 
     color:#FFFFFF;
 
-    font-size:20px;
+    font-size:18px;
 
 }
 
@@ -107,7 +107,7 @@
 
     margin:0;
 
-    font-size:18px;
+    font-size:16px;
 
     font-weight:700;
 
@@ -121,7 +121,7 @@
 
     margin-top:4px;
 
-    font-size:14px;
+    font-size:13px;
 
     color:#64748B;
 
@@ -169,7 +169,7 @@
 
 .kpi-number{
 
-    font-size:58px;
+    font-size:48px;
 
     font-weight:800;
 
@@ -177,7 +177,7 @@
 
     line-height:1;
 
-    margin-top:12px;
+    margin-top:8px;
 
     letter-spacing:-1px;
 
