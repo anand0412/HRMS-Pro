@@ -1,0 +1,263 @@
+/* ==========================================================
+   KPI CARD 2.0
+==========================================================*/
+
+.kpi-card{
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    border:1px solid #E8ECF4;
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    height:230px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    transition:.30s;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 24px 50px rgba(15,23,42,.12);
+
+}
+
+/* ==========================================================
+   HEADER
+==========================================================*/
+
+.kpi-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.kpi-title{
+
+    display:flex;
+
+    gap:14px;
+
+    align-items:center;
+
+}
+
+.kpi-title h4{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.kpi-title span{
+
+    display:block;
+
+    margin-top:3px;
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+/* ==========================================================
+   ICON
+==========================================================*/
+
+.kpi-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#FFFFFF;
+
+}
+
+.blue .kpi-icon{
+
+    background:#2563EB;
+
+}
+
+.green .kpi-icon{
+
+    background:#16A34A;
+
+}
+
+.orange .kpi-icon{
+
+    background:#F97316;
+
+}
+
+.purple .kpi-icon{
+
+    background:#7C3AED;
+
+}
+
+.kpi-icon .material-symbols-rounded{
+
+    font-size:26px;
+
+}
+
+/* ==========================================================
+   TREND
+==========================================================*/
+
+.kpi-trend{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:4px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    padding:6px 10px;
+
+    border-radius:999px;
+
+}
+
+.kpi-trend.positive{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+.kpi-trend .material-symbols-rounded{
+
+    font-size:18px;
+
+}
+
+/* ==========================================================
+   VALUE
+==========================================================*/
+
+.kpi-value{
+
+    font-size:44px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    line-height:1;
+
+}
+
+/* ==========================================================
+   SPARKLINE
+==========================================================*/
+
+.kpi-chart{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.kpi-chart svg{
+
+    width:100%;
+
+    height:60px;
+
+}
+
+.blue .kpi-chart{
+
+    color:#2563EB;
+
+}
+
+.green .kpi-chart{
+
+    color:#16A34A;
+
+}
+
+.orange .kpi-chart{
+
+    color:#F97316;
+
+}
+
+.purple .kpi-chart{
+
+    color:#7C3AED;
+
+}
+
+/* ==========================================================
+   FOOTER
+==========================================================*/
+
+.kpi-footer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#16A34A;
+
+}
+
+.kpi-footer .material-symbols-rounded{
+
+    font-size:18px;
+
+}
