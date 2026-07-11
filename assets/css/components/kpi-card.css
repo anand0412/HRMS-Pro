@@ -8,11 +8,11 @@
 
     border:1px solid #EEF2F7;
 
-    border-radius:22px;
+    border-radius:20px;
 
-    padding:22px;
+    padding:18px;
 
-    height:305px;
+    height:255px;
 
     display:flex;
 
@@ -24,7 +24,9 @@
 
     transition:.30s ease;
 
-    min-width:320px;
+    min-width:0;
+
+    overflow:hidden;
 
 }
 
