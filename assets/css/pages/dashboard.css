@@ -1121,8 +1121,20 @@ Override old welcome banner styling
 
     gap:24px;
 
-    margin-top:24px;
-
     align-items:start;
+
+    margin:24px 0;
+
+}
+
+.analytics-card{
+
+    height:100%;
+
+}
+
+.department-card{
+
+    height:100%;
 
 }
