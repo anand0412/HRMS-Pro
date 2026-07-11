@@ -50,6 +50,9 @@
           href="assets/css/layout/navbar.css">
 
     <link rel="stylesheet"
+          href="assets/css/widget.css">
+
+    <link rel="stylesheet"
           href="assets/css/pages/dashboard.css">
 
     <link rel="stylesheet"
@@ -60,6 +63,7 @@
 
     <link rel="stylesheet"
           href="assets/css/components/kpi-card.css">
+
 
 </head>
 
@@ -862,72 +866,78 @@
 
       <div class="kpi-card blue">
 
-    <!-- Header -->
-
     <div class="kpi-header">
 
         <div class="kpi-left">
 
             <div class="kpi-icon">
-
-                <span class="material-symbols-rounded">
-                    groups
-                </span>
-
+                <span class="material-symbols-rounded">groups</span>
             </div>
 
             <div class="kpi-heading">
-
                 <h3>Employees</h3>
-
                 <p>Total Employees</p>
-
             </div>
 
         </div>
 
-        <div class="kpi-trend positive">
-
-            <span class="material-symbols-rounded">
-                trending_up
-            </span>
-
+        <div class="kpi-trend">
+            <span class="material-symbols-rounded">trending_up</span>
             <span>12%</span>
-
         </div>
 
     </div>
 
-    <!-- Value -->
-
     <div class="kpi-value">
-
         4,286
-
     </div>
-
-    <!-- Chart -->
 
     <div class="kpi-chart">
 
-        <svg viewBox="0 0 300 70">
+        <svg viewBox="0 0 320 70" preserveAspectRatio="none">
+
+            <defs>
+
+                <linearGradient id="employeeGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%">
+
+                    <stop offset="0%" stop-color="#2563EB" stop-opacity=".35"/>
+
+                    <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+
+                </linearGradient>
+
+            </defs>
 
             <path
+
                 d="M0 55
-                   L30 48
-                   L60 51
-                   L90 36
-                   L120 39
-                   L150 22
-                   L180 30
-                   L210 12
-                   L240 18
-                   L270 6
-                   L300 10"
+                   L35 46
+                   L70 50
+                   L105 35
+                   L140 38
+                   L175 20
+                   L210 27
+                   L245 14
+                   L280 18
+                   L320 8
+                   L320 70
+                   L0 70 Z"
+
+                fill="url(#employeeGradient)"/>
+
+            <polyline
+
+                points="0,55 35,46 70,50 105,35 140,38 175,20 210,27 245,14 280,18 320,8"
 
                 fill="none"
-                stroke="currentColor"
-                stroke-width="5"
+
+                stroke="#2563EB"
+
+                stroke-width="4"
 
                 stroke-linecap="round"
 
@@ -937,29 +947,21 @@
 
     </div>
 
-    <!-- Footer -->
-
     <div class="kpi-footer">
 
         <div class="kpi-footer-left">
 
             <span class="material-symbols-rounded">
-
-                trending_up
-
+                arrow_upward
             </span>
 
-            <span>
-
-                142 This Month
-
-            </span>
+            <span>142 Joined</span>
 
         </div>
 
         <span class="kpi-footer-right">
 
-            vs last month
+            This Month
 
         </span>
 

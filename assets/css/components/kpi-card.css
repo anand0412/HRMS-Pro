@@ -1,38 +1,36 @@
 /*==========================================================
-    KPI CARD 2.0
+    KPI CARD 3.0
 ==========================================================*/
 
 .kpi-card{
 
     background:#FFFFFF;
 
-    border:1px solid #E8EDF5;
+    border:1px solid #E9EEF5;
 
-    border-radius:26px;
+    border-radius:24px;
 
-    height:270px;
+    padding:24px;
 
-    padding:26px;
+    height:265px;
 
     display:flex;
 
     flex-direction:column;
 
-    box-shadow:0 12px 30px rgba(15,23,42,.06);
+    box-shadow:0 10px 25px rgba(15,23,42,.06);
 
-    transition:.35s;
+    transition:.30s ease;
 
     overflow:hidden;
-
-    position:relative;
 
 }
 
 .kpi-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
-    box-shadow:0 22px 55px rgba(15,23,42,.12);
+    box-shadow:0 20px 45px rgba(15,23,42,.12);
 
 }
 
@@ -48,7 +46,7 @@
 
     align-items:flex-start;
 
-    margin-bottom:24px;
+    margin-bottom:22px;
 
 }
 
@@ -78,7 +76,7 @@
 
     margin-top:4px;
 
-    font-size:14px;
+    font-size:13px;
 
     color:#64748B;
 
@@ -90,11 +88,11 @@
 
 .kpi-icon{
 
-    width:64px;
+    width:56px;
 
-    height:64px;
+    height:56px;
 
-    border-radius:20px;
+    border-radius:18px;
 
     display:flex;
 
@@ -102,11 +100,147 @@
 
     justify-content:center;
 
-    color:#FFFFFF;
+    background:linear-gradient(135deg,#4F46E5,#2563EB);
 
-    flex-shrink:0;
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
 
 }
+
+.kpi-icon .material-symbols-rounded{
+
+    color:#FFFFFF;
+
+    font-size:28px;
+
+}
+
+/*==========================================================
+    TREND
+==========================================================*/
+
+.kpi-trend{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:4px;
+
+    background:#ECFDF3;
+
+    color:#16A34A;
+
+    border-radius:999px;
+
+    padding:8px 12px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.kpi-trend .material-symbols-rounded{
+
+    font-size:18px;
+
+}
+
+/*==========================================================
+    VALUE
+==========================================================*/
+
+.kpi-value{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    line-height:1;
+
+    letter-spacing:-1px;
+
+    margin-bottom:12px;
+
+}
+
+/*==========================================================
+    CHART
+==========================================================*/
+
+.kpi-chart{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.kpi-chart svg{
+
+    width:100%;
+
+    height:70px;
+
+}
+
+/*==========================================================
+    FOOTER
+==========================================================*/
+
+.kpi-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:8px;
+
+    padding-top:14px;
+
+    border-top:1px solid #EEF2F7;
+
+}
+
+.kpi-footer-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.kpi-footer-left .material-symbols-rounded{
+
+    font-size:16px;
+
+}
+
+.kpi-footer-right{
+
+    font-size:13px;
+
+    color:#94A3B8;
+
+}
+
+/*==========================================================
+    COLOR VARIANTS
+==========================================================*/
 
 .blue .kpi-icon{
 
@@ -128,12 +262,52 @@
 
 .purple .kpi-icon{
 
-    background:linear-gradient(135deg,#8B5CF6,#7C3AED);
+    background:linear-gradient(135deg,#A855F7,#7C3AED);
 
 }
 
-.kpi-icon .material-symbols-rounded{
+/* Footer Accent */
 
-    font-size:30px;
+.blue .kpi-footer-left{
+
+    color:#2563EB;
+
+}
+
+.green .kpi-footer-left{
+
+    color:#16A34A;
+
+}
+
+.orange .kpi-footer-left{
+
+    color:#F97316;
+
+}
+
+.purple .kpi-footer-left{
+
+    color:#7C3AED;
+
+}
+
+/*==========================================================
+    HOVER EFFECTS
+==========================================================*/
+
+.kpi-card:hover .kpi-icon{
+
+    transform:scale(1.08);
+
+    transition:.30s;
+
+}
+
+.kpi-card:hover .kpi-chart svg{
+
+    transform:scale(1.02);
+
+    transition:.30s;
 
 }
