@@ -860,29 +860,27 @@
 
         <!-- Employees -->
 
-       <div class="kpi-card blue">
+      <div class="kpi-card blue">
 
     <!-- Header -->
 
     <div class="kpi-header">
 
-        <div class="kpi-title">
+        <div class="kpi-left">
 
             <div class="kpi-icon">
 
                 <span class="material-symbols-rounded">
-
                     groups
-
                 </span>
 
             </div>
 
-            <div>
+            <div class="kpi-heading">
 
-                <h4>Employees</h4>
+                <h3>Employees</h3>
 
-                <span>Total Employees</span>
+                <p>Total Employees</p>
 
             </div>
 
@@ -891,18 +889,16 @@
         <div class="kpi-trend positive">
 
             <span class="material-symbols-rounded">
-
                 trending_up
-
             </span>
 
-            12%
+            <span>12%</span>
 
         </div>
 
     </div>
 
-    <!-- Number -->
+    <!-- Value -->
 
     <div class="kpi-value">
 
@@ -910,19 +906,32 @@
 
     </div>
 
-    <!-- Sparkline -->
+    <!-- Chart -->
 
     <div class="kpi-chart">
 
-        <svg viewBox="0 0 220 50" preserveAspectRatio="none">
+        <svg viewBox="0 0 300 70">
 
-            <polyline
+            <path
+                d="M0 55
+                   L30 48
+                   L60 51
+                   L90 36
+                   L120 39
+                   L150 22
+                   L180 30
+                   L210 12
+                   L240 18
+                   L270 6
+                   L300 10"
+
                 fill="none"
                 stroke="currentColor"
-                stroke-width="4"
+                stroke-width="5"
+
                 stroke-linecap="round"
-                stroke-linejoin="round"
-                points="0,42 25,36 50,39 75,28 100,30 125,20 150,24 175,14 200,18 220,8"/>
+
+                stroke-linejoin="round"/>
 
         </svg>
 
@@ -932,13 +941,27 @@
 
     <div class="kpi-footer">
 
-        <span class="material-symbols-rounded">
+        <div class="kpi-footer-left">
 
-            arrow_upward
+            <span class="material-symbols-rounded">
+
+                trending_up
+
+            </span>
+
+            <span>
+
+                142 This Month
+
+            </span>
+
+        </div>
+
+        <span class="kpi-footer-right">
+
+            vs last month
 
         </span>
-
-        142 Joined This Month
 
     </div>
 
