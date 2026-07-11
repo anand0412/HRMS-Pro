@@ -144,6 +144,10 @@
    Dashboard Grid
 ======================================*/
 
+/*=========================================
+    DASHBOARD GRID
+=========================================*/
+
 .dashboard-grid{
 
     display:grid;
@@ -152,7 +156,21 @@
 
     gap:24px;
 
-    margin-bottom:30px;
+    margin-top:24px;
+
+    align-items:start;
+
+}
+
+.large-card{
+
+    grid-column:span 1;
+
+}
+
+.small-card{
+
+    grid-column:span 1;
 
 }
 
