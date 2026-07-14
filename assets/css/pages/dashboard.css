@@ -1238,3 +1238,51 @@ Override old welcome banner styling
     color:#1E293B;
 
 }
+
+/* ===========================
+   Analytics Right Sidebar
+=========================== */
+
+.analytics-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+/* Department Card */
+
+.department-card{
+
+    height:250px;
+
+}
+
+/* Calendar Card */
+
+.calendar-card{
+
+    height:250px;
+
+}
+
+/* Temporary */
+
+.calendar-placeholder{
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#94A3B8;
+
+    font-size:15px;
+
+}
