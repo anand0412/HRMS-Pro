@@ -15,104 +15,163 @@ const workforceChart = new Chart(
             ]
         },
         options:{
-            responsive:true,
-            plugins:{
 
-            legend:{
+    responsive:true,
 
-                        display:false
+    maintainAspectRatio:false,
 
-                    },
+    plugins:{
 
-                tooltip:{
+        legend:{
 
-                            backgroundColor:"#0F172A",
+            display:false
 
-                            titleColor:"#FFFFFF",
+        },
 
-                            bodyColor:"#FFFFFF",
+        tooltip:{
 
-                            padding:12,
+            backgroundColor:"#0F172A",
 
-                            cornerRadius:10
+            titleColor:"#FFFFFF",
 
-                        }
+            bodyColor:"#FFFFFF",
 
-            },
+            padding:12,
+
+            cornerRadius:10
+
         }
+
+    },
+
+    scales:{
+
+        y:{
+
+            grid:{
+
+                color:"#EEF2F7"
+
+            }
+
+        },
+
+        x:{
+
+            grid:{
+
+                display:false
+
+            }
+
+        }
+
+    }
+
+}
     }
 );
 
 const departmentChart = new Chart(
+    document.getElementById("departmentChart"),
+    {
+        type: "bar",
 
-document.getElementById("departmentChart"),
+        data: {
+            labels: [
+                "IT",
+                "Finance",
+                "Administration",
+                "HR",
+                "Accounts",
+                "Engineering",
+                "Others"
+            ],
 
-{
+            datasets: [{
+                label: "Employees",
 
-type:"bar",
+                data: [
+                    120,
+                    74,
+                    58,
+                    41,
+                    32,
+                    27,
+                    390
+                ],
 
-data:{
+                backgroundColor: [
+                    "#6366F1",
+                    "#8B5CF6",
+                    "#06B6D4",
+                    "#22C55E",
+                    "#F59E0B",
+                    "#F97316",
+                    "#CBD5E1"
+                ],
 
-labels:[
+                borderRadius: 8
+            }]
+        },
 
-"IT",
+        options: {
 
-"Finance",
+            responsive: true,
 
-"Administration",
+            maintainAspectRatio: false,
 
-"HR",
+            plugins: {
 
-"Accounts",
+                legend: {
 
-"Engineering",
+                    display: false
 
-"Others"
+                },
 
-],
+                tooltip: {
 
-datasets:[{
+                    backgroundColor: "#0F172A",
 
-label:"Employees",
+                    titleColor: "#FFFFFF",
 
-data:[
+                    bodyColor: "#FFFFFF",
 
-120,
+                    padding: 12,
 
-74,
+                    cornerRadius: 10
 
-58,
+                }
 
-41,
+            },
 
-32,
+            scales: {
 
-27,
+                y: {
 
-390
+                    beginAtZero: true,
 
-],
+                    grid: {
 
-backgroundColor:[
+                        color: "#EEF2F7"
 
-"#6366F1",
+                    }
 
-"#8B5CF6",
+                },
 
-"#06B6D4",
+                x: {
 
-"#22C55E",
+                    grid: {
 
-"#F59E0B",
+                        display: false
 
-"#F97316",
+                    }
 
-"#CBD5E1"
+                }
 
-],
+            }
 
-borderRadius:8
+        }
 
-}]
-
-},
+    }
+);
