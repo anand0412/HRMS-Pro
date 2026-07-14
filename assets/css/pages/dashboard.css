@@ -1257,7 +1257,29 @@ Override old welcome banner styling
 
 .department-card{
 
-    height:250px;
+    height:260px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.department-chart-wrapper{
+
+    flex:1;
+
+    position:relative;
+
+    margin-top:10px;
+
+}
+
+.department-chart-wrapper canvas{
+
+    width:100% !important;
+
+    height:100% !important;
 
 }
 

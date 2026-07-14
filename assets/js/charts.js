@@ -17,8 +17,28 @@ const workforceChart = new Chart(
         options:{
             responsive:true,
             plugins:{
-                legend:{display:false}
-            }
+
+            legend:{
+
+                        display:false
+
+                    },
+
+                tooltip:{
+
+                            backgroundColor:"#0F172A",
+
+                            titleColor:"#FFFFFF",
+
+                            bodyColor:"#FFFFFF",
+
+                            padding:12,
+
+                            cornerRadius:10
+
+                        }
+
+            },
         }
     }
 );
@@ -35,17 +55,19 @@ data:{
 
 labels:[
 
-"HR",
-
 "IT",
 
 "Finance",
 
-"Admin",
+"Administration",
 
-"Sales",
+"HR",
 
-"Support"
+"Accounts",
+
+"Engineering",
+
+"Others"
 
 ],
 
@@ -55,70 +77,42 @@ label:"Employees",
 
 data:[
 
-35,
-
 120,
-
-42,
-
-28,
 
 74,
 
-55
+58,
+
+41,
+
+32,
+
+27,
+
+390
 
 ],
 
-backgroundColor:"#6366F1",
+backgroundColor:[
+
+"#6366F1",
+
+"#8B5CF6",
+
+"#06B6D4",
+
+"#22C55E",
+
+"#F59E0B",
+
+"#F97316",
+
+"#CBD5E1"
+
+],
 
 borderRadius:8
 
 }]
 
 },
-
-options:{
-
-responsive:true,
-
-maintainAspectRatio:false,
-
-plugins:{
-
-legend:{
-
-display:false
-
-}
-
-},
-
-scales:{
-
-y:{
-
-beginAtZero:true,
-
-grid:{
-
-color:"#EEF2F7"
-
-}
-
-},
-
-x:{
-
-grid:{
-
-display:false
-
-}
-
-}
-
-}
-
-}
-
-});
