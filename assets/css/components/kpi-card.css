@@ -163,15 +163,19 @@
 
 .kpi-number{
 
-    margin-top:12px;
+    margin-top:10px;
 
-    font-size:58px;
+    font-size:46px;
 
     font-weight:800;
 
-    line-height:1;
+    line-height:1.05;
+
+    letter-spacing:-1px;
 
     color:#0F172A;
+
+    white-space:nowrap;
 
 }
 
