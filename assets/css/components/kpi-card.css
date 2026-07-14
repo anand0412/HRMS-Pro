@@ -374,3 +374,29 @@
     }
 
 }
+
+/* ==============================
+   Orange KPI Card
+============================== */
+
+.kpi-card.orange .kpi-icon{
+
+    background:#F97316;
+
+}
+
+.kpi-card.orange .kpi-month{
+
+    color:#F97316;
+
+}
+
+.kpi-badge.danger{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+    font-weight:700;
+
+}

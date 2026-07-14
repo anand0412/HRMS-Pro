@@ -96,13 +96,9 @@
 
     display:grid;
 
-    grid-template-columns:repeat(4,minmax(0,1fr));
+    grid-template-columns:repeat(4,1fr);
 
-    gap:16px;
-
-    margin:24px 0;
-
-    align-items:stretch;
+    gap:20px;
 
 }
 
