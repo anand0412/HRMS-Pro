@@ -1131,7 +1131,7 @@ Override old welcome banner styling
 
 .analytics-card{
 
-    display:flex;
+    display:block;
 
     flex-direction:column;
 
@@ -1273,7 +1273,7 @@ Override old welcome banner styling
 
 .calendar-card{
 
-    height:250px;
+    height:460px;
 
 }
 
