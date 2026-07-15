@@ -1314,3 +1314,53 @@ Override old welcome banner styling
     height:100% !important;
 
 }
+
+/* ======================================
+   Section Header
+======================================*/
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:18px;
+
+}
+
+.section-title h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.section-title a{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#4F46E5;
+
+    text-decoration:none;
+
+    white-space:nowrap;
+
+    flex-shrink:0;
+
+}
+
+.section-title a:hover{
+
+    color:#4338CA;
+
+}
