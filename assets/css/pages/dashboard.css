@@ -1266,15 +1266,13 @@ Override old welcome banner styling
 
 .calendar-card{
 
-    height:550px;
+    display:flex;
 
-    overflow: hidden;
+    flex-direction:column;
 
-    display: flex;
+    overflow:hidden;
 
-    flex-direction: column;
-
-    height: 100%;
+    min-height:430px;
 
 }
 
@@ -1462,9 +1460,7 @@ Override old welcome banner styling
 
     gap:8px;
 
-    text-align:center;
-
-    margin-bottom:22px;
+    margin-top:12px;
 
 }
 
@@ -1506,9 +1502,11 @@ Override old welcome banner styling
 
 .today-events{
 
-    border-top:1px solid #EEF2F7;
+    margin-top:20px;
 
     padding-top:18px;
+
+    border-top:1px solid #EEF2F7;
 
 }
 
@@ -1528,7 +1526,7 @@ Override old welcome banner styling
 
     align-items:flex-start;
 
-    gap:12px;
+    gap:10px;
 
     margin-bottom:14px;
 
