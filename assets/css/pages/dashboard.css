@@ -1127,7 +1127,7 @@ Override old welcome banner styling
 
     margin:24px 0;
 
-    align-items:stretch;
+    align-items:start;
 
 }
 
@@ -1273,7 +1273,7 @@ Override old welcome banner styling
 
     overflow:hidden;
 
-    min-height:430px;
+    height:auto;
 
 }
 
@@ -1580,5 +1580,11 @@ Override old welcome banner styling
     color:#94A3B8;
 
     font-size:12px;
+
+}
+
+.analytics-card{
+    display:flex;
+    flex-direction:column;
 
 }
