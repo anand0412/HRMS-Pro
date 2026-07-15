@@ -78,23 +78,28 @@ const departmentChart = new Chart(
         type: "bar",
 
         data: {
-            labels: [
-    "HR",
-    "IT",
-    "Finance",
-    "Admin",
-    "Sales",
-    "Support"
-],
 
-data: [
-    36,
-    120,
-    42,
-    28,
-    74,
-    55
-]
+            labels: [
+                "HR",
+                "IT",
+                "Finance",
+                "Admin",
+                "Sales",
+                "Support"
+            ],
+
+            datasets: [{
+
+                label: "Employees",
+
+                data: [
+                    36,
+                    120,
+                    42,
+                    28,
+                    74,
+                    55
+                ],
 
                 backgroundColor: [
                     "#6366F1",
@@ -102,11 +107,11 @@ data: [
                     "#06B6D4",
                     "#22C55E",
                     "#F59E0B",
-                    "#F97316",
-                    "#CBD5E1"
+                    "#F97316"
                 ],
 
                 borderRadius: 8
+
             }]
         },
 
@@ -119,23 +124,15 @@ data: [
             plugins: {
 
                 legend: {
-
                     display: false
-
                 },
 
                 tooltip: {
-
                     backgroundColor: "#0F172A",
-
                     titleColor: "#FFFFFF",
-
                     bodyColor: "#FFFFFF",
-
                     padding: 12,
-
                     cornerRadius: 10
-
                 }
 
             },
@@ -147,9 +144,7 @@ data: [
                     beginAtZero: true,
 
                     grid: {
-
                         color: "#EEF2F7"
-
                     }
 
                 },
@@ -157,9 +152,7 @@ data: [
                 x: {
 
                     grid: {
-
                         display: false
-
                     }
 
                 }
