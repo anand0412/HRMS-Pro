@@ -1243,7 +1243,7 @@ Override old welcome banner styling
 
 .department-card{
 
-    height:260px;
+    height:300px;
 
     display:flex;
 
@@ -1362,5 +1362,221 @@ Override old welcome banner styling
 .section-title a:hover{
 
     color:#4338CA;
+
+}
+
+/*=========================================================
+    WORK CALENDAR
+=========================================================*/
+
+.calendar-widget{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.calendar-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.calendar-header h4{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.calendar-nav{
+
+    width:32px;
+
+    height:32px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#F8FAFC;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    color:#475569;
+
+    font-size:18px;
+
+}
+
+.calendar-nav:hover{
+
+    background:#EEF2FF;
+
+    color:#4F46E5;
+
+}
+
+.calendar-days{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#94A3B8;
+
+}
+
+.calendar-dates{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:8px;
+
+    text-align:center;
+
+    margin-bottom:22px;
+
+}
+
+.calendar-dates span{
+
+    height:34px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    color:#334155;
+
+}
+
+.calendar-dates span:hover{
+
+    background:#EEF2FF;
+
+    cursor:pointer;
+
+}
+
+.active-day{
+
+    background:#4F46E5;
+
+    color:#FFFFFF !important;
+
+    font-weight:700;
+
+}
+
+.today-events{
+
+    border-top:1px solid #EEF2F7;
+
+    padding-top:18px;
+
+}
+
+.today-events h5{
+
+    margin-bottom:14px;
+
+    font-size:15px;
+
+    color:#0F172A;
+
+}
+
+.event-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    margin-bottom:14px;
+
+}
+
+.event-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    margin-top:5px;
+
+    flex-shrink:0;
+
+}
+
+.event-dot.purple{
+
+    background:#6366F1;
+
+}
+
+.event-dot.green{
+
+    background:#22C55E;
+
+}
+
+.event-dot.orange{
+
+    background:#F97316;
+
+}
+
+.event-item strong{
+
+    display:block;
+
+    font-size:14px;
+
+    color:#1E293B;
+
+}
+
+.event-item small{
+
+    color:#94A3B8;
+
+    font-size:12px;
 
 }

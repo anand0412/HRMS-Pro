@@ -79,27 +79,22 @@ const departmentChart = new Chart(
 
         data: {
             labels: [
-                "IT",
-                "Finance",
-                "Administration",
-                "HR",
-                "Accounts",
-                "Engineering",
-                "Others"
-            ],
+    "HR",
+    "IT",
+    "Finance",
+    "Admin",
+    "Sales",
+    "Support"
+],
 
-            datasets: [{
-                label: "Employees",
-
-                data: [
-                    120,
-                    74,
-                    58,
-                    41,
-                    32,
-                    27,
-                    390
-                ],
+data: [
+    36,
+    120,
+    42,
+    28,
+    74,
+    55
+]
 
                 backgroundColor: [
                     "#6366F1",
