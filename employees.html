@@ -819,7 +819,7 @@ Employee Table
 
         <tbody>
 
-            <tr>
+            <tr class="employee-row">
 
                 <td>
 
@@ -877,7 +877,7 @@ Employee Table
 
             </tr>
 
-            <tr>
+            <tr class="employee-row">
 
                 <td>
 
@@ -935,7 +935,7 @@ Employee Table
 
             </tr>
 
-            <tr>
+            <tr class="employee-row">
 
                 <td>
 
@@ -1118,11 +1118,151 @@ Employee Table
 
 <script src="assets/js/dashboard.js"></script>
 
+<script src="assets/js/employees.js"></script>
+
 <!-- Chart.js Library -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- Charts -->
 <script src="assets/js/charts.js"></script>
+
+<!-- ==========================================
+     Employee Details Drawer
+========================================== -->
+
+<div class="employee-drawer-overlay" id="employeeDrawerOverlay">
+
+    <div class="employee-drawer">
+
+        <div class="drawer-header">
+
+            <h2>Employee Profile</h2>
+
+            <button class="drawer-close">
+
+                <span class="material-symbols-rounded">close</span>
+
+            </button>
+
+        </div>
+
+        <div class="drawer-body">
+
+            <div class="employee-profile-top">
+
+                <div class="profile-avatar">
+
+                    RS
+
+                </div>
+
+                <div>
+
+                    <h3>Rahul Sharma</h3>
+
+                    <p>EMP-1001</p>
+
+                    <span class="status-badge active">Active</span>
+
+                </div>
+
+            </div>
+
+            <div class="drawer-section">
+
+                <h4>Personal Details</h4>
+
+                <div class="info-grid">
+
+                    <div>
+
+                        <label>Email</label>
+
+                        <p>rahul@hrmspro.com</p>
+
+                    </div>
+
+                    <div>
+
+                        <label>Phone</label>
+
+                        <p>+91 9876543210</p>
+
+                    </div>
+
+                    <div>
+
+                        <label>Date of Birth</label>
+
+                        <p>14 July 1996</p>
+
+                    </div>
+
+                    <div>
+
+                        <label>Blood Group</label>
+
+                        <p>B+</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="drawer-section">
+
+                <h4>Employment</h4>
+
+                <div class="info-grid">
+
+                    <div>
+
+                        <label>Department</label>
+
+                        <p>IT</p>
+
+                    </div>
+
+                    <div>
+
+                        <label>Designation</label>
+
+                        <p>Senior Developer</p>
+
+                    </div>
+
+                    <div>
+
+                        <label>Joining Date</label>
+
+                        <p>15 Jan 2024</p>
+
+                    </div>
+
+                    <div>
+
+                        <label>Manager</label>
+
+                        <p>Anita Verma</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="btn-primary drawer-edit-btn">
+
+                Edit Employee
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 

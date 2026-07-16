@@ -595,3 +595,233 @@
     color:#FFFFFF;
 
 }
+
+/*=========================================================
+    EMPLOYEE DETAILS DRAWER
+=========================================================*/
+
+.employee-drawer-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.35);
+
+    backdrop-filter:blur(4px);
+
+    display:none;
+
+    justify-content:flex-end;
+
+    align-items:stretch;
+
+    z-index:5000;
+
+}
+
+.employee-drawer{
+
+    width:430px;
+
+    max-width:100%;
+
+    background:#FFFFFF;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    box-shadow:-20px 0 50px rgba(15,23,42,.18);
+
+    animation:drawerSlide .30s ease;
+
+}
+
+@keyframes drawerSlide{
+
+    from{
+
+        transform:translateX(100%);
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.drawer-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.drawer-header h2{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+.drawer-close{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.25s;
+
+}
+
+.drawer-close:hover{
+
+    background:#EEF2FF;
+
+}
+
+.drawer-body{
+
+    flex:1;
+
+    overflow:auto;
+
+    padding:28px;
+
+}
+
+.employee-profile-top{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    margin-bottom:32px;
+
+}
+
+.profile-avatar{
+
+    width:78px;
+
+    height:78px;
+
+    border-radius:22px;
+
+    background:linear-gradient(135deg,#4F46E5,#7C3AED);
+
+    color:#FFFFFF;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.employee-profile-top h3{
+
+    margin:0;
+
+    font-size:24px;
+
+}
+
+.employee-profile-top p{
+
+    margin:6px 0;
+
+    color:#64748B;
+
+}
+
+.drawer-section{
+
+    margin-top:30px;
+
+}
+
+.drawer-section h4{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+.info-grid label{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#94A3B8;
+
+    margin-bottom:6px;
+
+}
+
+.info-grid p{
+
+    margin:0;
+
+    font-weight:600;
+
+    color:#0F172A;
+
+}
+
+.drawer-edit-btn{
+
+    width:100%;
+
+    margin-top:40px;
+
+}
