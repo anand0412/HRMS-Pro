@@ -55,3 +55,79 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+/*=========================================================
+    ADD EMPLOYEE MODAL
+=========================================================*/
+
+const employeeModal =
+    document.getElementById("employeeModalOverlay");
+
+const addEmployeeBtn =
+    document.querySelector(".page-header-right .primary-btn");
+
+const modalCloseBtn =
+    document.querySelector(".modal-close");
+
+const modalCancelBtn =
+    document.querySelector(".modal-cancel");
+
+/* Open Modal */
+
+if(addEmployeeBtn){
+
+    addEmployeeBtn.addEventListener("click", function(){
+
+        employeeModal.style.display = "flex";
+
+    });
+
+}
+
+/* Close Button */
+
+if(modalCloseBtn){
+
+    modalCloseBtn.addEventListener("click", function(){
+
+        employeeModal.style.display = "none";
+
+    });
+
+}
+
+/* Cancel Button */
+
+if(modalCancelBtn){
+
+    modalCancelBtn.addEventListener("click", function(){
+
+        employeeModal.style.display = "none";
+
+    });
+
+}
+
+/* Click Outside */
+
+employeeModal.addEventListener("click", function(e){
+
+    if(e.target === employeeModal){
+
+        employeeModal.style.display = "none";
+
+    }
+
+});
+
+/* ESC Key */
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+
+        employeeModal.style.display = "none";
+
+    }
+
+});

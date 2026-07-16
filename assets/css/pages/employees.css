@@ -1003,3 +1003,211 @@
     font-weight:600;
 
 }
+
+/*=========================================================
+    ADD EMPLOYEE MODAL
+=========================================================*/
+
+.employee-modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.45);
+
+    backdrop-filter:blur(4px);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:6000;
+
+}
+
+.employee-modal{
+
+    width:900px;
+
+    max-width:92%;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    background:#FFFFFF;
+
+    border-radius:24px;
+
+    box-shadow:0 30px 80px rgba(15,23,42,.18);
+
+    animation:modalPop .25s ease;
+
+}
+
+@keyframes modalPop{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px) scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:26px 32px;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.modal-header h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.modal-close{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.25s;
+
+}
+
+.modal-close:hover{
+
+    background:#EEF2FF;
+
+}
+
+.employee-form{
+
+    padding:32px;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.form-group input,
+.form-group select{
+
+    height:48px;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:12px;
+
+    padding:0 14px;
+
+    font-size:14px;
+
+    outline:none;
+
+    transition:.25s;
+
+    background:#FFFFFF;
+
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border-color:#4F46E5;
+
+    box-shadow:0 0 0 4px rgba(79,70,229,.08);
+
+}
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:14px;
+
+    margin-top:34px;
+
+    padding-top:26px;
+
+    border-top:1px solid #EEF2F7;
+
+}
+
+.modal-footer button{
+
+    min-width:150px;
+
+}
