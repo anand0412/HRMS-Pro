@@ -64,6 +64,8 @@
     <link rel="stylesheet"
           href="assets/css/components/kpi-card.css">
 
+    <link rel="stylesheet" href="css/employees.css">
+
 
 </head>
 
@@ -636,7 +638,7 @@ Track employee attendance, work hours, shifts and daily presence.
 
         </button>
 
-        <button class="primary-btn" id="addEmployeeBtn">
+        <button class="primary-btn" id="markAttendanceBtn">
 
             <span class="material-symbols-rounded">
                 how_to_reg
@@ -1096,6 +1098,142 @@ Employee Table
 <div id="toastContainer"></div>
 
 
+<!-- =========================================================
+     MARK ATTENDANCE MODAL
+========================================================= -->
+
+<div class="attendance-modal-overlay" id="attendanceModalOverlay">
+
+    <div class="attendance-modal">
+
+        <div class="modal-header">
+
+            <h2>Mark Attendance</h2>
+
+            <button class="modal-close">
+
+                <span class="material-symbols-rounded">
+
+                    close
+
+                </span>
+
+            </button>
+
+        </div>
+
+        <form class="attendance-form">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Employee</label>
+
+                    <select>
+
+                        <option>Rahul Sharma</option>
+                        <option>Priya Singh</option>
+                        <option>Amit Kumar</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Date</label>
+
+                    <input type="date">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Shift</label>
+
+                    <select>
+
+                        <option>General Shift</option>
+                        <option>Morning Shift</option>
+                        <option>Evening Shift</option>
+                        <option>Night Shift</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Status</label>
+
+                    <select>
+
+                        <option>Present</option>
+                        <option>Late</option>
+                        <option>Half Day</option>
+                        <option>Absent</option>
+                        <option>On Leave</option>
+                        <option>Work From Home</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Check In</label>
+
+                    <input type="time">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Check Out</label>
+
+                    <input type="time">
+
+                </div>
+
+                <div class="form-group" style="grid-column:1 / -1;">
+
+                    <label>Remarks</label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Enter remarks..."></textarea>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn-secondary attendance-cancel">
+
+                    Cancel
+
+                </button>
+
+                <button
+                    type="submit"
+                    class="btn-primary">
+
+                    Save Attendance
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
 
 <!-- ===================================================== -->
 <!-- SCRIPTS -->
@@ -1110,6 +1248,8 @@ Employee Table
 <script src="assets/js/dashboard.js"></script>
 
 <script src="assets/js/employees.js"></script>
+
+<script src="assets/js/attendance.js"></script>
 
 <!-- ==========================================
      Employee Details Drawer
