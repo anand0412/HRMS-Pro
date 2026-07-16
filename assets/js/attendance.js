@@ -1,7 +1,3 @@
-/*=========================================================
-    MARK ATTENDANCE MODAL
-=========================================================*/
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const attendanceModal =
@@ -16,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalCancelBtn =
         document.querySelector(".attendance-cancel");
 
-    /* Open Modal */
+    console.log(attendanceModal);
+    console.log(markAttendanceBtn);
 
     if(markAttendanceBtn){
 
@@ -28,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    /* Close Button */
-
     if(modalCloseBtn){
 
         modalCloseBtn.addEventListener("click", function(){
@@ -40,8 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    /* Cancel Button */
-
     if(modalCancelBtn){
 
         modalCancelBtn.addEventListener("click", function(){
@@ -51,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
-
-    /* Click Outside */
 
     if(attendanceModal){
 
@@ -67,17 +58,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
-
-    /* ESC Key */
-
-    document.addEventListener("keydown", function(e){
-
-        if(e.key === "Escape" && attendanceModal){
-
-            attendanceModal.style.display = "none";
-
-        }
-
-    });
 
 });
