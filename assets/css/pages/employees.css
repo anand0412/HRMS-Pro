@@ -289,3 +289,233 @@
     border-color:#4F46E5;
 
 }
+
+/*=========================================================
+  Employee Table
+=========================================================*/
+
+.employee-table-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.table-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+.table-header h3{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.table-header span{
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+.employee-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.employee-table thead th{
+
+    text-align:left;
+
+    padding:16px 18px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#64748B;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.employee-table tbody td{
+
+    padding:18px;
+
+    border-bottom:1px solid #EEF2F7;
+
+    vertical-align:middle;
+
+}
+
+.employee-table tbody tr{
+
+    transition:.25s;
+
+}
+
+.employee-table tbody tr:hover{
+
+    background:#F8FAFC;
+
+}
+
+.employee-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.employee-avatar{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    color:#FFFFFF;
+
+    background:#3B82F6;
+
+    flex-shrink:0;
+
+}
+
+.employee-avatar.purple{
+
+    background:#7C3AED;
+
+}
+
+.employee-avatar.orange{
+
+    background:#F97316;
+
+}
+
+.employee-info strong{
+
+    display:block;
+
+    font-size:15px;
+
+    color:#0F172A;
+
+}
+
+.employee-info small{
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+.status-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.status-badge.active{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+.status-badge.leave{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}
+
+.table-action{
+
+    width:36px;
+
+    height:36px;
+
+    border:none;
+
+    background:#F8FAFC;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.table-action:hover{
+
+    background:#EEF2FF;
+
+}
+
+.table-action .material-symbols-rounded{
+
+    font-size:20px;
+
+    color:#475569;
+
+}
