@@ -17,11 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if(markAttendanceBtn){
 
-        markAttendanceBtn.addEventListener("click", function(){
+        document.addEventListener("click", function(e){
 
-            console.log("Button clicked");
-
-            attendanceModal.style.display = "flex";
+            console.log(e.target);
 
         });
 
