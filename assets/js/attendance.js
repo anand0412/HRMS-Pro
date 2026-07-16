@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         markAttendanceBtn.addEventListener("click", function(){
 
+            console.log("Button clicked");
+
             attendanceModal.style.display = "flex";
 
         });
