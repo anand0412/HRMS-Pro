@@ -900,13 +900,21 @@
 
 }
 
-.profile-avatar img{
+.initials-avatar{
 
-    width:100%;
+    background:linear-gradient(135deg,#4F46E5,#7C3AED);
 
-    height:100%;
+    display:flex;
 
-    object-fit:cover;
+    align-items:center;
+
+    justify-content:center;
+
+    color:#FFFFFF;
+
+    font-size:34px;
+
+    font-weight:700;
 
     border-radius:22px;
 
