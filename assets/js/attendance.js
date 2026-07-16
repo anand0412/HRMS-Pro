@@ -1,62 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const attendanceModal =
-        document.getElementById("attendanceModalOverlay");
+    console.log("attendance.js loaded");
 
-    const markAttendanceBtn =
-        document.getElementById("markAttendanceBtn");
+    const btn = document.getElementById("markAttendanceBtn");
+    const modal = document.getElementById("attendanceModalOverlay");
 
-    const modalCloseBtn =
-        document.querySelector(".attendance-modal .modal-close");
+    console.log("Button:", btn);
+    console.log("Modal:", modal);
 
-    const modalCancelBtn =
-        document.querySelector(".attendance-cancel");
-
-    console.log(attendanceModal);
-    console.log(markAttendanceBtn);
-
-    if(markAttendanceBtn){
-
-        document.addEventListener("click", function(e){
-
-            console.log(e.target);
-
-        });
-
+    if (!btn) {
+        console.log("Button NOT found");
+        return;
     }
 
-    if(modalCloseBtn){
-
-        modalCloseBtn.addEventListener("click", function(){
-
-            attendanceModal.style.display = "none";
-
-        });
-
+    if (!modal) {
+        console.log("Modal NOT found");
+        return;
     }
 
-    if(modalCancelBtn){
+    btn.addEventListener("click", function () {
 
-        modalCancelBtn.addEventListener("click", function(){
+        console.log("Button Clicked");
 
-            attendanceModal.style.display = "none";
+        modal.style.display = "flex";
 
-        });
-
-    }
-
-    if(attendanceModal){
-
-        attendanceModal.addEventListener("click", function(e){
-
-            if(e.target === attendanceModal){
-
-                attendanceModal.style.display = "none";
-
-            }
-
-        });
-
-    }
+    });
 
 });
