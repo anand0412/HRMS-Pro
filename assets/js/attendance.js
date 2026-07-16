@@ -1,9 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-    console.log("Attendance Module Loaded");
-
-});
-
 /*=========================================================
     MARK ATTENDANCE MODAL
 =========================================================*/
