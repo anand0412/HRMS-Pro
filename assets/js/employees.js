@@ -54,8 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-});
-
 /*=========================================================
     ADD EMPLOYEE MODAL
 =========================================================*/
@@ -110,24 +108,30 @@ if(modalCancelBtn){
 
 /* Click Outside */
 
-employeeModal.addEventListener("click", function(e){
+if(employeeModal){
 
-    if(e.target === employeeModal){
+    employeeModal.addEventListener("click", function(e){
+
+        if(e.target === employeeModal){
+
+            employeeModal.style.display = "none";
+
+        }
+
+    });
+
+}
+
+/* ESC Key */
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape" && employeeModal){
 
         employeeModal.style.display = "none";
 
     }
 
 });
-
-/* ESC Key */
-
-document.addEventListener("keydown", function(e){
-
-    if(e.key === "Escape"){
-
-        employeeModal.style.display = "none";
-
-    }
 
 });
