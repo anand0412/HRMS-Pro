@@ -64,7 +64,7 @@ const employeeModal =
     document.getElementById("employeeModalOverlay");
 
 const addEmployeeBtn =
-    document.querySelector(".page-header-right .primary-btn");
+    document.getElementById("addEmployeeBtn");
 
 const modalCloseBtn =
     document.querySelector(".modal-close");
