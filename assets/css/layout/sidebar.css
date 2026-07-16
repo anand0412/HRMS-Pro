@@ -489,3 +489,65 @@
     user-select:none;
 
 }
+
+/*====================================
+  Active Submenu Item
+====================================*/
+
+.submenu-item{
+
+    position:relative;
+
+    transition:.25s;
+
+}
+
+.submenu-item.active{
+
+    color:#4F46E5;
+
+    font-weight:600;
+
+}
+
+.submenu-item.active::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-14px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#4F46E5;
+
+}
+
+.submenu-item.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-22px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    border-radius:10px;
+
+    background:#4F46E5;
+
+}
