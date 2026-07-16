@@ -1,0 +1,39 @@
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.page-header h1{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.page-header p{
+
+    margin-top:8px;
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+.page-header-right{
+
+    display:flex;
+
+    gap:14px;
+
+}
