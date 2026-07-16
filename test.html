@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+
+<button id="btn">Open Modal</button>
+
+<div id="modal"
+     style="display:none;
+            position:fixed;
+            inset:0;
+            background:rgba(0,0,0,.5);">
+
+    <div style="background:white;
+                width:300px;
+                margin:120px auto;
+                padding:20px;">
+
+        Modal Opened
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("btn").addEventListener("click",function(){
+
+    console.log("clicked");
+
+    document.getElementById("modal").style.display="block";
+
+});
+
+</script>
+
+</body>
+</html>
