@@ -1126,7 +1126,7 @@
 
 .employee-form{
 
-    padding:32px;
+    padding:24px 30px;
 
     overflow-y:auto;
 
@@ -1140,10 +1140,11 @@
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:22px;
+    column-gap:22px;
+
+    row-gap:14px;
 
 }
-
 .form-group{
 
     display:flex;
@@ -1257,5 +1258,89 @@
         width:100%;
 
     }
+
+}
+
+/*=========================================================
+    MODAL BUTTONS
+=========================================================*/
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:14px;
+
+    margin-top:24px;
+
+    padding-top:20px;
+
+    border-top:1px solid #EEF2F7;
+
+}
+
+.modal-footer .btn-secondary{
+
+    height:46px;
+
+    min-width:120px;
+
+    padding:0 24px;
+
+    border:1px solid #DDE3EE;
+
+    background:#FFFFFF;
+
+    color:#475569;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.modal-footer .btn-secondary:hover{
+
+    background:#F8FAFC;
+
+}
+
+.modal-footer .btn-primary{
+
+    height:46px;
+
+    min-width:160px;
+
+    padding:0 28px;
+
+    border:none;
+
+    background:#4F46E5;
+
+    color:#FFFFFF;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.modal-footer .btn-primary:hover{
+
+    background:#4338CA;
 
 }
