@@ -825,3 +825,55 @@
     margin-top:40px;
 
 }
+
+/*=========================================================
+    DRAWER TABS
+=========================================================*/
+
+.drawer-tabs{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:28px;
+
+}
+
+.drawer-tab{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    color:#64748B;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.drawer-tab:hover{
+
+    background:#EEF2FF;
+
+    color:#4F46E5;
+
+}
+
+.drawer-tab.active{
+
+    background:#4F46E5;
+
+    color:#FFFFFF;
+
+}
