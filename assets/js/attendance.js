@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const timeRow =
         document.getElementById("attendanceTimeRow");
 
+    const remarksGroup =
+    document.getElementById("remarksGroup");
+
+    const remarksLabel =
+        remarksGroup.querySelector("label");
+
     const markAttendanceBtn = document.getElementById("markAttendanceBtn");
 
     const cancelAttendance = document.getElementById("cancelAttendance");
@@ -35,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Show time row
             timeRow.style.display = "grid";
+            remarksLabel.textContent = "Remarks (Optional)";
         }
 
         markAttendanceBtn.addEventListener("click", () => {
@@ -76,14 +83,31 @@ document.addEventListener("DOMContentLoaded", () => {
             const status =
                 card.querySelector("input").value;
 
-            if(status === "Present" || status === "Half Day"){
+            switch (status) {
 
-                timeRow.style.display = "grid";
+                case "Present":
 
-            }else{
+                    timeRow.style.display = "grid";
+                    remarksLabel.textContent = "Remarks (Optional)";
+                    break;
 
-                timeRow.style.display = "none";
+                case "Half Day":
 
+                    timeRow.style.display = "grid";
+                    remarksLabel.textContent = "Reason for Half Day";
+                    break;
+
+                case "Absent":
+
+                    timeRow.style.display = "none";
+                    remarksLabel.textContent = "Reason for Absence";
+                    break;
+
+                case "Leave":
+
+                    timeRow.style.display = "none";
+                    remarksLabel.textContent = "Leave Reason";
+                    break;
             }
 
         });
