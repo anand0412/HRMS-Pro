@@ -1052,11 +1052,116 @@ Employee Statistics
 
         <div class="attendance-modal-body">
 
-            <h3>This is our new Attendance Modal.</h3>
+            <div class="attendance-modal-body">
 
-            <p>
-                We will gradually build this form.
-            </p>
+                <form class="attendance-form">
+
+                    <div class="attendance-field">
+
+                        <label>Employee</label>
+
+                        <select>
+
+                            <option>Rahul Sharma</option>
+
+                            <option>Priya Singh</option>
+
+                            <option>Amit Kumar</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="attendance-field">
+
+                        <label>Date</label>
+
+                        <input type="date">
+
+                    </div>
+
+                    <div class="attendance-field">
+
+                        <label>Status</label>
+
+                        <div class="attendance-status">
+
+                            <label>
+                                <input type="radio" name="status">
+                                Present
+                            </label>
+
+                            <label>
+                                <input type="radio" name="status">
+                                Absent
+                            </label>
+
+                            <label>
+                                <input type="radio" name="status">
+                                Leave
+                            </label>
+
+                            <label>
+                                <input type="radio" name="status">
+                                Half Day
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="attendance-two-column">
+
+                        <div class="attendance-field">
+
+                            <label>Check In</label>
+
+                            <input type="time">
+
+                        </div>
+
+                        <div class="attendance-field">
+
+                            <label>Check Out</label>
+
+                            <input type="time">
+
+                        </div>
+
+                    </div>
+
+                    <div class="attendance-field">
+
+                        <label>Remarks</label>
+
+                        <textarea rows="4"></textarea>
+
+                    </div>
+
+                    <div class="attendance-footer">
+
+                        <button
+                            type="button"
+                            class="secondary-btn"
+                            id="cancelAttendance">
+
+                            Cancel
+
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="primary-btn">
+
+                            Save Attendance
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
 
         </div>
 
