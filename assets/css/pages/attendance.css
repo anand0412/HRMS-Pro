@@ -519,9 +519,9 @@
 
 .attendance-modal{
 
-    width:620px;
+    width:750px;
 
-    max-width:90%;
+    max-width: 92vw;;
 
     background:#fff;
 
@@ -639,9 +639,15 @@
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:
 
-    gap:20px;
+        1fr
+        auto
+        auto;
+
+    column-gap:18px;
+
+    align-items:start;
 
 }
 
@@ -694,5 +700,17 @@
     gap:16px;
 
     justify-content:start;
+
+}
+
+.attendance-modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    align-items:flex-end;
 
 }
