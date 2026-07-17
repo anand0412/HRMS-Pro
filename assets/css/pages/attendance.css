@@ -48,7 +48,6 @@
 
 }
 
-.primary-btn,
 .secondary-btn{
 
     height:56px;
@@ -77,9 +76,33 @@
 
 .primary-btn{
 
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 24px;
+
+    min-width:170px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
     background:#4F46E5;
 
-    color:white;
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
 
 }
 
@@ -91,11 +114,31 @@
 
 .secondary-btn{
 
-    background:white;
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 24px;
+
+    height:48px;
 
     border:1px solid #E2E8F0;
 
+    border-radius:14px;
+
+    background:#fff;
+
     color:#0F172A;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
 
 }
 
@@ -852,5 +895,21 @@
 .attendance-status-card:has(input:checked) strong{
 
     color:#0F172A;
+
+}
+
+.attendance-modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:20px;
+
+    width:100%;
 
 }

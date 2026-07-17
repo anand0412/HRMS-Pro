@@ -1055,171 +1055,216 @@ Employee Statistics
 
             <form id="attendanceForm">
 
-                <!-- Row 1 -->
+            <!-- ===========================
+                ROW 1
+            =========================== -->
 
-                <div class="attendance-grid-two">
-
-                    <div class="attendance-field">
-
-                        <label>Employee</label>
-
-                        <select>
-
-                            <option>Rahul Sharma</option>
-                            <option>Priya Singh</option>
-                            <option>Amit Kumar</option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="attendance-field">
-
-                        <label>Date</label>
-
-                        <input type="date">
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- Status -->
+            <div class="attendance-grid-two">
 
                 <div class="attendance-field">
 
-                    <label>Status</label>
+                    <label>Employee</label>
 
-                    <div class="attendance-status-grid">
+                    <select id="attendanceEmployee">
 
-                        <label class="attendance-status-card">
+                        <option>Rahul Sharma</option>
+                        <option>Priya Singh</option>
+                        <option>Amit Verma</option>
 
-                            <input
-                                type="radio"
-                                name="status"
-                                checked>
-
-                            <span class="material-symbols-rounded">
-                                check_circle
-                            </span>
-
-                            <strong>Present</strong>
-
-                        </label>
-
-
-
-                        <label class="attendance-status-card">
-
-                            <input
-                                type="radio"
-                                name="status">
-
-                            <span class="material-symbols-rounded">
-                                cancel
-                            </span>
-
-                            <strong>Absent</strong>
-
-                        </label>
-
-
-
-                        <label class="attendance-status-card">
-
-                            <input
-                                type="radio"
-                                name="status">
-
-                            <span class="material-symbols-rounded">
-                                event_busy
-                            </span>
-
-                            <strong>Leave</strong>
-
-                        </label>
-
-
-
-                        <label class="attendance-status-card">
-
-                            <input
-                                type="radio"
-                                name="status">
-
-                            <span class="material-symbols-rounded">
-                                brightness_2
-                            </span>
-
-                            <strong>Half Day</strong>
-
-                        </label>
-
-                    </div>
+                    </select>
 
                 </div>
-
-
-
-                <!-- Time -->
-
-                <div class="attendance-grid-two">
-
-                    <div class="attendance-field">
-
-                        <label>Check In</label>
-
-                        <input type="time">
-
-                    </div>
-
-                    <div class="attendance-field">
-
-                        <label>Check Out</label>
-
-                        <input type="time">
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- Remarks -->
 
                 <div class="attendance-field">
 
-                    <label>Remarks</label>
+                    <label>Date</label>
 
-                    <textarea
-                        rows="3"
-                        placeholder="Add any remarks (optional)..."></textarea>
+                    <input
+                        type="date"
+                        id="attendanceDate">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===========================
+                STATUS
+            =========================== -->
+
+            <div class="attendance-section">
+
+                <label class="attendance-section-title">
+
+                    Attendance Status
+
+                </label>
+
+                <div class="attendance-status-grid">
+
+                    <label class="attendance-status-card active">
+
+                        <input
+                            type="radio"
+                            name="attendanceStatus"
+                            value="Present"
+                            checked>
+
+                        <span class="material-symbols-rounded">
+
+                            task_alt
+
+                        </span>
+
+                        <span>
+
+                            Present
+
+                        </span>
+
+                    </label>
+
+                    <label class="attendance-status-card">
+
+                        <input
+                            type="radio"
+                            name="attendanceStatus"
+                            value="Absent">
+
+                        <span class="material-symbols-rounded">
+
+                            cancel
+
+                        </span>
+
+                        <span>
+
+                            Absent
+
+                        </span>
+
+                    </label>
+
+                    <label class="attendance-status-card">
+
+                        <input
+                            type="radio"
+                            name="attendanceStatus"
+                            value="Leave">
+
+                        <span class="material-symbols-rounded">
+
+                            event_busy
+
+                        </span>
+
+                        <span>
+
+                            Leave
+
+                        </span>
+
+                    </label>
+
+                    <label class="attendance-status-card">
+
+                        <input
+                            type="radio"
+                            name="attendanceStatus"
+                            value="Half Day">
+
+                        <span class="material-symbols-rounded">
+
+                            brightness_2
+
+                        </span>
+
+                        <span>
+
+                            Half Day
+
+                        </span>
+
+                    </label>
 
                 </div>
 
+            </div>
 
 
-                <div class="attendance-modal-footer">
 
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        id="cancelAttendance">
+            <!-- ===========================
+                CHECK IN / OUT
+            =========================== -->
 
-                        Cancel
+            <div class="attendance-grid-two">
 
-                    </button>
+                <div class="attendance-field">
 
-                    <button
-                        type="submit"
-                        class="primary-btn">
+                    <label>Check In</label>
 
-                        Save Attendance
-
-                    </button>
+                    <input
+                        type="time"
+                        id="checkIn">
 
                 </div>
+
+                <div class="attendance-field">
+
+                    <label>Check Out</label>
+
+                    <input
+                        type="time"
+                        id="checkOut">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===========================
+                REMARKS
+            =========================== -->
+
+            <div class="attendance-field">
+
+                <label>Remarks</label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Add remarks (optional)..."></textarea>
+
+            </div>
+
+
+
+            <!-- ===========================
+                FOOTER
+            =========================== -->
+
+            <div class="attendance-modal-footer">
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="cancelAttendance">
+
+                    Cancel
+
+                </button>
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                    id="saveAttendanceBtn">
+
+                    Save Attendance
+
+                </button>
+
+            </div>
 
             </form>
 
