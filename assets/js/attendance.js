@@ -128,6 +128,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let firstInvalidField = null;
 
+        const selectedStatus =
+        document.querySelector(
+            ".attendance-status-card.active input"
+        ).value;
+
         // Employee
 
         if(employee.value === ""){
@@ -159,6 +164,40 @@ document.addEventListener("DOMContentLoaded", () => {
             firstInvalidField ??= attendanceDate;
 
         }
+
+        if (
+            (selectedStatus === "Present" ||
+            selectedStatus === "Half Day") &&
+            checkIn.value === ""
+        ) {
+
+            showError(
+                checkIn,
+                checkInError,
+                "Please enter check-in time."
+            );
+
+            isValid = false;
+
+            firstInvalidField ??= checkIn;
+        }
+
+        if (
+            (selectedStatus === "Present" ||
+            selectedStatus === "Half Day") &&
+            checkOut.value === ""
+        ) {
+
+        showError(
+            checkOut,
+            checkOutError,
+            "Please enter check-out time."
+        );
+
+    isValid = false;
+
+    firstInvalidField ??= checkOut;
+}
 
         if(firstInvalidField){
 
@@ -231,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /* ============================================
-   Attendance Form Submit
+     Attendance Form Submit
     ============================================ */
 
     attendanceForm.addEventListener("submit", function (e) {
