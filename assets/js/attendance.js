@@ -1,26 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    console.log("Attendance JS Loaded");
+    console.log("Attendance Page Loaded");
 
-    const openBtn =
-        document.getElementById("markAttendanceBtn");
+    const attendanceModal = new HRMSModal("attendanceModal");
 
-    const modal =
-        document.getElementById("attendanceModal");
+    const markAttendanceBtn = document.getElementById("markAttendanceBtn");
 
-    const closeBtn =
-        document.getElementById("closeAttendanceModal");
+    const cancelAttendance = document.getElementById("cancelAttendance");
 
-    openBtn.addEventListener("click", () => {
+    if (markAttendanceBtn) {
 
-        modal.style.display = "flex";
+        markAttendanceBtn.addEventListener("click", () => {
 
-    });
+            attendanceModal.open();
 
-    closeBtn.addEventListener("click", () => {
+        });
 
-        modal.style.display = "none";
+    }
 
-    });
+    if (cancelAttendance) {
+
+        cancelAttendance.addEventListener("click", () => {
+
+            attendanceModal.close();
+
+        });
+
+    }
 
 });
