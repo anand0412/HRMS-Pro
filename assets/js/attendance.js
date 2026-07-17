@@ -120,6 +120,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+    function clearFieldError(field, errorElement) {
+
+        if (field) {
+            field.classList.remove("input-error");
+        }
+
+        if (errorElement) {
+            errorElement.textContent = "";
+        }
+
+    }
+
     function validateAttendanceForm(){
 
         clearErrors();
@@ -267,6 +279,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
+    });
+
+    /* ============================================
+    Live Validation
+    ============================================ */
+
+    employee.addEventListener("change", () => {
+        clearFieldError(employee, employeeError);
+    });
+
+    attendanceDate.addEventListener("change", () => {
+        clearFieldError(attendanceDate, dateError);
+    });
+
+    checkIn.addEventListener("input", () => {
+        clearFieldError(checkIn, checkInError);
+    });
+
+    checkOut.addEventListener("input", () => {
+        clearFieldError(checkOut, checkOutError);
+    });
+
+    remarks.addEventListener("input", () => {
+        clearFieldError(remarks, remarksError);
     });
 
     /* ============================================
