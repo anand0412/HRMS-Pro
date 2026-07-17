@@ -107,3 +107,109 @@
     background:#F8FAFC;
 
 }
+
+/* ==========================================
+   ATTENDANCE STATS
+========================================== */
+
+.attendance-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-bottom:32px;
+
+}
+
+.stat-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.04);
+
+}
+
+.stat-icon{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#FFFFFF;
+
+}
+
+.stat-icon span{
+
+    font-size:34px;
+
+}
+
+.blue{
+
+    background:#3B82F6;
+
+}
+
+.green{
+
+    background:#22C55E;
+
+}
+
+.orange{
+
+    background:#F97316;
+
+}
+
+.purple{
+
+    background:#6366F1;
+
+}
+
+.stat-content span{
+
+    display:block;
+
+    color:#64748B;
+
+    font-size:15px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-content h2{
+
+    font-size:48px;
+
+    color:#0F172A;
+
+    font-weight:700;
+
+}
