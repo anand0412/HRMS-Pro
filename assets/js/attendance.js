@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkInError = document.getElementById("checkInError");
     const checkOutError = document.getElementById("checkOutError");
     const remarksError = document.getElementById("remarksError");
+    const saveAttendanceBtn = document.getElementById("saveAttendanceBtn");
 
     const markAttendanceBtn = document.getElementById("markAttendanceBtn");
 
@@ -38,21 +39,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function resetAttendanceForm() {
 
-        if (attendanceForm) {
-            attendanceForm.reset();
-        }
+            if (attendanceForm) {
+                attendanceForm.reset();
+            }
 
-        // Set today's date
-        attendanceDate.value = new Date().toISOString().split("T")[0];
+            // Set today's date
+            attendanceDate.value = new Date().toISOString().split("T")[0];
 
-        // Reset status cards
-        statusCards.forEach(card => {
-            card.classList.remove("active");
-        });
+            // Reset status cards
+            statusCards.forEach(card => {
+                card.classList.remove("active");
+            });
 
-            document.getElementById("statusPresent").classList.add("active");
+                document.getElementById("statusPresent").classList.add("active");
 
-            // Show time row
+                // Show time row
             timeRow.style.display = "grid";
             remarksLabel.textContent = "Remarks (Optional)";
         }
@@ -64,6 +65,108 @@ document.addEventListener("DOMContentLoaded", () => {
             attendanceModal.open();
 
         });
+
+    }
+
+    /* ============================================
+    Validation Helpers
+    ============================================ */
+
+    function clearErrors() {
+
+        const fields = [
+            employee,
+            attendanceDate,
+            checkIn,
+            checkOut,
+            remarks
+        ];
+
+        const errors = [
+            employeeError,
+            dateError,
+            checkInError,
+            checkOutError,
+            remarksError
+        ];
+
+        fields.forEach(field => {
+
+            if(field){
+                field.classList.remove("input-error");
+            }
+
+        });
+
+        errors.forEach(error => {
+
+            if(error){
+                error.textContent = "";
+            }
+
+        });
+
+    }
+
+    function showError(field, errorElement, message){
+
+        if(field){
+            field.classList.add("input-error");
+        }
+
+        if(errorElement){
+            errorElement.textContent = message;
+        }
+
+    }
+
+    function validateAttendanceForm(){
+
+        clearErrors();
+
+        let isValid = true;
+
+        let firstInvalidField = null;
+
+        // Employee
+
+        if(employee.value === ""){
+
+            showError(
+                employee,
+                employeeError,
+                "Please select an employee."
+            );
+
+            isValid = false;
+
+            firstInvalidField ??= employee;
+
+        }
+
+        // Date
+
+        if(attendanceDate.value === ""){
+
+            showError(
+                attendanceDate,
+                dateError,
+                "Please select a date."
+            );
+
+            isValid = false;
+
+            firstInvalidField ??= attendanceDate;
+
+        }
+
+        if(firstInvalidField){
+
+            firstInvalidField.focus();
+
+        }
+
+        return isValid;
 
     }
 
@@ -126,5 +229,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
+
+});
+
+/* ============================================
+   Attendance Form Submit
+============================================ */
+
+attendanceForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    if (!validateAttendanceForm()) {
+
+        return;
+
+    }
+
+    console.log("Attendance validation passed.");
 
 });
