@@ -1,3 +1,109 @@
 /* ==========================================
    ATTENDANCE PAGE
 ========================================== */
+/* ==========================================
+   ATTENDANCE PAGE
+========================================== */
+
+.page-content{
+
+    padding:32px;
+
+}
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:32px;
+
+}
+
+.page-header-left h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.page-header-left p{
+
+    font-size:18px;
+
+    color:#64748B;
+
+}
+
+.page-header-right{
+
+    display:flex;
+
+    gap:16px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    height:56px;
+
+    padding:0 24px;
+
+    border:none;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.primary-btn{
+
+    background:#4F46E5;
+
+    color:white;
+
+}
+
+.primary-btn:hover{
+
+    background:#4338CA;
+
+}
+
+.secondary-btn{
+
+    background:white;
+
+    border:1px solid #E2E8F0;
+
+    color:#0F172A;
+
+}
+
+.secondary-btn:hover{
+
+    background:#F8FAFC;
+
+}
