@@ -2,9 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Attendance Page Loaded");
 
-    const attendanceModal = new HRMSModal("attendanceModal");
-    const attendanceForm = document.getElementById("attendanceForm");
-    const attendanceDate = document.getElementById("attendanceDate");
+    const attendanceModal = 
+        new HRMSModal("attendanceModal");
+    const attendanceForm =
+        document.getElementById("attendanceForm");
+    const attendanceDate =
+        document.getElementById("attendanceDate");
     const statusCards =
         document.querySelectorAll(".attendance-status-card");
 
@@ -16,6 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const remarksLabel =
         remarksGroup.querySelector("label");
+
+    const employee = document.getElementById("attendanceEmployee");
+    const checkIn = document.getElementById("checkIn");
+    const checkOut = document.getElementById("checkOut");
+    const remarks = document.getElementById("remarks");
+    const employeeError = document.getElementById("employeeError");
+    const dateError = document.getElementById("dateError");
+    const checkInError = document.getElementById("checkInError");
+    const checkOutError = document.getElementById("checkOutError");
+    const remarksError = document.getElementById("remarksError");
 
     const markAttendanceBtn = document.getElementById("markAttendanceBtn");
 

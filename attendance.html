@@ -1054,7 +1054,7 @@ Employee Statistics
 
         <div class="attendance-modal-body">
 
-            <form id="attendanceForm">
+            <form id="attendanceForm" novalidate>
 
             <!-- ===========================
                 ROW 1
@@ -1074,6 +1074,8 @@ Employee Statistics
 
                     </select>
 
+                    <small class="attendance-error" id="employeeError"></small>
+
                 </div>
 
                 <div class="attendance-field">
@@ -1083,6 +1085,8 @@ Employee Statistics
                     <input
                         type="date"
                         id="attendanceDate">
+
+                    <small class="attendance-error" id="dateError"></small>
 
                 </div>
 
@@ -1219,6 +1223,8 @@ Employee Statistics
                         type="time"
                         id="checkIn">
 
+                    <small class="attendance-error" id="checkInError"></small>
+
                 </div>
 
                 <div class="attendance-field">
@@ -1228,6 +1234,8 @@ Employee Statistics
                     <input
                         type="time"
                         id="checkOut">
+
+                    <small class="attendance-error" id="checkOutError"></small>
 
                 </div>
 
@@ -1245,8 +1253,11 @@ Employee Statistics
                 <label>Remarks</label>
 
                 <textarea
+                    id="remarks"
                     rows="4"
                     placeholder="Add remarks (optional)..."></textarea>
+
+                <small class="attendance-error" id="remarksError"></small>
 
             </div>
 
