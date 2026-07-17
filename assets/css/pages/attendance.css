@@ -76,33 +76,17 @@
 
 .primary-btn{
 
-    display:inline-flex;
+    min-width:180px;
 
-    align-items:center;
-
-    justify-content:center;
-
-    padding:12px 24px;
-
-    min-width:170px;
-
-    height:48px;
+    height:50px;
 
     border:none;
 
     border-radius:14px;
 
-    background:#4F46E5;
-
-    color:#fff;
-
     font-size:15px;
 
     font-weight:600;
-
-    cursor:pointer;
-
-    transition:.25s;
 
 }
 
@@ -114,34 +98,17 @@
 
 .secondary-btn{
 
-    display:inline-flex;
+    min-width:110px;
 
-    align-items:center;
-
-    justify-content:center;
-
-    padding:12px 24px;
-
-    height:48px;
-
-    border:1px solid #E2E8F0;
+    height:50px;
 
     border-radius:14px;
-
-    background:#fff;
-
-    color:#0F172A;
 
     font-size:15px;
 
     font-weight:600;
 
-    cursor:pointer;
-
-    transition:.25s;
-
 }
-
 .secondary-btn:hover{
 
     background:#F8FAFC;
@@ -576,19 +543,19 @@
 
 .attendance-modal{
 
-    width:100%;
+    width:700px;
 
-    max-width:760px;
+    max-width:92vw;
 
-    background:#ffffff;
+    background:#FFFFFF;
 
     border-radius:24px;
 
     overflow:hidden;
 
-    box-shadow:0 35px 80px rgba(0,0,0,.18);
+    box-shadow:0 30px 80px rgba(15,23,42,.22);
 
-    animation:attendancePopup .25s ease;
+    animation:modalPop .25s ease;
 
 }
 
@@ -624,7 +591,7 @@
 
     align-items:center;
 
-    padding:26px 30px;
+    padding:24px 30px;
 
     border-bottom:1px solid #EEF2F7;
 
@@ -700,7 +667,7 @@
 
 .attendance-modal-body{
 
-    padding:28px 30px;
+    padding:24px 30px 26px;
 
 }
 
@@ -724,7 +691,9 @@
 
     grid-template-columns:1fr 1fr;
 
-    gap:24px;
+    gap:22px;
+
+    margin-bottom:20px;
 
 }
 
@@ -744,6 +713,10 @@
 
 .attendance-field label{
 
+    display:block;
+
+    margin-bottom:8px;
+
     font-size:15px;
 
     font-weight:600;
@@ -753,40 +726,34 @@
 }
 
 .attendance-field input,
-
 .attendance-field select,
-
 .attendance-field textarea{
 
     width:100%;
 
-    height:52px;
-
-    border:1px solid #D9E2F1;
-
-    border-radius:14px;
-
-    background:#FFFFFF;
+    height:54px;
 
     padding:0 18px;
 
+    border:1px solid #D9E3F0;
+
+    border-radius:14px;
+
+    background:#FFF;
+
     font-size:15px;
 
-    font-family:inherit;
-
-    color:#0F172A;
-
-    transition:.25s;
+    transition:.2s;
 
 }
 
 .attendance-field textarea{
 
-    height:110px;
+    height:82px;
 
     resize:none;
 
-    padding:14px 18px;
+    padding:16px 18px;
 
 }
 
@@ -820,17 +787,11 @@
 
 .attendance-status-card{
 
-    position:relative;
+    height:112px;
 
-    border:1px solid #E5EAF4;
+    border:1px solid #DCE5F2;
 
-    border-radius:16px;
-
-    background:#FFF;
-
-    cursor:pointer;
-
-    padding:18px;
+    border-radius:18px;
 
     display:flex;
 
@@ -842,7 +803,18 @@
 
     gap:10px;
 
-    transition:.25s;
+    cursor:pointer;
+
+    transition:.22s;
+
+    background:#FFF;
+
+}
+
+.attendance-status-card
+.material-symbols-rounded{
+
+    font-size:34px;
 
 }
 
@@ -872,9 +844,9 @@
 
 .attendance-status-card:hover{
 
-    border-color:#4F46E5;
-
     transform:translateY(-3px);
+
+    box-shadow:0 12px 26px rgba(15,23,42,.08);
 
 }
 
@@ -908,8 +880,70 @@
 
     gap:12px;
 
-    margin-top:20px;
+    margin-top:22px;
 
-    width:100%;
+    padding-top:20px;
+
+    border-top:1px solid #EEF2F7;
+
+}
+
+.attendance-modal-title{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    gap:14px;
+
+}
+
+.attendance-modal-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:14px;
+
+    font-size:28px;
+
+}
+
+.attendance-status-card span:last-child{
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.attendance-status-card.active{
+
+    background:#F0FDF4;
+
+    border:2px solid #22C55E;
+
+    color:#16A34A;
+
+}
+
+@keyframes modalPop{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(16px) scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
 
 }
