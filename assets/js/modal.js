@@ -13,7 +13,7 @@ class HRMSModal {
 
         this.modal = this.overlay.querySelector(".attendance-modal");
 
-        this.closeBtn = this.overlay.querySelector(".attendance-close");
+        this.closeBtn = this.overlay.querySelector(".attendance-close-btn");
 
         this.init();
 
