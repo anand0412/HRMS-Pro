@@ -230,22 +230,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-});
-
-/* ============================================
+    /* ============================================
    Attendance Form Submit
-============================================ */
+    ============================================ */
 
-attendanceForm.addEventListener("submit", function (e) {
+    attendanceForm.addEventListener("submit", function (e) {
 
-    e.preventDefault();
+        e.preventDefault();
 
-    if (!validateAttendanceForm()) {
+        if (!validateAttendanceForm()) {
 
-        return;
+            return;
 
-    }
+        }
 
-    console.log("Attendance validation passed.");
+        console.log("Attendance validation passed.");
+
+    });
 
 });
