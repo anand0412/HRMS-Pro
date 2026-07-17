@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Attendance Page Loaded");
 
     const attendanceModal = new HRMSModal("attendanceModal");
+    const attendanceForm = document.getElementById("attendanceForm");
+    const attendanceDate = document.getElementById("attendanceDate");
+    const statusCards =
+        document.querySelectorAll(".attendance-status-card");
+
+    const timeRow =
+        document.getElementById("attendanceTimeRow");
 
     const markAttendanceBtn = document.getElementById("markAttendanceBtn");
 
@@ -11,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (markAttendanceBtn) {
 
         markAttendanceBtn.addEventListener("click", () => {
+
+            attendanceDate.value = new Date().toISOString().split("T")[0];
 
             attendanceModal.open();
 
@@ -27,5 +36,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
+
+    /* ============================================
+   Attendance Status Cards
+    ============================================ */
+
+    statusCards.forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            statusCards.forEach(c => {
+
+                c.classList.remove("active");
+
+            });
+
+            card.classList.add("active");
+
+            const status =
+                card.querySelector("input").value;
+
+            if(status === "Present" || status === "Half Day"){
+
+                timeRow.style.display = "grid";
+
+            }else{
+
+                timeRow.style.display = "none";
+
+            }
+
+        });
+
+    });
 
 });
