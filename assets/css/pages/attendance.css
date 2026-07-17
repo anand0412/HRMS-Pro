@@ -647,11 +647,15 @@
 
 .attendance-status{
 
-    display:flex;
+    display:grid;
 
-    gap:24px;
+    grid-template-columns:repeat(4, max-content);
 
-    flex-wrap:wrap;
+    column-gap:16px;
+
+    row-gap:8px;
+
+    align-items:center;
 
 }
 
@@ -678,5 +682,17 @@
     gap:12px;
 
     margin-top:18px;
+
+}
+
+.attendance-time-row{
+
+    display:grid;
+
+    grid-template-columns:140px 140px;
+
+    gap:16px;
+
+    justify-content:start;
 
 }
