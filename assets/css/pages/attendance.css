@@ -684,3 +684,173 @@
     gap:24px;
 
 }
+
+/* =====================================================
+   FORM FIELDS
+===================================================== */
+
+.attendance-field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.attendance-field label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#475569;
+
+}
+
+.attendance-field input,
+
+.attendance-field select,
+
+.attendance-field textarea{
+
+    width:100%;
+
+    height:52px;
+
+    border:1px solid #D9E2F1;
+
+    border-radius:14px;
+
+    background:#FFFFFF;
+
+    padding:0 18px;
+
+    font-size:15px;
+
+    font-family:inherit;
+
+    color:#0F172A;
+
+    transition:.25s;
+
+}
+
+.attendance-field textarea{
+
+    height:110px;
+
+    resize:none;
+
+    padding:14px 18px;
+
+}
+
+.attendance-field input:focus,
+
+.attendance-field select:focus,
+
+.attendance-field textarea:focus{
+
+    outline:none;
+
+    border-color:#4F46E5;
+
+    box-shadow:0 0 0 4px rgba(79,70,229,.12);
+
+}
+
+/* =====================================================
+   STATUS CARDS
+===================================================== */
+
+.attendance-status-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:16px;
+
+}
+
+.attendance-status-card{
+
+    position:relative;
+
+    border:1px solid #E5EAF4;
+
+    border-radius:16px;
+
+    background:#FFF;
+
+    cursor:pointer;
+
+    padding:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    transition:.25s;
+
+}
+
+.attendance-status-card input{
+
+    display:none;
+
+}
+
+.attendance-status-card span{
+
+    font-size:28px;
+
+    color:#64748B;
+
+}
+
+.attendance-status-card strong{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.attendance-status-card:hover{
+
+    border-color:#4F46E5;
+
+    transform:translateY(-3px);
+
+}
+
+.attendance-status-card:has(input:checked){
+
+    border:2px solid #22C55E;
+
+    background:#F4FFF8;
+
+}
+
+.attendance-status-card:has(input:checked) span{
+
+    color:#22C55E;
+
+}
+
+.attendance-status-card:has(input:checked) strong{
+
+    color:#0F172A;
+
+}
