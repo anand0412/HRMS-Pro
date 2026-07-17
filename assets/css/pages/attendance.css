@@ -573,7 +573,7 @@
 
 .attendance-modal-body{
 
-    padding:16px 22px 20px;
+    padding:3px 7px;
 
 }
 
@@ -615,7 +615,7 @@
 .attendance-field select,
 .attendance-field textarea{
 
-    width:100%;
+    width:70%;
 
     padding:10px 12px;
 
