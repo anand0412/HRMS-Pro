@@ -17,9 +17,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (markAttendanceBtn) {
 
+        function resetAttendanceForm() {
+
+        if (attendanceForm) {
+            attendanceForm.reset();
+        }
+
+        // Set today's date
+        attendanceDate.value = new Date().toISOString().split("T")[0];
+
+        // Reset status cards
+        statusCards.forEach(card => {
+            card.classList.remove("active");
+        });
+
+            document.getElementById("statusPresent").classList.add("active");
+
+            // Show time row
+            timeRow.style.display = "grid";
+        }
+
         markAttendanceBtn.addEventListener("click", () => {
 
-            attendanceDate.value = new Date().toISOString().split("T")[0];
+            resetAttendanceForm();
 
             attendanceModal.open();
 
