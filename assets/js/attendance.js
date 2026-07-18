@@ -200,16 +200,16 @@ document.addEventListener("DOMContentLoaded", () => {
             checkOut.value === ""
         ) {
 
-        showError(
-            checkOut,
-            checkOutError,
-            "Please enter check-out time."
-        );
+            showError(
+                checkOut,
+                checkOutError,
+                "Please enter check-out time."
+            );
 
-    isValid = false;
+            isValid = false;
 
-    firstInvalidField ??= checkOut;
-}
+            firstInvalidField ??= checkOut;
+        }
 
         if(firstInvalidField){
 
@@ -319,7 +319,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-        /* ============================================
+
+    });
+
+    /* ============================================
         Toast Engine
         ============================================ */
 
@@ -379,7 +382,5 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(removeToast, 3000);
 
         }
-
-    });
 
 });
