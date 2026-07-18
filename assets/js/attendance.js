@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /* ============================================
-     Attendance Form Submit
+    Attendance Form Submit
     ============================================ */
 
     attendanceForm.addEventListener("submit", function (e) {
@@ -317,10 +317,28 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        showToast(
-            "success",
-            "Attendance saved successfully."
-        );
+        // Show loading state
+        startButtonLoading(saveAttendanceBtn);
+
+        // Simulate server save
+        setTimeout(() => {
+
+            // Restore button
+            stopButtonLoading(saveAttendanceBtn);
+
+            // Show success message
+            showToast(
+                "success",
+                "Attendance saved successfully."
+            );
+
+            // Reset form
+            resetAttendanceForm();
+
+            // Close modal
+            attendanceModal.close();
+
+        }, 1000);
 
     });
 
