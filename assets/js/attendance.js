@@ -319,7 +319,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-        console.log("Attendance validation passed.");
+        /* ============================================
+        Toast Engine
+        ============================================ */
+
+        function showToast(type, message) {
+
+            const container = document.getElementById("toastContainer");
+
+            const toast = document.createElement("div");
+
+            toast.className = `toast ${type}`;
+
+            toast.textContent = message;
+
+            container.appendChild(toast);
+
+            requestAnimationFrame(() => {
+                toast.classList.add("show");
+            });
+
+            setTimeout(() => {
+
+                toast.classList.remove("show");
+
+                setTimeout(() => {
+                    toast.remove();
+                }, 350);
+
+            }, 3000);
+
+        }
+
+        showToast(
+            "success",
+            "Attendance saved successfully."
+        );
 
     });
 
