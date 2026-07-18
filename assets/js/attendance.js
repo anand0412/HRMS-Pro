@@ -325,6 +325,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function showToast(type, message) {
 
+            console.log("showToast called", type, message);
+
             const container = document.getElementById("toastContainer");
 
             const icons = {
