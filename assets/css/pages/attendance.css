@@ -684,7 +684,7 @@
 
     align-items:center;
 
-    padding:24px 30px;
+    padding:20px 30px;
 
     border-bottom:1px solid #EEF2F7;
 
@@ -762,7 +762,7 @@
 
 .attendance-modal-body{
 
-    padding:24px 30px 26px;
+    padding:20px 30px;
 
     overflow-y:auto;
 
@@ -776,7 +776,7 @@
 
     flex-direction:column;
 
-    gap:24px;
+    gap: 18px;
 
 }
 
@@ -790,9 +790,9 @@
 
     grid-template-columns:1fr 1fr;
 
-    gap:22px;
+    gap:18px;
 
-    margin-bottom:20px;
+    margin-bottom:8px;
 
 }
 
@@ -806,7 +806,7 @@
 
     flex-direction:column;
 
-    gap:10px;
+    gap:6px;
 
 }
 
@@ -814,7 +814,7 @@
 
     display:block;
 
-    margin-bottom:8px;
+    margin-bottom:4px;
 
     font-size:15px;
 
@@ -886,7 +886,7 @@
 
 .attendance-status-card{
 
-    height:112px;
+    height:96px;
 
     border:1px solid #DCE5F2;
 
@@ -913,7 +913,7 @@
 .attendance-status-card
 .material-symbols-rounded{
 
-    font-size:34px;
+    font-size:30px;
 
 }
 
@@ -933,7 +933,7 @@
 
 .attendance-status-card strong{
 
-    font-size:15px;
+    font-size:14px;
 
     font-weight:600;
 
@@ -979,9 +979,9 @@
 
     gap:12px;
 
-    margin-top:22px;
+    margin-top:14px;
 
-    padding-top:20px;
+    padding-top:16px;
 
     border-top:1px solid #EEF2F7;
 
