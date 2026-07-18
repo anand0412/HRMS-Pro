@@ -329,6 +329,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const container = document.getElementById("toastContainer");
 
+            console.log(container);
+
             const icons = {
                 success: "✓",
                 error: "✕",
