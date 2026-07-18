@@ -314,11 +314,13 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
 
         if (!validateAttendanceForm()) {
-
             return;
-
         }
 
+        showToast(
+            "success",
+            "Attendance saved successfully."
+        );
 
     });
 
@@ -328,11 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function showToast(type, message) {
 
-            console.log("showToast called", type, message);
-
             const container = document.getElementById("toastContainer");
-
-            console.log(container);
 
             const icons = {
                 success: "✓",
