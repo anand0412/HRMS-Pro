@@ -551,9 +551,52 @@
 
 }
 
-/* =====================================================
-   ATTENDANCE MODAL
-===================================================== */
+/* ==========================================
+   Status Dot
+========================================== */
+
+.status-dot{
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    display:inline-block;
+
+    margin-right:8px;
+
+}
+
+.badge.present .status-dot{
+
+    background:#16A34A;
+
+}
+
+.badge.absent .status-dot{
+
+    background:#DC2626;
+
+}
+
+.badge.late .status-dot{
+
+    background:#D97706;
+
+}
+
+.badge.halfday .status-dot{
+
+    background:#7C3AED;
+
+}
+
+.badge.leave .status-dot{
+
+    background:#2563EB;
+
+}
 
 /* =====================================================
    MARK ATTENDANCE MODAL
