@@ -1056,239 +1056,248 @@ Employee Statistics
 
             <form id="attendanceForm" novalidate>
 
-            <!-- ===========================
-                ROW 1
-            =========================== -->
+                <!-- ===========================
+                    ROW 1
+                =========================== -->
 
-            <div class="attendance-grid-two">
+                <div class="attendance-grid-two">
 
-                <div class="attendance-field">
+                    <div class="attendance-field">
 
-                    <label>Employee</label>
+                        <label>Employee</label>
 
-                    <select id="attendanceEmployee">
+                        <select id="attendanceEmployee">
 
-                        <option value="">Select Employee</option>
-                        <option>Rahul Sharma</option>
-                        <option>Priya Singh</option>
-                        <option>Amit Verma</option>
+                            <option value="">Select Employee</option>
+                            <option>Rahul Sharma</option>
+                            <option>Priya Singh</option>
+                            <option>Amit Verma</option>
 
-                    </select>
+                        </select>
 
-                    <small class="attendance-error" id="employeeError"></small>
+                        <small class="attendance-error" id="employeeError"></small>
 
-                </div>
+                    </div>
 
-                <div class="attendance-field">
+                    <div class="attendance-field">
 
-                    <label>Date</label>
-
-                    <input
-                        type="date"
-                        id="attendanceDate">
-
-                    <small class="attendance-error" id="dateError"></small>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ===========================
-                STATUS
-            =========================== -->
-
-            <div class="attendance-section">
-
-                <label class="attendance-section-title">
-
-                    Attendance Status
-
-                </label>
-
-                <div class="attendance-status-grid">
-
-                    <label
-                        class="attendance-status-card active"
-                        id="statusPresent">
+                        <label>Date</label>
 
                         <input
-                            type="radio"
-                            name="attendanceStatus"
-                            value="Present"
-                            checked>
+                            type="date"
+                            id="attendanceDate">
 
-                        <span class="material-symbols-rounded">
+                        <small class="attendance-error" id="dateError"></small>
 
-                            task_alt
+                    </div>
 
-                        </span>
+                </div>
 
-                        <span>
 
-                            Present
 
-                        </span>
+                <!-- ===========================
+                    STATUS
+                =========================== -->
+
+                <div class="attendance-section">
+
+                    <label class="attendance-section-title">
+
+                        Attendance Status
 
                     </label>
 
-                    <label
-                        class="attendance-status-card"
-                        id="statusAbsent">
+                    <div class="attendance-status-grid">
 
-                        <input
-                            type="radio"
-                            name="attendanceStatus"
-                            value="Absent">
+                        <label
+                            class="attendance-status-card active"
+                            id="statusPresent">
 
-                        <span class="material-symbols-rounded">
+                            <input
+                                type="radio"
+                                name="attendanceStatus"
+                                value="Present"
+                                checked>
 
-                            cancel
+                            <span class="material-symbols-rounded">
 
-                        </span>
+                                task_alt
 
-                        <span>
+                            </span>
 
-                            Absent
+                            <span>
 
-                        </span>
+                                Present
 
-                    </label>
+                            </span>
 
-                    <label
-                        class="attendance-status-card"
-                        id="statusLeave">
+                        </label>
 
-                        <input
-                            type="radio"
-                            name="attendanceStatus"
-                            value="Leave">
+                        <label
+                            class="attendance-status-card"
+                            id="statusAbsent">
 
-                        <span class="material-symbols-rounded">
+                            <input
+                                type="radio"
+                                name="attendanceStatus"
+                                value="Absent">
 
-                            event_busy
+                            <span class="material-symbols-rounded">
 
-                        </span>
+                                cancel
 
-                        <span>
+                            </span>
 
-                            Leave
+                            <span>
 
-                        </span>
+                                Absent
 
-                    </label>
+                            </span>
 
-                    <label
-                        class="attendance-status-card"
-                        id="statusHalfDay">
+                        </label>
 
-                        <input
-                            type="radio"
-                            name="attendanceStatus"
-                            value="Half Day">
+                        <label
+                            class="attendance-status-card"
+                            id="statusLeave">
 
-                        <span class="material-symbols-rounded">
+                            <input
+                                type="radio"
+                                name="attendanceStatus"
+                                value="Leave">
 
-                            brightness_2
+                            <span class="material-symbols-rounded">
 
-                        </span>
+                                event_busy
 
-                        <span>
+                            </span>
 
-                            Half Day
+                            <span>
 
-                        </span>
+                                Leave
 
-                    </label>
+                            </span>
 
-                </div>
+                        </label>
 
-            </div>
+                        <label
+                            class="attendance-status-card"
+                            id="statusHalfDay">
 
+                            <input
+                                type="radio"
+                                name="attendanceStatus"
+                                value="Half Day">
 
+                            <span class="material-symbols-rounded">
 
-            <!-- ===========================
-                CHECK IN / OUT
-            =========================== -->
+                                brightness_2
 
-            <div
-                class="attendance-grid-two"
-                id="attendanceTimeRow">
+                            </span>
 
-                <div class="attendance-field">
+                            <span>
 
-                    <label>Check In</label>
+                                Half Day
 
-                    <input
-                        type="time"
-                        id="checkIn">
+                            </span>
 
-                    <small class="attendance-error" id="checkInError"></small>
+                        </label>
 
-                </div>
-
-                <div class="attendance-field">
-
-                    <label>Check Out</label>
-
-                    <input
-                        type="time"
-                        id="checkOut">
-
-                    <small class="attendance-error" id="checkOutError"></small>
+                    </div>
 
                 </div>
 
-            </div>
+
+
+                <!-- ===========================
+                    CHECK IN / OUT
+                =========================== -->
+
+                <div
+                    class="attendance-grid-two"
+                    id="attendanceTimeRow">
+
+                    <div class="attendance-field">
+
+                        <label>Check In</label>
+
+                        <input
+                            type="time"
+                            id="checkIn">
+
+                        <small class="attendance-error" id="checkInError"></small>
+
+                    </div>
+
+                    <div class="attendance-field">
+
+                        <label>Check Out</label>
+
+                        <input
+                            type="time"
+                            id="checkOut">
+
+                        <small class="attendance-error" id="checkOutError"></small>
+
+                    </div>
+
+                </div>
 
 
 
-            <!-- ===========================
-                REMARKS
-            =========================== -->
+                <!-- ===========================
+                    REMARKS
+                =========================== -->
 
-            <div class="attendance-field"
-                id="remarksGroup">
+                <div class="attendance-field"
+                    id="remarksGroup">
 
-                <label>Remarks</label>
+                    <label>Remarks</label>
 
-                <textarea
-                    id="remarks"
-                    rows="4"
-                    placeholder="Add remarks (optional)..."></textarea>
+                    <textarea
+                        id="remarks"
+                        rows="4"
+                        placeholder="Add remarks (optional)..."></textarea>
 
-                <small class="attendance-error" id="remarksError"></small>
+                    <small class="attendance-error" id="remarksError"></small>
 
-            </div>
+                </div>
 
 
 
-            <!-- ===========================
-                FOOTER
-            =========================== -->
+                <!-- ===========================
+                    FOOTER
+                =========================== -->
 
-            <div class="attendance-modal-footer">
+                <div class="attendance-modal-footer">
 
-                <button
-                    type="button"
-                    class="secondary-btn"
-                    id="cancelAttendance">
+                    <button
+                        type="button"
+                        class="secondary-btn"
+                        id="cancelAttendance">
 
-                    Cancel
+                        Cancel
 
-                </button>
+                    </button>
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                        id="saveAttendanceBtn">
 
-                <button
-                    type="submit"
-                    class="primary-btn"
-                    id="saveAttendanceBtn">
+                        <span class="btn-text">
+                            Save Attendance
+                        </span>
 
-                    Save Attendance
+                        <span class="btn-loader" hidden>
 
-                </button>
+                            <span class="spinner"></span>
 
-            </div>
+                            Saving...
+
+                        </span>
+
+                    </button>
+
+                </div>
 
             </form>
 
