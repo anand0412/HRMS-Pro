@@ -327,11 +327,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const container = document.getElementById("toastContainer");
 
+            const icons = {
+                success: "✓",
+                error: "✕",
+                warning: "⚠",
+                info: "ℹ"
+            };
+
             const toast = document.createElement("div");
 
             toast.className = `toast ${type}`;
 
-            toast.textContent = message;
+            toast.innerHTML = `
+                <div class="toast-icon">${icons[type]}</div>
+
+                <div class="toast-message">
+                    ${message}
+                </div>
+
+                <button class="toast-close">&times;</button>
+
+                <div class="toast-progress"></div>
+            `;
 
             container.appendChild(toast);
 
@@ -339,22 +356,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 toast.classList.add("show");
             });
 
-            setTimeout(() => {
+            const removeToast = () => {
 
                 toast.classList.remove("show");
 
                 setTimeout(() => {
+
                     toast.remove();
+
                 }, 350);
 
-            }, 3000);
+            };
+
+            toast
+                .querySelector(".toast-close")
+                .addEventListener("click", removeToast);
+
+            setTimeout(removeToast, 3000);
 
         }
-
-        showToast(
-            "success",
-            "Attendance saved successfully."
-        );
 
     });
 
