@@ -391,10 +391,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             button.classList.add("loading");
 
-            button.querySelector(".btn-text").hidden = true;
-
-            button.querySelector(".btn-loader").hidden = false;
-
         }
 
         function stopButtonLoading(button){
@@ -402,10 +398,6 @@ document.addEventListener("DOMContentLoaded", () => {
             button.disabled = false;
 
             button.classList.remove("loading");
-
-            button.querySelector(".btn-text").hidden = false;
-
-            button.querySelector(".btn-loader").hidden = true;
 
         }
 

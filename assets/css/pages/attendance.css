@@ -1113,13 +1113,33 @@
 
 }
 
-.primary-btn .btn-text,
-.primary-btn .btn-loader{
+.primary-btn .btn-text{
 
     display:flex;
     align-items:center;
     justify-content:center;
     gap:8px;
+
+}
+
+.primary-btn .btn-loader{
+
+    display:none;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+}
+
+.primary-btn.loading .btn-text{
+
+    display:none;
+
+}
+
+.primary-btn.loading .btn-loader{
+
+    display:flex;
 
 }
 
