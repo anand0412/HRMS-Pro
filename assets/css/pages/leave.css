@@ -313,3 +313,45 @@ textarea{
     transform:translateX(24px);
 
 }
+
+.checkbox-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:44px;
+
+    font-weight:500;
+
+}
+
+.checkbox-row input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:var(--primary-color);
+
+    cursor:pointer;
+
+}
+
+.checkbox-row span{
+
+    cursor:pointer;
+
+}
+
+.upload-box.drag-over{
+
+    border-color:var(--primary-color);
+
+    background:#EFF6FF;
+
+    transform:scale(1.01);
+
+}
