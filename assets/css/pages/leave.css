@@ -442,69 +442,50 @@ textarea{
     DRAWER TABS
 ==================================================*/
 
+/* ==========================================================
+   DRAWER TABS (Design 2)
+========================================================== */
+
 .drawer-tabs{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:10px;
-
-    margin-bottom:20px;
-
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin:8px 0 28px;
+    padding:0;
+    border-bottom:1px solid #EEF2F7;
 }
 
 .drawer-tab{
-
-    height:42px;
-
+    appearance:none;
     border:none;
-
-    border-radius:12px;
-
-    background:#F8FAFC;
-
+    background:none;
     color:#64748B;
-
-    font-size:14px;
-
-    font-weight:600;
-
+    font-size:15px;
+    font-weight:500;
+    padding:0 0 14px;
     cursor:pointer;
-
-    transition:all .25s ease;
-
+    position:relative;
+    transition:.2s;
 }
 
 .drawer-tab:hover{
-
-    background:#EEF2FF;
-
-    color:var(--primary-color);
-
+    color:#4F46E5;
 }
 
 .drawer-tab.active{
-
-    background:linear-gradient(
-        135deg,
-        #5B4CF0,
-        #4F46E5
-    );
-
-    color:#FFFFFF;
-
-    box-shadow:
-        0 10px 25px rgba(79,70,229,.25);
-
-    transform:translateY(-2px);
-
+    color:#4F46E5;
+    font-weight:600;
 }
 
 .drawer-tab.active::after{
-
-    display:none;
-
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-1px;
+    height:2px;
+    background:#635BFF;
+    border-radius:2px;
 }
 
 /*==================================================
@@ -533,11 +514,11 @@ textarea{
 
     gap:8px;
 
-    height:44px;
+    height:48px;
 
-    border:none;
+    border:1px solid #E6EAF2;
 
-    border-radius:12px;
+    border-radius:10px;
 
     background:#F8FAFC;
 
@@ -594,12 +575,7 @@ textarea{
 ========================================================== */
 
 .profile-card{
-    background:#fff;
-    border:1px solid #E8ECF4;
-    border-radius:18px;
-    padding:24px;
-    margin-bottom:18px;
-    box-shadow:0 6px 20px rgba(15,23,42,.05);
+    margin-bottom:26px;
 }
 
 .profile-header{
@@ -663,40 +639,51 @@ textarea{
 
 .profile-badges{
     display:flex;
-    flex-wrap:wrap;
-    gap:8px;
+    gap:10px;
     margin-top:18px;
+    flex-wrap:wrap;
 }
 
 .profile-badges span{
-    display:inline-flex;
+
+    height:30px;
+
+    display:flex;
     align-items:center;
-    justify-content:center;
-    padding:6px 12px;
-    border-radius:999px;
-    font-size:12px;
-    font-weight:600;
-    border:1px solid #E5E7EB;
-    background:#F9FAFB;
-    color:#374151;
+
+    padding:0 14px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    border:1px solid transparent;
 }
 
 .status-badge.active{
-    background:#ECFDF3;
-    border-color:#BBF7D0;
-    color:#15803D;
+
+    background:#EAFBF0;
+
+    color:#16934A;
+
 }
 
 .dept-badge{
+
     background:#EEF2FF;
-    border-color:#C7D2FE;
+
     color:#4F46E5;
+
 }
 
 .type-badge{
-    background:#FFF7ED;
-    border-color:#FED7AA;
-    color:#C2410C;
+
+    background:#FFF7E7;
+
+    color:#F59E0B;
+
 }
 
 /* ==========================
@@ -744,30 +731,38 @@ textarea{
 ========================== */
 
 .drawer-section{
-    background:#fff;
-    border:1px solid #E8ECF4;
-    border-radius:18px;
-    padding:22px;
+    margin-top:30px;
     margin-bottom:18px;
 }
 
 .section-title{
-    display:flex;
-    align-items:center;
-    gap:10px;
+
+    display:block;
+
     margin-bottom:18px;
+
 }
 
 .section-title .material-symbols-rounded{
-    font-size:22px;
-    color:#6366F1;
+
+    display:none;
+
 }
 
 .section-title h4{
-    margin:0;
-    font-size:17px;
+
+    font-size:18px;
+
     font-weight:700;
-    color:#111827;
+
+    color:#0F172A;
+
+    margin-bottom:18px;
+
+    padding-bottom:14px;
+
+    border-bottom:1px solid #EEF2F7;
+
 }
 
 .info-grid{
