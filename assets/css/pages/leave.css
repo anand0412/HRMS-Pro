@@ -416,13 +416,19 @@ textarea{
 @keyframes fadeDrawer{
 
     from{
+
         opacity:0;
-        transform:translateY(10px);
+
+        transform:translateY(12px);
+
     }
 
     to{
+
         opacity:1;
+
         transform:translateY(0);
+
     }
 
 }
@@ -432,34 +438,153 @@ textarea{
   TAB BUTTON ACTIVE STATE
 ==================================================*/
 
+/*==================================================
+    DRAWER TABS
+==================================================*/
+
+.drawer-tabs{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
 .drawer-tab{
 
-    position:relative;
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    color:#64748B;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
     transition:all .25s ease;
+
+}
+
+.drawer-tab:hover{
+
+    background:#EEF2FF;
+
+    color:var(--primary-color);
 
 }
 
 .drawer-tab.active{
 
-    color:var(--primary-color);
-    font-weight:600;
+    background:linear-gradient(
+        135deg,
+        #5B4CF0,
+        #4F46E5
+    );
+
+    color:#FFFFFF;
+
+    box-shadow:
+        0 10px 25px rgba(79,70,229,.25);
+
+    transform:translateY(-2px);
 
 }
 
 .drawer-tab.active::after{
 
-    content:"";
+    display:none;
 
-    position:absolute;
+}
 
-    left:0;
-    right:0;
-    bottom:-1px;
+/*==================================================
+    PROFILE ACTIONS
+==================================================*/
 
-    height:3px;
+.profile-actions{
 
-    background:var(--primary-color);
+    display:grid;
 
-    border-radius:10px;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin:24px 0;
+
+}
+
+.profile-action{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    color:#475569;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+.profile-action:hover{
+
+    background:#EEF2FF;
+
+    color:var(--primary-color);
+
+}
+
+.profile-action .material-symbols-rounded{
+
+    font-size:20px;
+
+}
+
+.type-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:#FEF3C7;
+
+    color:#92400E;
+
+    font-size:12px;
+
+    font-weight:600;
 
 }
