@@ -882,3 +882,71 @@ textarea{
     }
 
 }
+
+/* ==========================================
+   EMPLOYMENT TAB
+========================================== */
+
+.employment-section{
+    margin-bottom:34px;
+}
+
+.employment-section h4{
+    font-size:18px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:18px;
+    padding-bottom:12px;
+    border-bottom:1px solid #EEF2F7;
+}
+
+.employment-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap:32px;
+    row-gap:18px;
+}
+
+.employment-item{
+    padding-bottom:14px;
+    border-bottom:1px solid #F1F5F9;
+}
+
+.employment-item label{
+    display:block;
+    margin-bottom:6px;
+    font-size:12px;
+    font-weight:600;
+    color:#9CA3AF;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+}
+
+.employment-item span{
+    font-size:15px;
+    font-weight:600;
+    color:#111827;
+}
+
+.employment-status{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:4px 10px;
+    border-radius:6px;
+    font-size:12px !important;
+    font-weight:600 !important;
+}
+
+.employment-status.active{
+    background:#EAFBF0;
+    color:#16934A;
+}
+
+@media(max-width:768px){
+
+    .employment-grid{
+        grid-template-columns:1fr;
+    }
+
+}
