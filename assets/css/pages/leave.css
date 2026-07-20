@@ -950,3 +950,181 @@ textarea{
     }
 
 }
+
+/* =====================================
+   DOCUMENTS TAB
+===================================== */
+
+.document-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.document-item{
+
+    display:grid;
+
+    grid-template-columns:1fr auto auto;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding-bottom:16px;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.document-item h5{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.document-item p{
+
+    margin-top:4px;
+
+    color:#94A3B8;
+
+    font-size:13px;
+
+}
+
+.doc-status{
+
+    padding:4px 10px;
+
+    border-radius:6px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.doc-status.verified{
+
+    background:#EAFBF0;
+
+    color:#16934A;
+
+}
+
+.doc-status.uploaded{
+
+    background:#EEF2FF;
+
+    color:#4F46E5;
+
+}
+
+.doc-status.pending{
+
+    background:#FFF7E7;
+
+    color:#F59E0B;
+
+}
+
+.doc-btn{
+
+    border:1px solid #DDE3EC;
+
+    background:white;
+
+    height:34px;
+
+    padding:0 16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.doc-btn.upload{
+
+    background:#635BFF;
+
+    color:white;
+
+    border:none;
+
+}
+
+/* =====================================
+   LEAVE TAB
+===================================== */
+
+.leave-card{
+
+    margin-bottom:28px;
+
+}
+
+.leave-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:10px;
+
+}
+
+.leave-row strong{
+
+    font-size:15px;
+
+}
+
+.leave-row p{
+
+    margin-top:4px;
+
+    color:#94A3B8;
+
+    font-size:13px;
+
+}
+
+.leave-row span{
+
+    color:#635BFF;
+
+    font-weight:600;
+
+}
+
+.leave-progress{
+
+    height:8px;
+
+    background:#EEF2F7;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.leave-progress div{
+
+    height:100%;
+
+    background:#635BFF;
+
+    border-radius:20px;
+
+}
