@@ -55,6 +55,8 @@
     <link rel="stylesheet"
         href="assets/css/pages/employees.css">
 
+    <link rel="stylesheet" href="assets/css/pages/leave.css">    
+
     <link rel="stylesheet"
           href="assets/css/responsive.css">
 
@@ -69,971 +71,528 @@
 
 <body>
 
-<div class="app-layout">
+    <div class="app-layout">
 
-    <!-- ===================================================== -->
-    <!-- SIDEBAR -->
-    <!-- ===================================================== -->
-
-  <!-- =========================
-     SIDEBAR 2.0 START
-========================= -->
-
-<aside id="sidebar" class="sidebar">
+        <!-- ===================================================== -->
+        <!-- SIDEBAR -->
+        <!-- ===================================================== -->
 
     <!-- =========================
-         Header
+        SIDEBAR 2.0 START
     ========================= -->
 
-    <div class="sidebar-header">
+    <aside id="sidebar" class="sidebar">
 
-        <div class="brand">
+        <!-- =========================
+            Header
+        ========================= -->
 
-            <div class="brand-logo">
+        <div class="sidebar-header">
 
-                HR
+            <div class="brand">
+
+                <div class="brand-logo">
+
+                    HR
+
+                </div>
+
+                <div class="brand-info">
+
+                    <h2>HRMS Pro</h2>
+
+                    <span>Enterprise Suite</span>
+
+                </div>
 
             </div>
 
-            <div class="brand-info">
-
-                <h2>HRMS Pro</h2>
-
-                <span>Enterprise Suite</span>
-
-            </div>
-
-        </div>
-
-        <button
-            id="sidebarToggle"
-            class="sidebar-toggle">
-
-            <span class="material-symbols-rounded">
-
-                keyboard_double_arrow_left
-
-            </span>
-
-        </button>
-
-    </div>
-
-    <!-- =======================================
-Employee Statistics
-======================================= -->
-
-    <!-- =========================
-         Dashboard
-    ========================= -->
-
-    <nav class="sidebar-nav">
-
-        <a href="dashboard.html"
-                class="menu-item">
-
-            <div class="menu-icon dashboard-icon">
+            <button
+                id="sidebarToggle"
+                class="sidebar-toggle">
 
                 <span class="material-symbols-rounded">
 
-                    dashboard
-
-                </span>
-
-            </div>
-
-            <span class="menu-title">
-
-                Dashboard
-
-            </span>
-
-            <span class="menu-badge">
-
-                New
-
-            </span>
-
-        </a>
-
-        <!-- =========================
-             PEOPLE
-        ========================= -->
-
-        <div class="menu-group open">
-
-            <button class="menu-group-header">
-
-                <div class="group-left">
-
-                    <div class="menu-icon people-icon">
-
-                        <span class="material-symbols-rounded">
-
-                            groups
-
-                        </span>
-
-                    </div>
-
-                    <span>
-
-                        People
-
-                    </span>
-
-                </div>
-
-                <span class="material-symbols-rounded group-arrow">
-
-                    expand_more
+                    keyboard_double_arrow_left
 
                 </span>
 
             </button>
 
-            <div class="submenu">
-
-                <a href="employees.html" class="submenu-item">Employees</a>
-
-                <a href="attendance.html" class="submenu-item">Attendance</a>
-
-                <a href="leave.html" class="submenu-item">Leave active</a>
-
-                <a href="service-book.html" class="submenu-item">Service Book</a>
-
-            </div>
-
         </div>
 
-                <!-- =========================
-             PAYROLL
+        <!-- =======================================
+    Employee Statistics
+    ======================================= -->
+
+        <!-- =========================
+            Dashboard
         ========================= -->
 
-        <div class="menu-group">
+        <nav class="sidebar-nav">
 
-            <button class="menu-group-header">
+            <a href="dashboard.html"
+                    class="menu-item">
 
-                <div class="group-left">
+                <div class="menu-icon dashboard-icon">
 
-                    <div class="menu-icon payroll-icon">
+                    <span class="material-symbols-rounded">
 
-                        <span class="material-symbols-rounded">
-
-                            account_balance_wallet
-
-                        </span>
-
-                    </div>
-
-                    <span>
-
-                        Payroll
+                        dashboard
 
                     </span>
 
                 </div>
 
-                <span class="material-symbols-rounded group-arrow">
+                <span class="menu-title">
 
-                    chevron_right
+                    Dashboard
 
                 </span>
 
-            </button>
+                <span class="menu-badge">
 
-            <div class="submenu">
+                    New
 
-                <a href="#">Salary Structure</a>
+                </span>
 
-                <a href="#">Payroll Processing</a>
+            </a>
 
-                <a href="#">Payslips</a>
+            <!-- =========================
+                PEOPLE
+            ========================= -->
 
-                <a href="#">Loans & Advances</a>
+            <div class="menu-group open">
 
-            </div>
+                <button class="menu-group-header">
 
-        </div>
+                    <div class="group-left">
 
+                        <div class="menu-icon people-icon">
 
-        <!-- =========================
-             ORGANIZATION
-        ========================= -->
+                            <span class="material-symbols-rounded">
 
-        <div class="menu-group">
+                                groups
 
-            <button class="menu-group-header">
+                            </span>
 
-                <div class="group-left">
+                        </div>
 
-                    <div class="menu-icon organization-icon">
+                        <span>
 
-                        <span class="material-symbols-rounded">
-
-                            apartment
+                            People
 
                         </span>
 
                     </div>
 
-                    <span>
+                    <span class="material-symbols-rounded group-arrow">
 
-                        Organization
+                        expand_more
 
                     </span>
 
+                </button>
+
+                <div class="submenu">
+
+                    <a href="employees.html" class="submenu-item">Employees</a>
+
+                    <a href="attendance.html" class="submenu-item">Attendance</a>
+
+                    <a href="leave.html" class="submenu-item">Leave active</a>
+
+                    <a href="service-book.html" class="submenu-item">Service Book</a>
+
                 </div>
-
-                <span class="material-symbols-rounded group-arrow">
-
-                    chevron_right
-
-                </span>
-
-            </button>
-
-            <div class="submenu">
-
-                <a href="#">Departments</a>
-
-                <a href="#">Designations</a>
-
-                <a href="#">Branches</a>
-
-                <a href="#">Shifts</a>
 
             </div>
 
-        </div>
+                    <!-- =========================
+                PAYROLL
+            ========================= -->
 
+            <div class="menu-group">
 
-        <!-- =========================
-             REPORTS
-        ========================= -->
+                <button class="menu-group-header">
 
-        <div class="menu-group">
+                    <div class="group-left">
 
-            <button class="menu-group-header">
+                        <div class="menu-icon payroll-icon">
 
-                <div class="group-left">
+                            <span class="material-symbols-rounded">
 
-                    <div class="menu-icon reports-icon">
+                                account_balance_wallet
 
-                        <span class="material-symbols-rounded">
+                            </span>
 
-                            bar_chart
+                        </div>
+
+                        <span>
+
+                            Payroll
 
                         </span>
 
                     </div>
 
-                    <span>
+                    <span class="material-symbols-rounded group-arrow">
 
-                        Reports
+                        chevron_right
 
                     </span>
 
+                </button>
+
+                <div class="submenu">
+
+                    <a href="#">Salary Structure</a>
+
+                    <a href="#">Payroll Processing</a>
+
+                    <a href="#">Payslips</a>
+
+                    <a href="#">Loans & Advances</a>
+
                 </div>
-
-                <span class="material-symbols-rounded group-arrow">
-
-                    chevron_right
-
-                </span>
-
-            </button>
-
-            <div class="submenu">
-
-                <a href="#">Attendance Report</a>
-
-                <a href="#">Leave Report</a>
-
-                <a href="#">Payroll Report</a>
-
-                <a href="#">Employee Report</a>
 
             </div>
 
-        </div>
 
+            <!-- =========================
+                ORGANIZATION
+            ========================= -->
 
-        <!-- =========================
-             ADMINISTRATION
-        ========================= -->
+            <div class="menu-group">
 
-        <div class="menu-group">
+                <button class="menu-group-header">
 
-            <button class="menu-group-header">
+                    <div class="group-left">
 
-                <div class="group-left">
+                        <div class="menu-icon organization-icon">
 
-                    <div class="menu-icon admin-icon">
+                            <span class="material-symbols-rounded">
 
-                        <span class="material-symbols-rounded">
+                                apartment
 
-                            admin_panel_settings
+                            </span>
+
+                        </div>
+
+                        <span>
+
+                            Organization
 
                         </span>
 
                     </div>
 
-                    <span>
+                    <span class="material-symbols-rounded group-arrow">
 
-                        Administration
+                        chevron_right
+
+                    </span>
+
+                </button>
+
+                <div class="submenu">
+
+                    <a href="#">Departments</a>
+
+                    <a href="#">Designations</a>
+
+                    <a href="#">Branches</a>
+
+                    <a href="#">Shifts</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                REPORTS
+            ========================= -->
+
+            <div class="menu-group">
+
+                <button class="menu-group-header">
+
+                    <div class="group-left">
+
+                        <div class="menu-icon reports-icon">
+
+                            <span class="material-symbols-rounded">
+
+                                bar_chart
+
+                            </span>
+
+                        </div>
+
+                        <span>
+
+                            Reports
+
+                        </span>
+
+                    </div>
+
+                    <span class="material-symbols-rounded group-arrow">
+
+                        chevron_right
+
+                    </span>
+
+                </button>
+
+                <div class="submenu">
+
+                    <a href="#">Attendance Report</a>
+
+                    <a href="#">Leave Report</a>
+
+                    <a href="#">Payroll Report</a>
+
+                    <a href="#">Employee Report</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                ADMINISTRATION
+            ========================= -->
+
+            <div class="menu-group">
+
+                <button class="menu-group-header">
+
+                    <div class="group-left">
+
+                        <div class="menu-icon admin-icon">
+
+                            <span class="material-symbols-rounded">
+
+                                admin_panel_settings
+
+                            </span>
+
+                        </div>
+
+                        <span>
+
+                            Administration
+
+                        </span>
+
+                    </div>
+
+                    <span class="material-symbols-rounded group-arrow">
+
+                        chevron_right
+
+                    </span>
+
+                </button>
+
+                <div class="submenu">
+
+                    <a href="#">Users</a>
+
+                    <a href="#">Roles</a>
+
+                    <a href="#">Permissions</a>
+
+                    <a href="#">Audit Logs</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                SETTINGS
+            ========================= -->
+
+            <a href="#"
+            class="menu-item">
+
+                <div class="menu-icon settings-icon">
+
+                    <span class="material-symbols-rounded">
+
+                        settings
 
                     </span>
 
                 </div>
 
-                <span class="material-symbols-rounded group-arrow">
+                <span class="menu-title">
 
-                    chevron_right
-
-                </span>
-
-            </button>
-
-            <div class="submenu">
-
-                <a href="#">Users</a>
-
-                <a href="#">Roles</a>
-
-                <a href="#">Permissions</a>
-
-                <a href="#">Audit Logs</a>
-
-            </div>
-
-        </div>
-
-
-        <!-- =========================
-             SETTINGS
-        ========================= -->
-
-        <a href="#"
-           class="menu-item">
-
-            <div class="menu-icon settings-icon">
-
-                <span class="material-symbols-rounded">
-
-                    settings
+                    Settings
 
                 </span>
 
-            </div>
+            </a>
 
-            <span class="menu-title">
+            <div class="sidebar-bottom">
 
-                Settings
+        <span>
 
-            </span>
-
-        </a>
-
-        <div class="sidebar-bottom">
-
-    <span>
-
-        HRMS Pro v2.0
-
-    </span>
-
-</div>
-
-    </nav>
-    
-
-</aside>
-
-<!-- =========================
-     SIDEBAR 2.0 END
-========================= -->
-
-
-
-    <!-- ===================================================== -->
-    <!-- MAIN -->
-    <!-- ===================================================== -->
-
-    <main class="main-wrapper">
-
-        <!-- =============================================== -->
-        <!-- TOP NAVBAR -->
-        <!-- =============================================== -->
-
-        <header class="top-navbar">
-
-    <!-- ===========================
-         Left
-    ============================ -->
-
-    <div class="navbar-left">
-
-    <button class="menu-toggle">
-
-        <span class="material-symbols-rounded">
-
-            menu
+            HRMS Pro v2.0
 
         </span>
 
-    </button>
-
-</div>
-
-
-
-    <!-- ===========================
-         Center Search
-    ============================ -->
-
-    <div class="search-box">
-
-        <input
-            type="text"
-            placeholder="Search employees, payroll, reports...">
-
-            <button class="search-btn">
-
-                 <span class="material-symbols-rounded">
-
-                    search
-
-                </span>
-
-            </button>
-
     </div>
 
+        </nav>
+        
 
+    </aside>
 
     <!-- =========================
-     Navbar Right
-========================= -->
-
-<div class="navbar-right">
-
-    <!-- Theme -->
-
-    <button class="icon-btn" id="themeToggle">
-
-        <span class="material-symbols-rounded">
-
-            light_mode
-
-        </span>
-
-    </button>
-
-    <!-- Apps -->
-
-    <button class="icon-btn">
-
-        <span class="material-symbols-rounded">
-
-            apps
-
-        </span>
-
-    </button>
-
-    <!-- Notifications -->
-
-    <button class="icon-btn notification-btn">
-
-        <span class="material-symbols-rounded">
-
-            notifications
-
-        </span>
-
-        <span class="notification-count">
-
-            8
-
-        </span>
-
-    </button>
-
-    <div class="navbar-divider"></div>
-
-    <!-- Profile -->
-
-    <button class="profile-btn">
-
-        <div class="avatar-placeholder">
-
-            AU
-
-        </div>
-
-        <div class="profile-meta">
-
-            <h4>
-
-                Admin User
-
-            </h4>
-
-            <span>
-
-                Administrator
-
-            </span>
-
-        </div>
-
-        <span class="material-symbols-rounded">
-
-            keyboard_arrow_down
-
-        </span>
-
-    </button>
-
-</div>
-
-</header>
+        SIDEBAR 2.0 END
+    ========================= -->
 
 
 
-        <!-- =============================================== -->
-        <!-- PAGE CONTENT -->
-        <!-- =============================================== -->
+        <!-- ===================================================== -->
+        <!-- MAIN -->
+        <!-- ===================================================== -->
 
-        <section class="page-content">
+        <main class="main-wrapper">
 
-            <!-- =======================================
-Employee Page Header
-======================================= -->
+            <!-- =============================================== -->
+            <!-- TOP NAVBAR -->
+            <!-- =============================================== -->
 
-<section class="page-header">
+            <header class="top-navbar">
 
-    <div class="page-header-left">
+        <!-- ===========================
+            Left
+        ============================ -->
 
-        <h1>Leave Management</h1>
+        <div class="navbar-left">
 
-        <p>
-            Manage employee leave requests, approvals and leave balances.
-        </p>
-
-    </div>
-
-    <div class="page-header-right">
-
-        <button class="secondary-btn">
+        <button class="menu-toggle">
 
             <span class="material-symbols-rounded">
-                file_download
+
+                menu
+
             </span>
-
-            Export
-
-        </button>
-
-        <button class="primary-btn" id="addEmployeeBtn">
-
-            <span class="material-symbols-rounded">
-                event_available
-            </span>
-
-            Create Leave Request
 
         </button>
 
     </div>
 
-</section>
 
-<section class="employee-stats">
 
-    <div class="stat-card">
+        <!-- ===========================
+            Center Search
+        ============================ -->
 
-        <div class="stat-icon blue">
-            <span class="material-symbols-rounded">event_note</span>
-        </div>
-
-        <div class="stat-content">
-            <span>Total Requests</span>
-            <h2>328</h2>
-        </div>
-
-    </div>
-
-    <div class="stat-card">
-
-        <div class="stat-icon green">
-            <span class="material-symbols-rounded">pending_actions</span>
-        </div>
-
-        <div class="stat-content">
-            <span>Pending</span>
-            <h2>4</h2>
-        </div>
-
-    </div>
-
-    <div class="stat-card">
-
-        <div class="stat-icon orange">
-            <span class="material-symbols-rounded">task_alt</span>
-        </div>
-
-        <div class="stat-content">
-            <span>Approved</span>
-            <h2>251</h2>
-        </div>
-
-    </div>
-
-    <div class="stat-card">
-
-        <div class="stat-icon purple">
-            <span class="material-symbols-rounded">cancel</span>
-        </div>
-
-        <div class="stat-content">
-            <span>Rejected</span>
-            <h2>35</h2>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =======================================
-Employee Filters
-======================================= -->
-
-<section class="employee-filters">
-
-    <div class="filter-left">
-
-        <div class="search-input">
-
-            <span class="material-symbols-rounded">
-                search
-            </span>
+        <div class="search-box">
 
             <input
                 type="text"
-                placeholder="Search employee, leave ID...">
+                placeholder="Search employees, payroll, reports...">
+
+                <button class="search-btn">
+
+                    <span class="material-symbols-rounded">
+
+                        search
+
+                    </span>
+
+                </button>
 
         </div>
 
-        <select>
 
-            <option>Department</option>
-            <option>HR</option>
-            <option>IT</option>
-            <option>Finance</option>
 
-        </select>
+        <!-- =========================
+        Navbar Right
+    ========================= -->
 
-        <select>
+    <div class="navbar-right">
 
-            <option>Leave Type</option>
-            <option>Casual Leave</option>
-            <option>Sick Leave</option>
-            <option>Earned Leave</option>
-            <option>Maternity Leave</option>
-            <option>Paternity Leave</option>
-            <option>Comp Off</option>
-  
-        </select>
+        <!-- Theme -->
 
-        <select>
-
-            <option>Status</option>
-            <option>Pending</option>
-            <option>Approved</option>
-            <option>Rejected</option>
-            <option>Cancelled</option>
-
-        </select>
-
-        <select>
-            
-            <option>Duration</option>
-            <option>Half Day</option>
-            <option>1 Day</option>
-            <option>2–5 Days</option>
-            <option>More than 5 Days</option>
-
-        </select>
-
-    </div>
-
-    <div class="filter-right">
-
-        <button class="secondary-btn">
-
-            Reset
-
-        </button>
-
-        <button class="primary-btn">
-
-            Apply Filters
-
-        </button>
-
-    </div>
-
-</section>
-
-<!-- =======================================
-Employee Table
-======================================= -->
-
-<section class="employee-table-card">
-
-    <div class="table-header">
-
-        <h3>Leave Requests</h3>
-
-        <span>Showing 1–5 of 328 Leave Requests</span>
-
-    </div>
-
-    <table class="employee-table">
-
-        <thead>
-
-            <tr>
-
-                <th>Employee</th>
-                <th>Leave ID</th>
-                <th>Leave Type</th>
-                <th>Duration</th>
-                <th>Status</th>
-                <th>Applied On</th>
-                <th>Actions</th>
-
-            </tr>
-
-        </thead>
-
-        <tbody>
-
-            <tr class="employee-row">
-
-                <td>
-
-                    <div class="employee-info">
-
-                        <div class="employee-avatar">
-
-                            RS
-
-                        </div>
-
-                        <div>
-
-                            <strong>Rahul Sharma</strong>
-
-                            <small>rahul@hrmspro.com</small>
-
-                        </div>
-
-                    </div>
-
-                </td>
-
-                <td>LV-2026-001</td>
-
-                <td>Casual Leave</td>
-
-                <td>15–17 Jul (3 Days)</td>
-
-                <td>
-
-                    <span class="status-badge Pending">
-
-                        Pending
-
-                    </span>
-
-                </td>
-
-                <td>12 Jul 2026</td>
-
-                <td>
-
-                    <button class="table-action">
-
-                        <span class="material-symbols-rounded">
-
-                            more_vert
-
-                        </span>
-
-                    </button>
-
-                </td>
-
-            </tr>
-
-            <tr class="employee-row">
-
-                <td>
-
-                    <div class="employee-info">
-
-                        <div class="employee-avatar purple">
-
-                            PS
-
-                        </div>
-
-                        <div>
-
-                            <strong>Priya Singh</strong>
-
-                            <small>priya@hrmspro.com</small>
-
-                        </div>
-
-                    </div>
-
-                </td>
-
-                <td>LV-2026-002</td>
-
-                <td>Earned Leave</td>
-
-                <td>21–25 Jul (5 Days)</td>
-
-                <td>
-
-                    <span class="status-badge Approved">
-
-                        Approved
-
-                    </span>
-
-                </td>
-
-                <td>10 Jul 2026</td>
-
-                <td>
-
-                    <button class="table-action">
-
-                        <span class="material-symbols-rounded">
-
-                            more_vert
-
-                        </span>
-
-                    </button>
-
-                </td>
-
-            </tr>
-
-            <tr class="employee-row">
-
-                <td>
-
-                    <div class="employee-info">
-
-                        <div class="employee-avatar orange">
-
-                            AK
-
-                        </div>
-
-                        <div>
-
-                            <strong>Amit Kumar</strong>
-
-                            <small>amit@hrmspro.com</small>
-
-                        </div>
-
-                    </div>
-
-                </td>
-
-                <td>LV-2026-003</td>
-
-                <td>Sick Leave</td>
-
-                <td>18 Jul (1 Day)</td>
-
-                <td>
-
-                    <span class="status-badge Rejected">
-
-                        Rejected
-
-                    </span>
-
-                </td>
-
-                <td>15 Jul 2026</td>
-
-                <td>
-
-                    <button class="table-action">
-
-                        <span class="material-symbols-rounded">
-
-                            more_vert
-
-                        </span>
-
-                    </button>
-
-                </td>
-
-            </tr>
-
-        </tbody>
-
-    </table>
-
-    <div class="table-pagination">
-
-    <div class="pagination-info">
-
-        Showing <strong>1–5</strong> of <strong>328</strong> Leave Requests
-
-    </div>
-
-    <div class="pagination-controls">
-
-        <button class="page-btn">
+        <button class="icon-btn" id="themeToggle">
 
             <span class="material-symbols-rounded">
 
-                chevron_left
+                light_mode
 
             </span>
 
         </button>
 
-        <button class="page-btn active">1</button>
+        <!-- Apps -->
 
-        <button class="page-btn">2</button>
-
-        <button class="page-btn">3</button>
-
-        <button class="page-btn">4</button>
-
-        <button class="page-btn">5</button>
-
-        <button class="page-btn">
+        <button class="icon-btn">
 
             <span class="material-symbols-rounded">
 
-                chevron_right
+                apps
+
+            </span>
+
+        </button>
+
+        <!-- Notifications -->
+
+        <button class="icon-btn notification-btn">
+
+            <span class="material-symbols-rounded">
+
+                notifications
+
+            </span>
+
+            <span class="notification-count">
+
+                8
+
+            </span>
+
+        </button>
+
+        <div class="navbar-divider"></div>
+
+        <!-- Profile -->
+
+        <button class="profile-btn">
+
+            <div class="avatar-placeholder">
+
+                AU
+
+            </div>
+
+            <div class="profile-meta">
+
+                <h4>
+
+                    Admin User
+
+                </h4>
+
+                <span>
+
+                    Administrator
+
+                </span>
+
+            </div>
+
+            <span class="material-symbols-rounded">
+
+                keyboard_arrow_down
 
             </span>
 
@@ -1041,407 +600,959 @@ Employee Table
 
     </div>
 
-</div>
+    </header>
 
-</section>
 
-        <!-- =============================================== -->
-        <!-- FOOTER -->
-        <!-- =============================================== -->
 
-        <footer class="dashboard-footer">
+            <!-- =============================================== -->
+            <!-- PAGE CONTENT -->
+            <!-- =============================================== -->
+
+            <section class="page-content">
+
+                <!-- =======================================
+    Employee Page Header
+    ======================================= -->
+
+    <section class="page-header">
+
+        <div class="page-header-left">
+
+            <h1>Leave Management</h1>
 
             <p>
-
-                © 2026 HRMS Pro
-
-                <span class="separator">•</span>
-
-                Designed with modern enterprise UI principles.
-
+                Manage employee leave requests, approvals and leave balances.
             </p>
 
-        </footer>
+        </div>
 
-        </section>
+        <div class="page-header-right">
 
-    </main>
+            <button class="secondary-btn">
 
-</div>
+                <span class="material-symbols-rounded">
+                    file_download
+                </span>
 
+                Export
 
+            </button>
 
-<!-- ===================================================== -->
-<!-- GLOBAL OVERLAY -->
-<!-- ===================================================== -->
+            <button class="primary-btn" id="addEmployeeBtn">
 
-<div id="overlay"
-     class="overlay"></div>
+                <span class="material-symbols-rounded">
+                    event_available
+                </span>
 
-
-
-<!-- ===================================================== -->
-<!-- DRAWERS -->
-<!-- ===================================================== -->
-
-<div id="notificationDrawer"
-     class="drawer"></div>
-
-<div id="profileDrawer"
-     class="drawer"></div>
-
-
-
-<!-- ===================================================== -->
-<!-- MODALS -->
-<!-- ===================================================== -->
-
-<div id="modalContainer"></div>
-
-
-
-<!-- ===================================================== -->
-<!-- TOAST -->
-<!-- ===================================================== -->
-
-<div id="toastContainer"></div>
-
-
-
-<!-- ===================================================== -->
-<!-- SCRIPTS -->
-<!-- ===================================================== -->
-
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-<script src="assets/js/theme.js"></script>
-
-<script src="assets/js/sidebar.js"></script>
-
-<script src="assets/js/dashboard.js"></script>
-
-<script src="assets/js/employees.js"></script>
-
-<!-- ==========================================
-     Employee Details Drawer
-========================================== -->
-
-<div class="employee-drawer-overlay" id="employeeDrawerOverlay">
-
-    <div class="employee-drawer">
-
-        <div class="drawer-header">
-
-            <h2>Employee Profile</h2>
-
-            <button class="drawer-close">
-
-                <span class="material-symbols-rounded">close</span>
+                Create Leave Request
 
             </button>
 
         </div>
 
-        <div class="drawer-body">
-            <div class="drawer-tabs">
+    </section>
 
-            <button class="drawer-tab active">
+    <section class="employee-stats">
 
-                Profile
+        <div class="stat-card">
+
+            <div class="stat-icon blue">
+                <span class="material-symbols-rounded">event_note</span>
+            </div>
+
+            <div class="stat-content">
+                <span>Total Requests</span>
+                <h2>328</h2>
+            </div>
+
+        </div>
+
+        <div class="stat-card">
+
+            <div class="stat-icon green">
+                <span class="material-symbols-rounded">pending_actions</span>
+            </div>
+
+            <div class="stat-content">
+                <span>Pending</span>
+                <h2>4</h2>
+            </div>
+
+        </div>
+
+        <div class="stat-card">
+
+            <div class="stat-icon orange">
+                <span class="material-symbols-rounded">task_alt</span>
+            </div>
+
+            <div class="stat-content">
+                <span>Approved</span>
+                <h2>251</h2>
+            </div>
+
+        </div>
+
+        <div class="stat-card">
+
+            <div class="stat-icon purple">
+                <span class="material-symbols-rounded">cancel</span>
+            </div>
+
+            <div class="stat-content">
+                <span>Rejected</span>
+                <h2>35</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================================
+    Employee Filters
+    ======================================= -->
+
+    <section class="employee-filters">
+
+        <div class="filter-left">
+
+            <div class="search-input">
+
+                <span class="material-symbols-rounded">
+                    search
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search employee, leave ID...">
+
+            </div>
+
+            <select>
+
+                <option>Department</option>
+                <option>HR</option>
+                <option>IT</option>
+                <option>Finance</option>
+
+            </select>
+
+            <select>
+
+                <option>Leave Type</option>
+                <option>Casual Leave</option>
+                <option>Sick Leave</option>
+                <option>Earned Leave</option>
+                <option>Maternity Leave</option>
+                <option>Paternity Leave</option>
+                <option>Comp Off</option>
+    
+            </select>
+
+            <select>
+
+                <option>Status</option>
+                <option>Pending</option>
+                <option>Approved</option>
+                <option>Rejected</option>
+                <option>Cancelled</option>
+
+            </select>
+
+            <select>
+                
+                <option>Duration</option>
+                <option>Half Day</option>
+                <option>1 Day</option>
+                <option>2–5 Days</option>
+                <option>More than 5 Days</option>
+
+            </select>
+
+        </div>
+
+        <div class="filter-right">
+
+            <button class="secondary-btn">
+
+                Reset
 
             </button>
 
-            <button class="drawer-tab">
+            <button class="primary-btn">
 
-                 Employment
-
-            </button>
-
-            <button class="drawer-tab">
-
-              Documents
-
-            </button>
-
-             <button class="drawer-tab">
-
-                 Leave
+                Apply Filters
 
             </button>
 
         </div>
 
-            <div class="employee-profile-top">
+    </section>
 
-                <div class="profile-avatar initials-avatar">
+    <!-- =======================================
+    Employee Table
+    ======================================= -->
 
-                    <span>RS</span>
+    <section class="employee-table-card">
 
-                    <span class="online-dot"></span>
+        <div class="table-header">
+
+            <h3>Leave Requests</h3>
+
+            <span>Showing 1–5 of 328 Leave Requests</span>
+
+        </div>
+
+        <table class="employee-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Employee</th>
+                    <th>Leave ID</th>
+                    <th>Leave Type</th>
+                    <th>Duration</th>
+                    <th>Status</th>
+                    <th>Applied On</th>
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr class="employee-row">
+
+                    <td>
+
+                        <div class="employee-info">
+
+                            <div class="employee-avatar">
+
+                                RS
+
+                            </div>
+
+                            <div>
+
+                                <strong>Rahul Sharma</strong>
+
+                                <small>rahul@hrmspro.com</small>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+                    <td>LV-2026-001</td>
+
+                    <td>Casual Leave</td>
+
+                    <td>15–17 Jul (3 Days)</td>
+
+                    <td>
+
+                        <span class="status-badge Pending">
+
+                            Pending
+
+                        </span>
+
+                    </td>
+
+                    <td>12 Jul 2026</td>
+
+                    <td>
+
+                        <button class="table-action">
+
+                            <span class="material-symbols-rounded">
+
+                                more_vert
+
+                            </span>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr class="employee-row">
+
+                    <td>
+
+                        <div class="employee-info">
+
+                            <div class="employee-avatar purple">
+
+                                PS
+
+                            </div>
+
+                            <div>
+
+                                <strong>Priya Singh</strong>
+
+                                <small>priya@hrmspro.com</small>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+                    <td>LV-2026-002</td>
+
+                    <td>Earned Leave</td>
+
+                    <td>21–25 Jul (5 Days)</td>
+
+                    <td>
+
+                        <span class="status-badge Approved">
+
+                            Approved
+
+                        </span>
+
+                    </td>
+
+                    <td>10 Jul 2026</td>
+
+                    <td>
+
+                        <button class="table-action">
+
+                            <span class="material-symbols-rounded">
+
+                                more_vert
+
+                            </span>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr class="employee-row">
+
+                    <td>
+
+                        <div class="employee-info">
+
+                            <div class="employee-avatar orange">
+
+                                AK
+
+                            </div>
+
+                            <div>
+
+                                <strong>Amit Kumar</strong>
+
+                                <small>amit@hrmspro.com</small>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+                    <td>LV-2026-003</td>
+
+                    <td>Sick Leave</td>
+
+                    <td>18 Jul (1 Day)</td>
+
+                    <td>
+
+                        <span class="status-badge Rejected">
+
+                            Rejected
+
+                        </span>
+
+                    </td>
+
+                    <td>15 Jul 2026</td>
+
+                    <td>
+
+                        <button class="table-action">
+
+                            <span class="material-symbols-rounded">
+
+                                more_vert
+
+                            </span>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="table-pagination">
+
+        <div class="pagination-info">
+
+            Showing <strong>1–5</strong> of <strong>328</strong> Leave Requests
+
+        </div>
+
+        <div class="pagination-controls">
+
+            <button class="page-btn">
+
+                <span class="material-symbols-rounded">
+
+                    chevron_left
+
+                </span>
+
+            </button>
+
+            <button class="page-btn active">1</button>
+
+            <button class="page-btn">2</button>
+
+            <button class="page-btn">3</button>
+
+            <button class="page-btn">4</button>
+
+            <button class="page-btn">5</button>
+
+            <button class="page-btn">
+
+                <span class="material-symbols-rounded">
+
+                    chevron_right
+
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    </section>
+
+            <!-- =============================================== -->
+            <!-- FOOTER -->
+            <!-- =============================================== -->
+
+            <footer class="dashboard-footer">
+
+                <p>
+
+                    © 2026 HRMS Pro
+
+                    <span class="separator">•</span>
+
+                    Designed with modern enterprise UI principles.
+
+                </p>
+
+            </footer>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- GLOBAL OVERLAY -->
+    <!-- ===================================================== -->
+
+    <div id="overlay"
+        class="overlay"></div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- DRAWERS -->
+    <!-- ===================================================== -->
+
+    <div id="notificationDrawer"
+        class="drawer"></div>
+
+    <div id="profileDrawer"
+        class="drawer"></div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- MODALS -->
+    <!-- ===================================================== -->
+
+    <div id="modalContainer"></div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- TOAST -->
+    <!-- ===================================================== -->
+
+    <div id="toastContainer"></div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- SCRIPTS -->
+    <!-- ===================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="assets/js/theme.js"></script>
+
+    <script src="assets/js/sidebar.js"></script>
+
+    <script src="assets/js/dashboard.js"></script>
+
+    <script src="assets/js/employees.js"></script>
+
+    <!-- ==========================================
+        Employee Details Drawer
+    ========================================== -->
+
+    <div class="employee-drawer-overlay" id="employeeDrawerOverlay">
+
+        <div class="employee-drawer">
+
+            <div class="drawer-header">
+
+                <h2>Employee Profile</h2>
+
+                <button class="drawer-close">
+
+                    <span class="material-symbols-rounded">close</span>
+
+                </button>
+
+            </div>
+
+            <div class="drawer-body">
+                <div class="drawer-tabs">
+
+                <button class="drawer-tab active">
+
+                    Profile
+
+                </button>
+
+                <button class="drawer-tab">
+
+                    Employment
+
+                </button>
+
+                <button class="drawer-tab">
+
+                Documents
+
+                </button>
+
+                <button class="drawer-tab">
+
+                    Leave
+
+                </button>
+
+            </div>
+
+                <div class="employee-profile-top">
+
+                    <div class="profile-avatar initials-avatar">
+
+                        <span>RS</span>
+
+                        <span class="online-dot"></span>
+
+                    </div>
+
+                    <div class="profile-info">
+
+                    <h3>Rahul Sharma</h3>
+                
+                    <p>Senior Developer</p>
+
+                        <span class="employee-id">EMP-1001</span>
+
+                        <div class="profile-badges">
+
+                            <span class="status-badge active">Active</span>
+
+                            <span class="dept-badge">IT Department</span>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-                <div class="profile-info">
+                <div class="drawer-section">
 
-                 <h3>Rahul Sharma</h3>
+                    <h4>Personal Details</h4>
+
+                    <div class="info-grid">
+
+                        <div>
+
+                            <label>Email</label>
+
+                            <p>rahul@hrmspro.com</p>
+
+                        </div>
+
+                        <div>
+
+                            <label>Phone</label>
+
+                            <p>+91 9876543210</p>
+
+                        </div>
+
+                        <div>
+
+                            <label>Date of Birth</label>
+
+                            <p>14 July 1996</p>
+
+                        </div>
+
+                        <div>
+
+                            <label>Blood Group</label>
+
+                            <p>B+</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="drawer-section">
+
+                    <h4>Employment</h4>
+
+                    <div class="info-grid">
+
+                        <div>
+
+                            <label>Department</label>
+
+                            <p>IT</p>
+
+                        </div>
+
+                        <div>
+
+                            <label>Designation</label>
+
+                            <p>Senior Developer</p>
+
+                        </div>
+
+                        <div>
+
+                            <label>Joining Date</label>
+
+                            <p>15 Jan 2024</p>
+
+                        </div>
+
+                        <div>
+
+                            <label>Manager</label>
+
+                            <p>Anita Verma</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="btn-primary drawer-edit-btn">
+
+                    Edit Employee
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================================================
+        Create Leave Request Modal
+    ========================================================= -->
+
+    <div class="employee-modal-overlay" id="employeeModalOverlay">
+
+        <div class="employee-modal">
+
+            <div class="modal-header">
+
+                <div>
+
+                    <h2>Create Leave Request</h2>
+
+                    <p class="modal-subtitle">
+                        Create a leave request on behalf of an employee.
+                    </p>
+
+                </div>
+
+                <button class="modal-close">
+
+                    <span class="material-symbols-rounded">
+                        close
+                    </span>
+
+                </button>
+
+            </div>
+
             
-                 <p>Senior Developer</p>
+                <!-- ==========================================================
+                Enterprise Leave Request Form
+                =========================================================== -->
+                <form class="employee-form">
 
-                    <span class="employee-id">EMP-1001</span>
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="material-symbols-rounded">badge</span>
+                            <div>
+                                <h3>Employee Information</h3>
+                                <p>Select the employee for whom the leave request is being created.</p>
+                            </div>
+                        </div>
 
-                    <div class="profile-badges">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Employee *</label>
+                                <select><option>Select Employee</option></select>
+                            </div>
 
-                        <span class="status-badge active">Active</span>
+                            <div class="form-group">
+                                <label>Employee ID</label>
+                                <input type="text" value="EMP-10021" readonly>
+                            </div>
 
-                        <span class="dept-badge">IT Department</span>
+                            <div class="form-group">
+                                <label>Department</label>
+                                <input type="text" value="Human Resources" readonly>
+                            </div>
 
-                     </div>
+                            <div class="form-group">
+                                <label>Designation</label>
+                                <input type="text" value="HR Executive" readonly>
+                            </div>
 
-                </div>
+                            <div class="form-group">
+                                <label>Reporting Manager</label>
+                                <input type="text" value="Anita Verma" readonly>
+                            </div>
 
-            </div>
-
-            <div class="drawer-section">
-
-                <h4>Personal Details</h4>
-
-                <div class="info-grid">
-
-                    <div>
-
-                        <label>Email</label>
-
-                        <p>rahul@hrmspro.com</p>
-
+                            <div class="form-group">
+                                <label>Leave Balance</label>
+                                <input type="text" value="Casual: 8 Days | Earned: 14 Days" readonly>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="material-symbols-rounded">event</span>
+                            <div>
+                                <h3>Leave Information</h3>
+                                <p>Specify leave type, category and duration.</p>
+                            </div>
+                        </div>
 
-                        <label>Phone</label>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Leave Type *</label>
+                                <select>
+                                    <option>Casual Leave</option>
+                                    <option>Sick Leave</option>
+                                    <option>Earned Leave</option>
+                                    <option>Maternity Leave</option>
+                                    <option>Paternity Leave</option>
+                                    <option>Comp Off</option>
+                                </select>
+                            </div>
 
-                        <p>+91 9876543210</p>
+                            <div class="form-group">
+                                <label>Leave Category</label>
+                                <select>
+                                <option>Paid Leave</option>
+                                <option>Unpaid Leave</option>
+                                <option>Compensatory</option>
+                                </select>
+                            </div>
 
+                            <div class="form-group">
+                                <label>From Date *</label>
+                                <input type="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label>To Date *</label>
+                                <input type="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Duration</label>
+                                <input type="text" value="Auto Calculated" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label><input type="checkbox"> Half Day</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="material-symbols-rounded">description</span>
+                            <div>
+                                <h3>Additional Details</h3>
+                                <p>Provide supporting information.</p>
+                            </div>
+                            </div>
 
-                        <label>Date of Birth</label>
+                            <div class="form-grid">
+                            <div class="form-group" class="form-group full-width">
+                                <label>Reason *</label>
+                                <textarea rows="4"></textarea>
+                            </div>
 
-                        <p>14 July 1996</p>
+                            <div class="form-group full-width">
 
+                                <label>Supporting Document</label>
+
+                                <div class="upload-box">
+
+                                    <span class="material-symbols-rounded upload-icon">
+
+                                        cloud_upload
+
+                                    </span>
+
+                                    <h4>Drop files here</h4>
+
+                                    <p>or click to browse from your computer</p>
+
+                                    <span class="upload-format">
+
+                                        PDF, JPG or PNG • Max 5 MB
+
+                                    </span>
+
+                                    <input type="file">
+
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="material-symbols-rounded">approval</span>
+                            <div>
+                                <h3>Approval Options</h3>
+                                <p>Configure approval workflow.</p>
+                            </div>
+                        </div>
 
-                        <label>Blood Group</label>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Approver</label>
+                                <select>
+                                <option>Reporting Manager</option>
+                                <option>HR Manager</option>
+                                </select>
+                            </div>
 
-                        <p>B+</p>
+                            <div class="form-group">
+                                <label>Priority</label>
+                                <select>
+                                <option>Normal</option>
+                                <option>High</option>
+                                <option>Emergency</option>
+                                </select>
+                            </div>
 
+                            <div class="form-group full-width">
+
+                                <div class="toggle-row">
+
+                                    <div>
+
+                                        <label class="toggle-title">
+
+                                            Notify Reporting Manager
+
+                                        </label>
+
+                                        <small>
+
+                                            Send an email notification after creating the leave request.
+
+                                        </small>
+
+                                    </div>
+
+                                    <label class="switch">
+
+                                        <input type="checkbox" checked>
+
+                                        <span class="slider"></span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group" class="form-group full-width">
+                                <label>Comments</label>
+                                <textarea rows="3"></textarea>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-
-            </div>
-
-            <div class="drawer-section">
-
-                <h4>Employment</h4>
-
-                <div class="info-grid">
-
-                    <div>
-
-                        <label>Department</label>
-
-                        <p>IT</p>
-
+                    <div class="modal-footer">
+                        <button type="button" class="secondary-btn">Cancel</button>
+                        <button type="submit" class="primary-btn">
+                            <span class="material-symbols-rounded">event_available</span>
+                            Create Leave Request
+                        </button>
                     </div>
 
-                    <div>
-
-                        <label>Designation</label>
-
-                        <p>Senior Developer</p>
-
-                    </div>
-
-                    <div>
-
-                        <label>Joining Date</label>
-
-                        <p>15 Jan 2024</p>
-
-                    </div>
-
-                    <div>
-
-                        <label>Manager</label>
-
-                        <p>Anita Verma</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <button class="btn-primary drawer-edit-btn">
-
-                Edit Employee
-
-            </button>
+                </form>
 
         </div>
 
     </div>
-
-</div>
-
-<!-- =========================================================
-     Create Leave Request Modal
-========================================================= -->
-
-<div class="employee-modal-overlay" id="employeeModalOverlay">
-
-    <div class="employee-modal">
-
-        <div class="modal-header">
-
-            <h2>Create Leave Request</h2>
-
-            <button class="modal-close">
-
-                <span class="material-symbols-rounded">close</span>
-
-            </button>
-
-        </div>
-
-        <form class="employee-form">
-
-            <div class="form-grid">
-
-                <div class="form-group">
-
-                    <label>First Name</label>
-
-                    <input type="text" placeholder="Rahul">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Last Name</label>
-
-                    <input type="text" placeholder="Sharma">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Email</label>
-
-                    <input type="email" placeholder="rahul@company.com">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Phone</label>
-
-                    <input type="text" placeholder="+91 9876543210">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Employee ID</label>
-
-                    <input type="text" placeholder="EMP-1048">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Department</label>
-
-                    <select>
-
-                        <option>IT</option>
-
-                        <option>HR</option>
-
-                        <option>Finance</option>
-
-                        <option>Administration</option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Designation</label>
-
-                    <input type="text" placeholder="Senior Developer">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Employment Type</label>
-
-                    <select>
-
-                        <option>Permanent</option>
-
-                        <option>Contract</option>
-
-                        <option>Intern</option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Date of Joining</label>
-
-                    <input type="date">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Reporting Manager</label>
-
-                    <input type="text" placeholder="Anita Verma">
-
-                </div>
-
-            </div>
-
-            <div class="modal-footer">
-
-                <button type="button" class="btn-secondary modal-cancel">
-
-                    Cancel
-
-                </button>
-
-                <button type="submit" class="btn-primary">
-
-                    Save Employee
-
-                </button>
-
-            </div>
-
-        </form>
-
-    </div>
-
-</div>
 
 </body>
 

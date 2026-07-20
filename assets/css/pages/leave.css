@@ -1,0 +1,315 @@
+/* =========================================================
+   HRMS PRO
+   Leave Management Module
+   ---------------------------------------------------------
+   This file contains ONLY Leave-specific styles.
+
+   Shared layout, tables, filters, buttons and common
+   components are inherited from employees.css.
+
+   Author: Anand Srivastava
+   ========================================================= */
+
+
+/* ==========================================================
+   Leave Modal Sections
+========================================================== */
+
+.form-section{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:24px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+.section-header{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom:18px;
+}
+
+.section-header .material-symbols-rounded{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:14px;
+
+    background:#EFF6FF;
+
+    color:var(--primary-color);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.section-header h3{
+    margin:0;
+    font-size:17px;
+    font-weight:600;
+    color:#0F172A;
+}
+
+.section-header p{
+    margin-top:4px;
+    color:#64748B;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.employee-form{
+    padding:30px;
+}
+
+.form-grid{
+    row-gap:20px;
+    column-gap:24px;
+}
+
+input[readonly]{
+
+    background:#F8FAFC;
+
+    color:#334155;
+
+    font-weight:500;
+
+    cursor:default;
+
+}
+
+textarea{
+    width:100%;
+    min-height:120px;
+    resize:vertical;
+
+    border:1px solid #E5E7EB;
+    border-radius:12px;
+
+    padding:14px;
+
+    font-family:inherit;
+}
+
+.modal-subtitle{
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    color:#64748B;
+
+    font-weight:400;
+
+}
+
+.employee-modal{
+
+    width:min(860px,92vw);
+
+    max-height:90vh;
+
+}
+
+.employee-form{
+
+    overflow-y:auto;
+
+    max-height:calc(90vh - 140px);
+
+}
+
+.form-section:hover{
+
+    border-color:#CBD5E1;
+
+    box-shadow:0 6px 20px rgba(15,23,42,.08);
+
+}
+
+.full-width{
+
+    grid-column:1/-1;
+
+}
+
+.upload-box{
+
+    position:relative;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:18px;
+
+    background:#F8FAFC;
+
+    padding:34px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.upload-box:hover{
+
+    border-color:var(--primary-color);
+
+    background:#EFF6FF;
+
+}
+
+.upload-box input{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    cursor:pointer;
+
+}
+
+.upload-icon{
+
+    font-size:44px;
+
+    color:var(--primary-color);
+
+    margin-bottom:12px;
+
+}
+
+.upload-box h4{
+
+    margin:0;
+
+    font-size:18px;
+
+}
+
+.upload-box p{
+
+    margin:8px 0;
+
+    color:#64748B;
+
+}
+
+.upload-format{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:13px;
+
+    color:#94A3B8;
+
+}
+
+.toggle-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.toggle-title{
+
+    font-weight:600;
+
+    display:block;
+
+    margin-bottom:4px;
+
+}
+
+.switch{
+
+    position:relative;
+
+    width:54px;
+
+    height:30px;
+
+}
+
+.switch input{
+
+    display:none;
+
+}
+
+.slider{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+    transition:.25s;
+
+}
+
+.slider::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:24px;
+
+    height:24px;
+
+    left:3px;
+
+    top:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.25s;
+
+}
+
+.switch input:checked + .slider{
+
+    background:var(--primary-color);
+
+}
+
+.switch input:checked + .slider::before{
+
+    transform:translateX(24px);
+
+}
