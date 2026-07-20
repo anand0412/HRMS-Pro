@@ -399,3 +399,67 @@ textarea{
     line-height:1.5;
 
 }
+
+/*==================================================
+  DRAWER TAB SYSTEM
+==================================================*/
+
+.drawer-tab-content{
+    display:none;
+    animation:fadeDrawer .25s ease;
+}
+
+.drawer-tab-content.active{
+    display:block;
+}
+
+@keyframes fadeDrawer{
+
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/*==================================================
+  TAB BUTTON ACTIVE STATE
+==================================================*/
+
+.drawer-tab{
+
+    position:relative;
+    transition:all .25s ease;
+
+}
+
+.drawer-tab.active{
+
+    color:var(--primary-color);
+    font-weight:600;
+
+}
+
+.drawer-tab.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:-1px;
+
+    height:3px;
+
+    background:var(--primary-color);
+
+    border-radius:10px;
+
+}

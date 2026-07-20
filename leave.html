@@ -1124,6 +1124,8 @@
 
     <script src="assets/js/employees.js"></script>
 
+    <script src="assets/js/leave.js"></script>
+
     <!-- ==========================================
         Employee Details Drawer
     ========================================== -->
@@ -1147,43 +1149,137 @@
             <div class="drawer-body">
                 <div class="drawer-tabs">
 
-                <button class="drawer-tab active">
+                    <button class="drawer-tab active" data-tab="profile">
+                        Profile
+                    </button>
 
-                    Profile
+                    <button class="drawer-tab" data-tab="employment">
+                        Employment
+                    </button>
 
-                </button>
+                    <button class="drawer-tab" data-tab="documents">
+                        Documents
+                    </button>
 
-                <button class="drawer-tab">
+                    <button class="drawer-tab" data-tab="leave">
+                        Leave
+                    </button>
 
-                    Employment
+                </div>
 
-                </button>
 
-                <button class="drawer-tab">
+                <!-- =========================
+                    PROFILE TAB
+                ========================= -->
 
-                Documents
+                <div class="drawer-tab-content active" id="profile-tab">
 
-                </button>
+                    <div class="employee-profile-top">
 
-                <button class="drawer-tab">
+                        <div class="profile-avatar initials-avatar">
 
-                    Leave
+                            <span>RS</span>
 
-                </button>
+                            <span class="online-dot"></span>
 
-            </div>
+                        </div>
 
-                <div class="employee-profile-top">
+                        <div class="profile-info">
 
-                    <div class="profile-avatar initials-avatar">
+                            <h3>Rahul Sharma</h3>
 
-                        <span>RS</span>
+                            <p>Senior Developer</p>
 
-                        <span class="online-dot"></span>
+                            <span class="employee-id">EMP-1001</span>
+
+                            <div class="profile-badges">
+
+                                <span class="status-badge active">Active</span>
+
+                                <span class="dept-badge">IT Department</span>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="profile-info">
+                    <div class="drawer-section">
+
+                        <h4>Personal Details</h4>
+
+                        <div class="info-grid">
+
+                            <div>
+                                <label>Email</label>
+                                <p>rahul@hrmspro.com</p>
+                            </div>
+
+                            <div>
+                                <label>Phone</label>
+                                <p>+91 9876543210</p>
+                            </div>
+
+                            <div>
+                                <label>Date of Birth</label>
+                                <p>14 July 1996</p>
+                            </div>
+
+                            <div>
+                                <label>Blood Group</label>
+                                <p>B+</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="btn-primary drawer-edit-btn">
+                        Edit Employee
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                    EMPLOYMENT TAB
+                ========================= -->
+
+                <div class="drawer-tab-content" id="employment-tab">
+
+                </div>
+
+
+                <!-- =========================
+                    DOCUMENTS TAB
+                ========================= -->
+
+                <div class="drawer-tab-content" id="documents-tab">
+
+                </div>
+
+
+                <!-- =========================
+                    LEAVE TAB
+                ========================= -->
+
+                <div class="drawer-tab-content" id="leave-tab">
+
+                </div>
+
+            </div>
+
+            <div class="employee-profile-top">
+
+                <div class="profile-avatar initials-avatar">
+
+                    <span>RS</span>
+
+                    <span class="online-dot"></span>
+
+                </div>
+
+                <div class="profile-info">
 
                     <h3>Rahul Sharma</h3>
                 
