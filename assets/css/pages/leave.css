@@ -357,3 +357,45 @@ textarea{
     transform:scale(1.01);
 
 }
+
+/* ==========================================
+   Approval Toggle Layout
+========================================== */
+
+.toggle-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.toggle-title{
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#1E293B;
+
+    margin-bottom:4px;
+
+}
+
+.toggle-description{
+
+    margin:0;
+
+    font-size:12px;
+
+    color:#64748B;
+
+    line-height:1.5;
+
+}
