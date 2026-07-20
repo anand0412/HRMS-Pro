@@ -320,11 +320,13 @@ textarea{
 
     align-items:center;
 
+    justify-content:flex-start;
+
+    height:46px;
+
     gap:10px;
 
-    height:44px;
-
-    font-weight:500;
+    padding-top:12px;
 
 }
 
