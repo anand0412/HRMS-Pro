@@ -588,3 +588,272 @@ textarea{
     font-weight:600;
 
 }
+
+/* ==========================================================
+   PROFILE TAB (Design 2)
+========================================================== */
+
+.profile-card{
+    background:#fff;
+    border:1px solid #E8ECF4;
+    border-radius:18px;
+    padding:24px;
+    margin-bottom:18px;
+    box-shadow:0 6px 20px rgba(15,23,42,.05);
+}
+
+.profile-header{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.profile-avatar{
+    width:82px;
+    height:82px;
+    min-width:82px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#6366F1,#8B5CF6);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    font-weight:700;
+    position:relative;
+}
+
+.online-dot{
+    position:absolute;
+    right:4px;
+    bottom:6px;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#22C55E;
+    border:3px solid #fff;
+}
+
+.profile-info{
+    flex:1;
+    min-width:0;
+}
+
+.profile-info h3{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+    color:#111827;
+    line-height:1.2;
+}
+
+.profile-info p{
+    margin:6px 0;
+    font-size:15px;
+    color:#6B7280;
+}
+
+.employee-id{
+    display:inline-block;
+    margin-top:4px;
+    font-size:13px;
+    font-weight:600;
+    color:#6366F1;
+}
+
+.profile-badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:18px;
+}
+
+.profile-badges span{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    border:1px solid #E5E7EB;
+    background:#F9FAFB;
+    color:#374151;
+}
+
+.status-badge.active{
+    background:#ECFDF3;
+    border-color:#BBF7D0;
+    color:#15803D;
+}
+
+.dept-badge{
+    background:#EEF2FF;
+    border-color:#C7D2FE;
+    color:#4F46E5;
+}
+
+.type-badge{
+    background:#FFF7ED;
+    border-color:#FED7AA;
+    color:#C2410C;
+}
+
+/* ==========================
+   QUICK ACTIONS
+========================== */
+
+.profile-actions{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-bottom:22px;
+}
+
+.profile-action{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:14px;
+    padding:14px 16px;
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.profile-action:hover{
+    transform:translateY(-2px);
+    border-color:#6366F1;
+    box-shadow:0 8px 20px rgba(99,102,241,.10);
+}
+
+.profile-action .material-symbols-rounded{
+    font-size:22px;
+    color:#6366F1;
+}
+
+.profile-action span:last-child{
+    font-size:14px;
+    font-weight:600;
+    color:#374151;
+}
+
+/* ==========================
+   PERSONAL DETAILS
+========================== */
+
+.drawer-section{
+    background:#fff;
+    border:1px solid #E8ECF4;
+    border-radius:18px;
+    padding:22px;
+    margin-bottom:18px;
+}
+
+.section-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+}
+
+.section-title .material-symbols-rounded{
+    font-size:22px;
+    color:#6366F1;
+}
+
+.section-title h4{
+    margin:0;
+    font-size:17px;
+    font-weight:700;
+    color:#111827;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.info-item{
+    padding-bottom:14px;
+    border-bottom:1px solid #F1F5F9;
+}
+
+.info-item label{
+    display:block;
+    margin-bottom:6px;
+    font-size:12px;
+    font-weight:600;
+    color:#9CA3AF;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+}
+
+.info-item p{
+    margin:0;
+    font-size:15px;
+    font-weight:600;
+    color:#111827;
+}
+
+/* ==========================
+   EDIT BUTTON
+========================== */
+
+.drawer-edit-btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    height:48px;
+    border:none;
+    border-radius:14px;
+    background:#6366F1;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.drawer-edit-btn:hover{
+    background:#4F46E5;
+    transform:translateY(-1px);
+}
+
+.drawer-edit-btn .material-symbols-rounded{
+    font-size:20px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .profile-header{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .profile-info{
+        width:100%;
+    }
+
+    .profile-badges{
+        justify-content:center;
+    }
+
+    .profile-actions{
+        grid-template-columns:1fr;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+}
