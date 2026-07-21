@@ -1413,11 +1413,456 @@ Employee Statistics
 
 </div>
 
-<!-- ===========================
-     Toast Container
-=========================== -->
+    <!-- ===========================
+        Toast Container
+    =========================== -->
 
-<div id="toastContainer"></div>
+    <div id="toastContainer"></div>
+
+    <!-- ==========================================
+        Employee Details Drawer
+    ========================================== -->
+
+    <div class="employee-drawer-overlay" id="employeeDrawerOverlay">
+
+        <div class="employee-drawer">
+
+            <div class="drawer-header">
+
+                <h2>Employee Profile</h2>
+
+                <button class="drawer-close">
+
+                    <span class="material-symbols-rounded">close</span>
+
+                </button>
+
+            </div>
+
+            <div class="drawer-body">
+                <div class="drawer-tabs">
+
+                    <button class="drawer-tab active" data-tab="profile">
+                        Profile
+                    </button>
+
+                    <button class="drawer-tab" data-tab="employment">
+                        Employment
+                    </button>
+
+                    <button class="drawer-tab" data-tab="documents">
+                        Documents
+                    </button>
+
+                    <button class="drawer-tab" data-tab="leave">
+                        Leave
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                    PROFILE TAB
+                ========================= -->
+
+                <div class="drawer-tab-content active" id="profile-tab">
+
+                    <!-- Employee Profile Card -->
+                    <div class="profile-card">
+
+                        <div class="profile-header">
+
+                            <div class="profile-avatar initials-avatar">
+
+                                <span>RS</span>
+
+                                <span class="online-dot"></span>
+
+                            </div>
+
+                            <div class="profile-info">
+
+                                <h3>Rahul Sharma</h3>
+
+                                <p>Senior Developer</p>
+
+                                <span class="employee-id">EMP-1001</span>
+
+                                <div class="profile-badges">
+
+                                    <span class="status-badge active">
+                                        Active
+                                    </span>
+
+                                    <span class="dept-badge">
+                                        IT Department
+                                    </span>
+
+                                    <span class="type-badge">
+                                        Full Time
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Quick Actions -->
+
+                    <div class="profile-actions">
+
+                        <button class="profile-action">
+
+                            <span class="material-symbols-rounded">mail</span>
+
+                            <span>Email</span>
+
+                        </button>
+
+                        <button class="profile-action">
+
+                            <span class="material-symbols-rounded">call</span>
+
+                            <span>Call</span>
+
+                        </button>
+
+                        <button class="profile-action">
+
+                            <span class="material-symbols-rounded">location_on</span>
+
+                            <span>Location</span>
+
+                        </button>
+
+                        <button class="profile-action">
+
+                            <span class="material-symbols-rounded">supervisor_account</span>
+
+                            <span>Manager</span>
+
+                        </button>
+
+                    </div>
+
+                    <!-- Personal Details -->
+
+                    <div class="drawer-section">
+
+                        <div class="section-title">
+
+                            <span class="material-symbols-rounded">
+                                badge
+                            </span>
+
+                            <h4>Personal Details</h4>
+
+                        </div>
+
+                        <div class="info-grid">
+
+                            <div class="info-item">
+
+                                <label>Email</label>
+
+                                <p>rahul@hrmspro.com</p>
+
+                            </div>
+
+                            <div class="info-item">
+
+                                <label>Phone</label>
+
+                                <p>+91 9876543210</p>
+
+                            </div>
+
+                            <div class="info-item">
+
+                                <label>Date of Birth</label>
+
+                                <p>14 July 1996</p>
+
+                            </div>
+
+                            <div class="info-item">
+
+                                <label>Blood Group</label>
+
+                                <p>B+</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="drawer-edit-btn">
+
+                        <span class="material-symbols-rounded">
+                            edit
+                        </span>
+
+                        Edit Employee
+
+                    </button>
+
+                </div>
+
+                <!-- =========================
+                    EMPLOYMENT TAB
+                ========================= -->
+
+                <div class="drawer-tab-content" id="employment-tab">
+
+                    <div class="employment-section">
+
+                        <h4>Employment Information</h4>
+
+                        <div class="employment-grid">
+
+                            <div class="employment-item">
+                                <label>Employee ID</label>
+                                <span>EMP-1001</span>
+                            </div>
+
+                            <div class="employment-item">
+                                <label>Department</label>
+                                <span>IT Department</span>
+                            </div>
+
+                            <div class="employment-item">
+                                <label>Designation</label>
+                                <span>Senior Developer</span>
+                            </div>
+
+                            <div class="employment-item">
+                                <label>Employment Type</label>
+                                <span>Full Time</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="employment-section">
+
+                        <h4>Reporting Information</h4>
+
+                        <div class="employment-grid">
+
+                            <div class="employment-item">
+                                <label>Reporting Manager</label>
+                                <span>Amit Verma</span>
+                            </div>
+
+                            <div class="employment-item">
+                                <label>Work Location</label>
+                                <span>Varanasi</span>
+                            </div>
+
+                            <div class="employment-item">
+                                <label>Shift</label>
+                                <span>General Shift</span>
+                            </div>
+
+                            <div class="employment-item">
+                                <label>Employment Status</label>
+                                <span class="employment-status active">Active</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="employment-section">
+
+                        <h4>Employment Timeline</h4>
+
+                        <div class="employment-grid">
+
+                            <div class="employment-item">
+                                <label>Joining Date</label>
+                                <span>14 Jul 2022</span>
+                            </div>
+
+                            <div class="employment-item">
+                                <label>Confirmation Date</label>
+                                <span>14 Jan 2023</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                    DOCUMENTS TAB
+                ========================= -->
+
+                <div class="drawer-tab-content" id="documents-tab">
+
+                    <div class="employment-section">
+
+                        <h4>Employee Documents</h4>
+
+                        <div class="document-list">
+
+                            <div class="document-item">
+
+                                <div>
+                                    <h5>Aadhaar Card</h5>
+                                    <p>Government Identity</p>
+                                </div>
+
+                                <span class="doc-status verified">Verified</span>
+
+                                <button class="doc-btn">View</button>
+
+                            </div>
+
+                            <div class="document-item">
+
+                                <div>
+                                    <h5>PAN Card</h5>
+                                    <p>Tax Document</p>
+                                </div>
+
+                                <span class="doc-status verified">Verified</span>
+
+                                <button class="doc-btn">View</button>
+
+                            </div>
+
+                            <div class="document-item">
+
+                                <div>
+                                    <h5>Resume</h5>
+                                    <p>Employee Resume</p>
+                                </div>
+
+                                <span class="doc-status uploaded">Uploaded</span>
+
+                                <button class="doc-btn">View</button>
+
+                            </div>
+
+                            <div class="document-item">
+
+                                <div>
+                                    <h5>Experience Certificate</h5>
+                                    <p>Previous Employer</p>
+                                </div>
+
+                                <span class="doc-status pending">Pending</span>
+
+                                <button class="doc-btn upload">Upload</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                    LEAVE TAB
+                ========================= -->
+
+                <div class="drawer-tab-content" id="leave-tab">
+
+                    <div class="employment-section">
+
+                        <h4>Leave Summary</h4>
+
+                        <div class="leave-card">
+
+                            <div class="leave-row">
+
+                                <div>
+
+                                    <strong>Annual Leave</strong>
+
+                                    <p>12 of 24 Days Used</p>
+
+                                </div>
+
+                                <span>12 Days Left</span>
+
+                            </div>
+
+                            <div class="leave-progress">
+
+                                <div style="width:50%"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="leave-card">
+
+                            <div class="leave-row">
+
+                                <div>
+
+                                    <strong>Sick Leave</strong>
+
+                                    <p>2 of 10 Days Used</p>
+
+                                </div>
+
+                                <span>8 Days Left</span>
+
+                            </div>
+
+                            <div class="leave-progress">
+
+                                <div style="width:20%"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="leave-card">
+
+                            <div class="leave-row">
+
+                                <div>
+
+                                    <strong>Casual Leave</strong>
+
+                                    <p>4 of 12 Days Used</p>
+
+                                </div>
+
+                                <span>8 Days Left</span>
+
+                            </div>
+
+                            <div class="leave-progress">
+
+                                <div style="width:33%"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 <!-- ===================================================== -->
 <!-- SCRIPTS -->
