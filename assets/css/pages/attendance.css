@@ -393,6 +393,7 @@
     border-bottom:none;
 
 }
+}
 
 .table-row:hover{
 
@@ -404,20 +405,16 @@
 
 .table-head{
 
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-
-    color:#64748B;
-
     background:#F8FAFC;
 
-    border-radius:14px;
+    border:1px solid #E2E8F0;
 
-    padding:16px 12px;
+    border-radius:16px;
 
-    margin-bottom:18px;
+    margin-bottom:14px;
+
+    padding:18px 16px;
+
 }
 
 .table-head div{
@@ -426,11 +423,11 @@
 
     font-weight:700;
 
-    color:#64748B;
-
     text-transform:uppercase;
 
     letter-spacing:.08em;
+
+    color:#64748B;
 
 }
 
@@ -471,6 +468,18 @@
     color:#94A3B8;
 
     font-size:13px;
+
+}
+
+.employee-designation{
+
+    display:block;
+
+    margin-top:4px;
+
+    font-size:12px;
+
+    color:#94A3B8;
 
 }
 
@@ -1421,5 +1430,65 @@
     font-size:20px;
 
     color:#64748B;
+
+}
+
+.shift-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.shift-badge.general{
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+}
+
+.shift-badge.morning{
+
+    background:#FFF7ED;
+
+    color:#EA580C;
+
+}
+
+.shift-badge.night{
+
+    background:#F3E8FF;
+
+    color:#7C3AED;
+
+}
+
+.hours-cell{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.hours-cell small{
+
+    color:#94A3B8;
+
+    font-size:12px;
 
 }
