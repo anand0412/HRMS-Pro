@@ -1167,3 +1167,11 @@
     }
 
 }
+
+.doc-status.missing{
+
+    background:#FEF2F2;
+
+    color:#DC2626;
+
+}
