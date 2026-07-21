@@ -452,9 +452,17 @@
 
 .table-row:not(.table-head){
 
-    font-size:15px;
+    transition:all .22s ease;
 
-    color:#0F172A;
+}
+
+.table-row:not(.table-head):hover{
+
+    background:#F8FAFC;
+
+    transform:translateX(4px);
+
+    box-shadow:0 6px 18px rgba(15,23,42,.05);
 
 }
 
@@ -515,6 +523,8 @@
     color:#FFFFFF;
 
     display:flex;
+
+    box-shadow:0 8px 20px rgba(79,70,229,.22);
 
     justify-content:center;
 
@@ -1613,5 +1623,31 @@
     font-weight:700;
 
     background:none;
+
+}
+
+.table-row:not(.table-head):nth-child(even){
+
+    background:#FCFCFD;
+
+}
+
+.table-row:not(.table-head):nth-child(odd){
+
+    background:#FFFFFF;
+
+}
+
+.employee-link{
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.employee-link:hover{
+
+    color:#4F46E5;
 
 }
