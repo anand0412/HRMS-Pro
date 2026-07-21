@@ -473,9 +473,7 @@ document.querySelectorAll(".action-view-employee").forEach(button => {
 
         });
 
-        document
-            .getElementById("employeeDrawerOverlay")
-            .classList.add("active");
+        document.getElementById("employeeDrawerOverlay").style.display = "flex";
 
     });
 
