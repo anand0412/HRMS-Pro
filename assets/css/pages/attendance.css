@@ -1651,3 +1651,111 @@
     color:#4F46E5;
 
 }
+
+/* ==========================================
+   TABLE FOOTER
+========================================== */
+
+.table-footer{
+
+    margin-top:24px;
+
+    padding-top:22px;
+
+    border-top:1px solid #EEF2F7;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.table-info{
+
+    font-size:14px;
+
+    color:#64748B;
+
+}
+
+.table-info strong{
+
+    color:#0F172A;
+
+}
+
+.pagination{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.page-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border:1px solid #E2E8F0;
+
+    background:#FFFFFF;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#475569;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.page-btn:hover{
+
+    border-color:#4F46E5;
+
+    color:#4F46E5;
+
+    background:#EEF2FF;
+
+}
+
+.page-btn.active{
+
+    background:#4F46E5;
+
+    border-color:#4F46E5;
+
+    color:#FFFFFF;
+
+}
+
+.page-btn .material-symbols-rounded{
+
+    font-size:20px;
+
+}
+
+.page-dots{
+
+    color:#94A3B8;
+
+    padding:0 6px;
+
+}
