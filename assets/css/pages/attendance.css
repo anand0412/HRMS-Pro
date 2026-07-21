@@ -377,6 +377,7 @@
 
 .table-row{
     display:grid;
+    padding:22px 12px;
     grid-template-columns:
         2.3fr   /* Employee */
         1fr     /* Date */
@@ -403,7 +404,25 @@
 
 .table-head{
 
-    font-size:13px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+
+    color:#64748B;
+
+    background:#F8FAFC;
+
+    border-radius:14px;
+
+    padding:16px 12px;
+
+    margin-bottom:18px;
+}
+
+.table-head div{
+
+    font-size:12px;
 
     font-weight:700;
 
@@ -411,13 +430,15 @@
 
     text-transform:uppercase;
 
-    letter-spacing:.04em;
+    letter-spacing:.08em;
 
-    background:#F8FAFC;
+}
 
-    border-radius:14px;
+.table-row:not(.table-head){
 
-    margin-bottom:10px;
+    font-size:15px;
+
+    color:#0F172A;
 
 }
 
@@ -437,13 +458,17 @@
 
     font-size:15px;
 
+    font-weight:600;
+
     color:#0F172A;
+
+    margin-bottom:4px;
 
 }
 
 .employee-cell small{
 
-    color:#64748B;
+    color:#94A3B8;
 
     font-size:13px;
 
