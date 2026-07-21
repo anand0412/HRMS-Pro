@@ -420,3 +420,39 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 });
+
+/* ==========================================
+   TABLE ACTION MENU
+========================================== */
+
+const actionButtons = document.querySelectorAll(".action-trigger");
+
+actionButtons.forEach(button => {
+
+    button.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        document.querySelectorAll(".action-menu").forEach(menu => {
+
+            if (menu !== this.nextElementSibling) {
+                menu.classList.remove("show");
+            }
+
+        });
+
+        this.nextElementSibling.classList.toggle("show");
+
+    });
+
+});
+
+document.addEventListener("click", () => {
+
+    document.querySelectorAll(".action-menu").forEach(menu => {
+
+        menu.classList.remove("show");
+
+    });
+
+});
