@@ -4,30 +4,62 @@
 ==================================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
-    initDrawerTabs();
+
+    initEmployeeDrawer();
+
 });
 
-function initDrawerTabs() {
+function initEmployeeDrawer() {
 
-    const tabs = document.querySelectorAll(".drawer-tab");
-    const panels = document.querySelectorAll(".drawer-tab-content");
+    const overlay = document.getElementById("employeeDrawerOverlay");
+    const drawer = document.querySelector(".employee-drawer");
+    const closeBtn = document.querySelector(".drawer-close");
 
-    if (!tabs.length) return;
+    if (!overlay) return;
+
+    // Close button
+    if (closeBtn) {
+
+        closeBtn.addEventListener("click", () => {
+
+            overlay.style.display = "none";
+
+        });
+
+    }
+
+    // Click outside drawer
+    overlay.addEventListener("click", (e) => {
+
+        if (e.target === overlay) {
+
+            overlay.style.display = "none";
+
+        }
+
+    });
+
+    // Tabs
+    const tabs = overlay.querySelectorAll(".drawer-tab");
+    const panels = overlay.querySelectorAll(".drawer-tab-content");
 
     tabs.forEach(tab => {
 
         tab.addEventListener("click", () => {
 
             tabs.forEach(t => t.classList.remove("active"));
-            panels.forEach(panel => panel.classList.remove("active"));
+            panels.forEach(p => p.classList.remove("active"));
 
             tab.classList.add("active");
 
-            const target = tab.dataset.tab;
-            const panel = document.getElementById(target + "-tab");
+            const panel = document.getElementById(
+                tab.dataset.tab + "-tab"
+            );
 
             if (panel) {
+
                 panel.classList.add("active");
+
             }
 
         });
