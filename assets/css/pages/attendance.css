@@ -376,39 +376,17 @@
 }
 
 .table-row{
-
     display:grid;
-
     grid-template-columns:
-
-        2.3fr
-
-        1fr
-
-        1fr
-
-        1fr
-
-        1fr
-
-        1fr
-
-        1fr
-
-        50px;
-
-    align-items:center;
-
-    gap:20px;
-
-    padding:18px 12px;
-
-    border-bottom:1px solid #EEF2F7;
-
-    transition:.25s;
-
-}
-
+        2.3fr   /* Employee */
+        1fr     /* Date */
+        1fr     /* Shift */
+        1fr     /* Check In */
+        1fr     /* Check Out */
+        1fr     /* Hours */
+        .9fr    /* Overtime */
+        1fr     /* Status */
+        50px;   /* Actions */
 .table-row:last-child{
 
     border-bottom:none;
