@@ -1,33 +1,33 @@
 /*==================================================
-    Drawer Tabs
+    HRMS PRO
+    Employee Drawer Component
 ==================================================*/
 
-function initDrawerTabs(){
+document.addEventListener("DOMContentLoaded", () => {
+    initDrawerTabs();
+});
 
-    const tabs=document.querySelectorAll(".drawer-tab");
+function initDrawerTabs() {
 
-    const panels=document.querySelectorAll(".drawer-tab-content");
+    const tabs = document.querySelectorAll(".drawer-tab");
+    const panels = document.querySelectorAll(".drawer-tab-content");
 
-    if(!tabs.length) return;
+    if (!tabs.length) return;
 
-    tabs.forEach(tab=>{
+    tabs.forEach(tab => {
 
-        tab.addEventListener("click",()=>{
+        tab.addEventListener("click", () => {
 
-            tabs.forEach(t=>t.classList.remove("active"));
-
-            panels.forEach(panel=>panel.classList.remove("active"));
+            tabs.forEach(t => t.classList.remove("active"));
+            panels.forEach(panel => panel.classList.remove("active"));
 
             tab.classList.add("active");
 
-            const target=tab.dataset.tab;
+            const target = tab.dataset.tab;
+            const panel = document.getElementById(target + "-tab");
 
-            const panel=document.getElementById(target+"-tab");
-
-            if(panel){
-
+            if (panel) {
                 panel.classList.add("active");
-
             }
 
         });
