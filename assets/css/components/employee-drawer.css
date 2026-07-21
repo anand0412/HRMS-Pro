@@ -952,3 +952,218 @@
     border-radius:20px;
 
 }
+
+/*==================================================
+    ATTENDANCE DRAWER - LEAVE DETAILS
+==================================================*/
+
+.leave-status-card{
+
+    display:flex;
+    gap:18px;
+    align-items:center;
+
+    padding:22px;
+
+    margin-bottom:28px;
+
+    border-radius:18px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E5E7EB;
+
+}
+
+.leave-status-card.available{
+
+    background:#ECFDF5;
+
+    border-color:#BBF7D0;
+
+}
+
+.leave-status-card.onleave{
+
+    background:#FFF7ED;
+
+    border-color:#FED7AA;
+
+}
+
+.leave-status-icon{
+
+    width:58px;
+    height:58px;
+
+    border-radius:14px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:white;
+
+}
+
+.leave-status-card.available .leave-status-icon{
+
+    color:#16A34A;
+
+}
+
+.leave-status-card.onleave .leave-status-icon{
+
+    color:#EA580C;
+
+}
+
+.leave-status-icon .material-symbols-rounded{
+
+    font-size:30px;
+
+}
+
+.leave-status-content{
+
+    flex:1;
+
+}
+
+.leave-status-content small{
+
+    display:block;
+
+    color:#64748B;
+
+    margin-bottom:4px;
+
+}
+
+.leave-status-content h3{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.leave-status-content p{
+
+    margin-top:6px;
+
+    color:#64748B;
+
+}
+
+/* Leave Balance */
+
+.leave-balance-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+}
+
+.leave-balance-card{
+
+    text-align:center;
+
+    background:white;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    padding:22px 14px;
+
+}
+
+.leave-balance-card h2{
+
+    margin:0;
+
+    font-size:32px;
+
+    color:#4F46E5;
+
+}
+
+.leave-balance-card span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-weight:600;
+
+}
+
+.leave-balance-card small{
+
+    color:#94A3B8;
+
+}
+
+/* History */
+
+.leave-history{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.leave-history-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.leave-history-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.leave-history-item strong{
+
+    display:block;
+
+    margin-bottom:6px;
+
+}
+
+.leave-history-item p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+@media(max-width:768px){
+
+    .leave-balance-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
