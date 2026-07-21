@@ -456,3 +456,27 @@ document.addEventListener("click", () => {
     });
 
 });
+
+/* ==========================================
+   VIEW EMPLOYEE
+========================================== */
+
+document.querySelectorAll(".action-view-employee").forEach(button => {
+
+    button.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        document.querySelectorAll(".action-menu").forEach(menu => {
+
+            menu.classList.remove("show");
+
+        });
+
+        document
+            .getElementById("employeeDrawerOverlay")
+            .classList.add("active");
+
+    });
+
+});
