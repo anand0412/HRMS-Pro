@@ -704,3 +704,55 @@ document.querySelectorAll(".edit-department").forEach(button => {
     });
 
 });
+
+const deleteDepartmentDialog =
+    document.getElementById("deleteDepartmentDialog");
+
+const cancelDeleteDepartment =
+    document.getElementById("cancelDeleteDepartment");
+
+const confirmDeleteDepartment =
+    document.getElementById("confirmDeleteDepartment");
+
+    document.querySelectorAll(".delete-department").forEach(button=>{
+
+    button.addEventListener("click",function(){
+
+        document.querySelectorAll(".action-menu").forEach(menu=>{
+
+            menu.classList.remove("show");
+
+        });
+
+        deleteDepartmentDialog.classList.add("show");
+
+    });
+
+});
+
+cancelDeleteDepartment.addEventListener("click",function(){
+
+    deleteDepartmentDialog.classList.remove("show");
+
+});
+
+deleteDepartmentDialog.addEventListener("click",function(e){
+
+    if(e.target===deleteDepartmentDialog){
+
+        deleteDepartmentDialog.classList.remove("show");
+
+    }
+
+});
+
+confirmDeleteDepartment.addEventListener("click",function(){
+
+    deleteDepartmentDialog.classList.remove("show");
+
+    showToast(
+        "success",
+        "Department deleted successfully."
+    );
+
+});
