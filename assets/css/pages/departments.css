@@ -2168,7 +2168,7 @@
 
 }
 
-.profile-card{
+.dept-profile-card{
 
     border:1px solid #E2E8F0;
 
@@ -2182,7 +2182,7 @@
 
 }
 
-.profile-avatar{
+.dept-profile-avatar{
 
     width:90px;
 
@@ -2210,31 +2210,31 @@
 
 }
 
+.profile-info h3{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.profile-info p{
+
+    margin:8px 0;
+
+    color:#64748B;
+
+    font-size:22px;
+
+}
+
 .profile-card h2{
 
     margin:0;
 
     font-size:24px;
-
-}
-
-.profile-designation{
-
-    margin:8px 0 18px;
-
-    color:#64748B;
-
-}
-
-.profile-actions{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-    margin-top:24px;
 
 }
 
@@ -2840,9 +2840,43 @@
 
 }
 
-.dept-profile-actions button{
+.dept-profile-action{
 
     width:100%;
+
+    height:48px;
+
+    border:1px solid #E2E8F0;
+
+    background:#FFFFFF;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:12px;
+
+    padding:0 16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.dept-profile-action:hover{
+
+    border-color:#4F46E5;
+
+    background:#EEF2FF;
 
 }
 
