@@ -335,7 +335,7 @@
 
     margin-bottom:32px;
 
-    overflow:hidden;
+    overflow:visible;
 
 }
 
@@ -1476,7 +1476,7 @@
 
     right:0;
 
-    top:42px;
+    top:calc(100% + 8px);
 
     min-width:260px;
 
@@ -3249,7 +3249,8 @@ DELETE DIALOG
 
 }
 
-.table-row:hover .action-trigger{
+.table-row:hover .action-trigger,
+.action-trigger.active{
 
     opacity:1;
 

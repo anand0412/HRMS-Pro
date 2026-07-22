@@ -433,15 +433,25 @@ actionButtons.forEach(button => {
 
         e.stopPropagation();
 
+        // Close all menus
         document.querySelectorAll(".action-menu").forEach(menu => {
 
-            if (menu !== this.nextElementSibling) {
-                menu.classList.remove("show");
-            }
+            menu.classList.remove("show");
 
         });
 
-        this.nextElementSibling.classList.toggle("show");
+        // Remove active state from all buttons
+        document.querySelectorAll(".action-trigger").forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+        // Open current menu
+        this.nextElementSibling.classList.add("show");
+
+        // Keep current three-dot visible
+        this.classList.add("active");
 
     });
 
@@ -452,6 +462,12 @@ document.addEventListener("click", () => {
     document.querySelectorAll(".action-menu").forEach(menu => {
 
         menu.classList.remove("show");
+
+    });
+
+    document.querySelectorAll(".action-trigger").forEach(btn => {
+
+        btn.classList.remove("active");
 
     });
 
