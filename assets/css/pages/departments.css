@@ -383,16 +383,19 @@
 
 .table-row{
     display:grid;
+
     grid-template-columns:
-        420px   /* Department */
-        260px   /* Department Head */
-        120px   /* Employees */
-        180px   /* Branch */
-        140px   /* Status */
-        150px   /* Created */
-        80px;   /* Actions */
+        2.8fr
+        1.8fr
+        0.9fr
+        1.2fr
+        1fr
+        1fr
+        0.5fr;
 
     align-items:center;
+    gap:20px;
+
 .table-row:last-child{
 
     border-bottom:none;
@@ -1757,4 +1760,12 @@
 
     padding:0 6px;
 
+}
+
+.department-cell,
+.department-head-cell{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
