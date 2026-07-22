@@ -1458,6 +1458,10 @@
 
     transition:.2s;
 
+    opacity: 0;
+
+    visibility: hidden;
+
 }
 
 .action-trigger:hover{
@@ -3242,5 +3246,13 @@ DELETE DIALOG
 .action-item.archive-department{
 
     color:#64748b;
+
+}
+
+.table-row:hover .action-trigger{
+
+    opacity:1;
+
+    visibility:visible;
 
 }
