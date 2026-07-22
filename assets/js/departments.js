@@ -481,6 +481,10 @@ document.querySelectorAll(".action-view-employee").forEach(button => {
 
 const entityDialog = document.getElementById("entityDialog");
 
+const tabs = document.querySelectorAll(".entity-tab");
+
+const panels = document.querySelectorAll(".tab-panel");
+
 document.querySelectorAll(".view-department").forEach(btn=>{
 
     btn.addEventListener("click",()=>{
@@ -526,10 +530,6 @@ entityDialog.addEventListener("click",(e)=>{
     }
 
 });
-
-const tabs = document.querySelectorAll(".entity-tab");
-
-const panels = document.querySelectorAll(".tab-panel");
 
 tabs.forEach(tab=>{
 
