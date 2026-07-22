@@ -378,6 +378,8 @@
 .attendance-table{
 
     width:100%;
+    overflow-x:auto;
+    overflow-y:visible;
 
 }
 
@@ -385,9 +387,10 @@
     display:grid;
     grid-template-columns: 2.8fr 1.8fr .9fr 1.2fr 1fr 1fr .5fr;
     align-items:center;
-
+    position:relative;
     padding:26px 0;
     border-bottom:1px solid #EEF2F7;
+    overflow:visible;
 }
 
 .table-row:last-child{
@@ -1485,7 +1488,7 @@
 
     display:none;
 
-    z-index:100;
+    z-index:9999;
 
 }
 
