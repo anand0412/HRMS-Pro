@@ -1471,7 +1471,7 @@
 
     top:42px;
 
-    width:240px;
+    min-width:260px;
 
     background:#fff;
 
@@ -3221,5 +3221,23 @@ DELETE DIALOG
 .danger-btn:hover{
 
     background:#b91c1c;
+
+}
+
+.action-item.delete-department{
+
+    color:#dc2626;
+
+}
+
+.action-item.delete-department:hover{
+
+    background:#fef2f2;
+
+}
+
+.action-item.archive-department{
+
+    color:#64748b;
 
 }
