@@ -383,17 +383,16 @@
 
 .table-row{
     display:grid;
-    padding:22px 12px;
     grid-template-columns:
-        2.3fr   /* Employee */
-        1fr     /* Date */
-        1fr     /* Shift */
-        1fr     /* Check In */
-        1fr     /* Check Out */
-        1fr     /* Hours */
-        .9fr    /* Overtime */
-        1fr     /* Status */
-        50px;   /* Actions */
+        420px   /* Department */
+        260px   /* Department Head */
+        120px   /* Employees */
+        180px   /* Branch */
+        140px   /* Status */
+        150px   /* Created */
+        80px;   /* Actions */
+
+    align-items:center;
 .table-row:last-child{
 
     border-bottom:none;
