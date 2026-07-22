@@ -562,3 +562,110 @@ document.addEventListener("keydown",(e)=>{
     }
 
 });
+
+/*====================================================
+  ENTITY FORM MODAL
+====================================================*/
+
+const entityFormModal = document.getElementById("entityFormModal");
+
+const entityFormTitle = document.getElementById("entityFormTitle");
+
+const entityFormSubtitle = document.getElementById("entityFormSubtitle");
+
+const saveDepartment = document.getElementById("saveDepartment");
+
+const closeEntityForm = document.getElementById("closeEntityForm");
+
+const cancelEntityForm = document.getElementById("cancelEntityForm");
+
+const departmentForm = document.getElementById("departmentForm");
+
+function openDepartmentForm(mode = "create") {
+
+    entityFormModal.classList.add("show");
+
+    if (mode === "create") {
+
+        entityFormTitle.textContent =
+            "Add Department";
+
+        entityFormSubtitle.textContent =
+            "Create a new department for your organization.";
+
+        saveDepartment.textContent =
+            "Create Department";
+
+        departmentForm.reset();
+
+    }
+
+    else {
+
+        entityFormTitle.textContent =
+            "Edit Department";
+
+        entityFormSubtitle.textContent =
+            "Update department information.";
+
+        saveDepartment.textContent =
+            "Update Department";
+
+        loadDummyDepartment();
+
+    }
+
+}
+
+function loadDummyDepartment() {
+
+    document.getElementById("departmentName").value =
+        "Information Technology";
+
+    document.getElementById("departmentCode").value =
+        "IT-001";
+
+}
+
+function closeDepartmentForm() {
+
+    entityFormModal.classList.remove("show");
+
+}
+
+closeEntityForm.addEventListener("click", closeDepartmentForm);
+
+cancelEntityForm.addEventListener("click", closeDepartmentForm);
+
+entityFormModal.addEventListener("click", function (e) {
+
+    if (e.target === entityFormModal) {
+
+        closeDepartmentForm();
+
+    }
+
+});
+
+document.addEventListener("keydown", function (e) {
+
+    if (e.key === "Escape") {
+
+        closeDepartmentForm();
+
+    }
+
+});
+
+const addDepartmentBtn =
+    document.getElementById("addDepartmentBtn");
+
+if (addDepartmentBtn) {
+
+    addDepartmentBtn.addEventListener("click", function () {
+
+        openDepartmentForm("create");
+
+    });
+
+}

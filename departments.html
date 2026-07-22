@@ -644,7 +644,7 @@ Employee Statistics
 
                     <button
                         class="primary-btn"
-                        id="markAttendanceBtn">
+                        id="addDepartmentBtn">
 
                         <span class="material-symbols-rounded">
                             apartment
@@ -3482,6 +3482,258 @@ Employee Statistics
                     </div>
 
                 </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+        DEPARTMENT FORM MODAL
+    ====================================================== -->
+
+    <div class="entity-form-overlay" id="entityFormModal">
+
+        <div class="entity-form-modal">
+
+            <!-- Header -->
+
+            <div class="entity-form-header">
+
+                <div class="entity-form-title">
+
+                    <div class="entity-form-icon">
+
+                        <span class="material-symbols-rounded">
+                            apartment
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h2 id="entityFormTitle">
+                            Add Department
+                        </h2>
+
+                        <p id="entityFormSubtitle">
+                            Create a new department for your organization.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="dialog-close"
+                    id="closeEntityForm">
+
+                    <span class="material-symbols-rounded">
+                        close
+                    </span>
+
+                </button>
+
+            </div>
+
+            <!-- Body -->
+
+            <div class="entity-form-body">
+
+                <form id="departmentForm">
+
+                    <div class="entity-form-grid">
+
+                        <!-- Department Name -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Department Name <span>*</span>
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="departmentName"
+                                placeholder="Enter department name">
+
+                        </div>
+
+                        <!-- Department Code -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Department Code <span>*</span>
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="departmentCode"
+                                placeholder="IT-001">
+
+                        </div>
+
+                        <!-- Parent -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Parent Department
+
+                            </label>
+
+                            <select>
+
+                                <option>Select</option>
+
+                                <option>Technology</option>
+
+                                <option>Administration</option>
+
+                                <option>Finance</option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- Branch -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Branch
+
+                            </label>
+
+                            <select>
+
+                                <option>Head Office</option>
+
+                                <option>Branch 1</option>
+
+                                <option>Branch 2</option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- Department Head -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Department Head
+
+                            </label>
+
+                            <select>
+
+                                <option>Select Employee</option>
+
+                                <option>Rahul Sharma</option>
+
+                                <option>Amit Kumar</option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- Status -->
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Status
+
+                            </label>
+
+                            <select>
+
+                                <option>Active</option>
+
+                                <option>Inactive</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Description -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Description
+
+                        </label>
+
+                        <textarea
+                            rows="5"
+                            placeholder="Write department description..."></textarea>
+
+                    </div>
+
+                    <!-- Info Card -->
+
+                    <div class="entity-info-card">
+
+                        <span class="material-symbols-rounded">
+
+                            info
+
+                        </span>
+
+                        <div>
+
+                            <strong>Information</strong>
+
+                            <p>
+
+                                Department codes should be unique.
+                                Employees can be assigned after creating
+                                the department.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- Footer -->
+
+            <div class="entity-form-footer">
+
+                <button
+                    class="secondary-btn"
+                    id="cancelEntityForm">
+
+                    Cancel
+
+                </button>
+
+                <button
+                    class="primary-btn"
+                    id="saveDepartment">
+
+                    Create Department
+
+                </button>
 
             </div>
 
