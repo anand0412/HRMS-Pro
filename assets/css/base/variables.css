@@ -70,17 +70,20 @@
 
 
 
-    /* ===============================
-       Layout
-    =============================== */
+/* ===============================
+   Layout
+=============================== */
 
-    --sidebar-width:290px;
+--sidebar-width:300px;
+--sidebar-width-collapsed:82px;
+--sidebar-collapse:var(--sidebar-width-collapsed);
+--navbar-height:78px;
 
-    --sidebar-collapse:92px;
+--content-padding:30px;
 
-    --navbar-height:78px;
-
-    --content-padding:30px;
+--page-max-width:100%;
+--page-gutter:30px;
+--section-gap:30px;
 
 
 
@@ -298,3 +301,4 @@ textarea{
     outline:none;
 
 }
+
