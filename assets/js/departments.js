@@ -683,3 +683,24 @@ if (entityEditBtn) {
     });
 
 }
+
+document.querySelectorAll(".edit-department").forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        // Close every open action menu
+        document.querySelectorAll(".action-menu").forEach(menu => {
+
+            menu.classList.remove("show");
+
+        });
+
+        // If Details Dialog is open, close it
+        entityDialog.classList.remove("show");
+
+        // Open Edit Form
+        openDepartmentForm("edit");
+
+    });
+
+});
