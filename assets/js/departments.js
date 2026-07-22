@@ -669,3 +669,17 @@ if (addDepartmentBtn) {
     });
 
 }
+
+const entityEditBtn = document.getElementById("entityEditBtn");
+
+if (entityEditBtn) {
+
+    entityEditBtn.addEventListener("click", function () {
+
+        entityDialog.classList.remove("show");
+
+        openDepartmentForm("edit");
+
+    });
+
+}
