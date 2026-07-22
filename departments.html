@@ -2701,23 +2701,23 @@ Employee Statistics
 
             <div class="entity-tabs">
 
-                <button class="entity-tab active">
+                <button class="entity-tab active" data-tab="overviewTab">
                     Overview
                 </button>
 
-                <button class="entity-tab">
+                <button class="entity-tab" data-tab="departmentHeadTab">
                     Department Head
                 </button>
 
-                <button class="entity-tab">
+                <button class="entity-tab" data-tab="teamsTab">
                     Teams
                 </button>
 
-                <button class="entity-tab">
+                <button class="entity-tab" data-tab="employeesTab">
                     Employees
                 </button>
 
-                <button class="entity-tab">
+                <button class="entity-tab" data-tab="activityTab">
                     Activity
                 </button>
 
@@ -2727,102 +2727,106 @@ Employee Statistics
 
             <div class="entity-content">
 
-                <div class="overview-grid">
+                <div class="tab-panel active" id="overviewTab">
 
-                    <!-- LEFT COLUMN -->
+                    <div class="overview-grid">
 
-                    <div class="overview-card">
+                        <!-- LEFT COLUMN -->
 
-                        <h3>Department Information</h3>
+                        <div class="overview-card">
 
-                        <div class="info-grid">
+                            <h3>Department Information</h3>
 
-                            <div class="info-item">
-                                <label>Department Name</label>
-                                <span>Information Technology</span>
-                            </div>
+                            <div class="info-grid">
 
-                            <div class="info-item">
-                                <label>Department Code</label>
-                                <span>IT-001</span>
-                            </div>
+                                <div class="info-item">
+                                    <label>Department Name</label>
+                                    <span>Information Technology</span>
+                                </div>
 
-                            <div class="info-item">
-                                <label>Branch</label>
-                                <span>Head Office</span>
-                            </div>
+                                <div class="info-item">
+                                    <label>Department Code</label>
+                                    <span>IT-001</span>
+                                </div>
 
-                            <div class="info-item">
-                                <label>Parent Department</label>
-                                <span>Technology Division</span>
-                            </div>
+                                <div class="info-item">
+                                    <label>Branch</label>
+                                    <span>Head Office</span>
+                                </div>
 
-                            <div class="info-item">
-                                <label>Status</label>
+                                <div class="info-item">
+                                    <label>Parent Department</label>
+                                    <span>Technology Division</span>
+                                </div>
 
-                                <span class="status-badge active">
+                                <div class="info-item">
+                                    <label>Status</label>
 
-                                    <span class="status-indicator"></span>
+                                    <span class="status-badge active">
 
-                                    Active
+                                        <span class="status-indicator"></span>
 
-                                </span>
+                                        Active
 
-                            </div>
+                                    </span>
 
-                            <div class="info-item">
-                                <label>Established</label>
-                                <span>12 March 2021</span>
-                            </div>
+                                </div>
 
-                        </div>
-
-                    </div>
-
-                    <!-- RIGHT COLUMN -->
-
-                    <div class="overview-card">
-
-                        <h3>Department Statistics</h3>
-
-                        <div class="stats-grid">
-
-                            <div class="stat-box">
-
-                                <h2>148</h2>
-
-                                <p>Total Employees</p>
-
-                            </div>
-
-                            <div class="stat-box">
-
-                                <h2>5</h2>
-
-                                <p>Teams</p>
-
-                            </div>
-
-                            <div class="stat-box">
-
-                                <h2>12</h2>
-
-                                <p>Open Positions</p>
-
-                            </div>
-
-                            <div class="stat-box">
-
-                                <h2>98%</h2>
-
-                                <p>Attendance</p>
+                                <div class="info-item">
+                                    <label>Established</label>
+                                    <span>12 March 2021</span>
+                                </div>
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <!-- RIGHT COLUMN -->
 
+                        <div class="overview-card">
+
+                            <h3>Department Statistics</h3>
+
+                            <div class="stats-grid">
+
+                                <div class="stat-box">
+
+                                    <h2>148</h2>
+
+                                    <p>Total Employees</p>
+
+                                </div>
+
+                                <div class="stat-box">
+
+                                    <h2>5</h2>
+
+                                    <p>Teams</p>
+
+                                </div>
+
+                                <div class="stat-box">
+
+                                    <h2>12</h2>
+
+                                    <p>Open Positions</p>
+
+                                </div>
+
+                                <div class="stat-box">
+
+                                    <h2>98%</h2>
+
+                                    <p>Attendance</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                
                 </div>
 
                 <!-- Description -->

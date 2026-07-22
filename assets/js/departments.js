@@ -485,7 +485,25 @@ document.querySelectorAll(".view-department").forEach(btn=>{
 
     btn.addEventListener("click",()=>{
 
+        // Show dialog
+
         entityDialog.classList.add("show");
+
+
+
+        // Reset tabs
+
+        tabs.forEach(t=>t.classList.remove("active"));
+
+        panels.forEach(p=>p.classList.remove("active"));
+
+
+
+        tabs[0].classList.add("active");
+
+        document
+            .getElementById("overviewTab")
+            .classList.add("active");
 
     });
 
@@ -502,6 +520,42 @@ document
 entityDialog.addEventListener("click",(e)=>{
 
     if(e.target===entityDialog){
+
+        entityDialog.classList.remove("show");
+
+    }
+
+});
+
+const tabs = document.querySelectorAll(".entity-tab");
+
+const panels = document.querySelectorAll(".tab-panel");
+
+tabs.forEach(tab=>{
+
+    tab.addEventListener("click",()=>{
+
+        tabs.forEach(t=>t.classList.remove("active"));
+
+        panels.forEach(panel=>panel.classList.remove("active"));
+
+        tab.classList.add("active");
+
+        document
+            .getElementById(tab.dataset.tab)
+            .classList.add("active");
+
+        document
+            .querySelector(".entity-content")
+            .scrollTop = 0;
+
+    });
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape"){
 
         entityDialog.classList.remove("show");
 
