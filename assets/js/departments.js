@@ -478,3 +478,33 @@ document.querySelectorAll(".action-view-employee").forEach(button => {
     });
 
 });
+
+const entityDialog = document.getElementById("entityDialog");
+
+document.querySelectorAll(".view-department").forEach(btn=>{
+
+    btn.addEventListener("click",()=>{
+
+        entityDialog.classList.add("show");
+
+    });
+
+});
+
+document
+.getElementById("closeEntityDialog")
+.addEventListener("click",()=>{
+
+    entityDialog.classList.remove("show");
+
+});
+
+entityDialog.addEventListener("click",(e)=>{
+
+    if(e.target===entityDialog){
+
+        entityDialog.classList.remove("show");
+
+    }
+
+});
