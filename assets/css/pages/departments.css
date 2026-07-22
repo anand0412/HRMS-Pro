@@ -2008,6 +2008,22 @@
 
 }
 
+.entity-dialog-header .status-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    width:auto;
+
+    min-width:unset;
+
+}
+
 /* ==========================================
    Overview Tab
 ========================================== */
@@ -2697,5 +2713,67 @@
         transform:translateY(0);
 
     }
+
+}
+
+.entity-edit-btn{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    height:42px;
+
+    padding:0 18px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:12px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.entity-edit-btn:hover{
+
+    border-color:#4F46E5;
+
+    color:#4F46E5;
+
+    background:#F5F3FF;
+
+}
+
+.dept-profile-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.dept-profile-actions button{
+
+    width:100%;
+
+}
+
+.overview-card h3{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:28px;
 
 }
