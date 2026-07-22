@@ -2758,11 +2758,21 @@
 
     gap:12px;
 
+    margin-top:24px;
+
 }
 
 .dept-profile-actions button{
 
     width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
 
 }
 
