@@ -2,6 +2,22 @@
     EMPLOYEE DETAILS DRAWER
 =========================================================*/
 
+function openEmployeeModal(){
+
+    openEmployeeModal();
+
+    document.body.style.overflow = "hidden";
+
+}
+
+function closeEmployeeModal(){
+
+    closeEmployeeModal();
+
+    document.body.style.overflow = "";
+
+}
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const drawerOverlay = document.getElementById("employeeDrawerOverlay");
@@ -48,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if(e.key === "Escape"){
 
-            drawerOverlay.style.display = "none";
+            closeEmployeeModal();
 
         }
 
@@ -76,7 +92,7 @@ if(addEmployeeBtn){
 
     addEmployeeBtn.addEventListener("click", function(){
 
-        employeeModal.style.display = "flex";
+       openEmployeeModal();
 
     });
 
@@ -88,7 +104,7 @@ if(modalCloseBtn){
 
     modalCloseBtn.addEventListener("click", function(){
 
-        employeeModal.style.display = "none";
+        closeEmployeeModal();
 
     });
 
@@ -100,7 +116,7 @@ if(modalCancelBtn){
 
     modalCancelBtn.addEventListener("click", function(){
 
-        employeeModal.style.display = "none";
+        closeEmployeeModal();
 
     });
 
@@ -114,7 +130,7 @@ if(employeeModal){
 
         if(e.target === employeeModal){
 
-            employeeModal.style.display = "none";
+            closeEmployeeModal();
 
         }
 
@@ -128,10 +144,29 @@ document.addEventListener("keydown", function(e){
 
     if(e.key === "Escape" && employeeModal){
 
-        employeeModal.style.display = "none";
+        closeEmployeeModal();
 
     }
 
 });
+
+/* ==========================================
+   Open Employee Form from Dashboard
+========================================== */
+
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("action") === "add") {
+
+    openEmployeeModal();
+
+    // Remove the query string so refresh doesn't reopen it
+    history.replaceState(
+        {},
+        "",
+        window.location.pathname
+    );
+
+}
 
 });
