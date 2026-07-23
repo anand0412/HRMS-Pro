@@ -52,7 +52,14 @@
     width:var(--sidebar-width);
     height:100vh;
 
-    background:#081225;
+    background:
+        linear-gradient(
+        180deg,
+        #081221 0%,
+        #0B1730 30%,
+        #101C38 70%,
+        #081221 100%
+        );
 
     color:#fff;
 
@@ -68,6 +75,30 @@
     z-index:999;
 
     border-right:1px solid rgba(255,255,255,.05);
+
+    .sidebar::before{
+
+        content:"";
+
+        position:absolute;
+
+        inset:0;
+
+        pointer-events:none;
+
+        background:
+            radial-gradient(
+                circle at top left,
+                rgba(79,70,229,.22),
+                transparent 35%
+            ),
+            radial-gradient(
+                circle at bottom,
+                rgba(37,99,235,.10),
+                transparent 45%
+            );
+
+    }
 
 }
 
@@ -127,7 +158,11 @@
 
     color:#fff;
 
-    box-shadow:0 15px 35px rgba(79,70,229,.35);
+    box-shadow:
+
+        0 15px 35px rgba(79,70,229,.45),
+
+        0 0 40px rgba(79,70,229,.25);
 
 }
 
@@ -270,16 +305,17 @@
 
 .menu-item.active{
 
-    background:linear-gradient(
-        135deg,
-        var(--primary-color),
-        #4F46E5
-    );
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79,70,229,.95),
+            rgba(59,130,246,.95)
+        );
 
-    color:#fff;
+    border:1px solid rgba(255,255,255,.10);
 
     box-shadow:
-        0 12px 30px rgba(37,99,235,.28);
+        0 14px 35px rgba(37,99,235,.28);
 
 }
 
@@ -313,44 +349,38 @@
 }
 
 .dashboard-icon{
-
-    background:#2563EB;
-
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
 }
 
 .people-icon{
-
-    background:#0EA5E9;
-
+    background:linear-gradient(135deg,#0EA5E9,#38BDF8);
 }
 
 .payroll-icon{
-
-    background:#16A34A;
-
+    background:linear-gradient(135deg,#16A34A,#22C55E);
 }
 
 .organization-icon{
 
-    background:#F59E0B;
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
 
 }
 
 .reports-icon{
 
-    background:#8B5CF6;
+    background:linear-gradient(135deg,#0EA5E9,#38BDF8);
 
 }
 
 .admin-icon{
 
-    background:#EF4444;
+    background:linear-gradient(135deg,#16A34A,#22C55E);
 
 }
 
 .settings-icon{
 
-    background:#64748B;
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
 
 }
 
@@ -478,6 +508,8 @@
         opacity .30s ease,
 
         margin .30s ease;
+    
+    border-left:2px solid rgba(79,70,229,.45);
 
 }
 
