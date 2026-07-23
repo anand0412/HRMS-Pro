@@ -247,8 +247,6 @@
 
     border-radius:16px;
 
-    color:#E2E8F0;
-
     margin-bottom:14px;
 
     transition:var(--transition);
@@ -257,15 +255,13 @@
 
 .menu-item:hover{
 
-    background:rgba(255,255,255,.07);
-
     transform:translateX(6px);
 
 }
 
 .menu-group-header:hover{
 
-    background:rgba(255,255,255,.07);
+    background:#EEF2FF;
 
     transform:translateX(6px);
 
@@ -503,7 +499,7 @@
 
 .submenu a:hover{
 
-    color:#FFFFFF;
+    color:#1E3A8A;
 
     transform:translateX(6px);
 
