@@ -284,30 +284,31 @@
    Navigation
 =========================== */
 
-.sidebar-nav{
+.sidebar-nav::-webkit-scrollbar{
 
-    flex:1;
-
-    overflow:auto;
-
-    padding:22px;
+    width:8px;
 
 }
 
-.sidebar-nav::-webkit-scrollbar{
+.sidebar-nav::-webkit-scrollbar-track{
 
-    width:6px;
+    background:transparent;
 
 }
 
 .sidebar-nav::-webkit-scrollbar-thumb{
 
-    background:rgba(255,255,255,.12);
+    background:rgba(255,255,255,.10);
 
-    border-radius:20px;
+    border-radius:50px;
 
 }
 
+.sidebar-nav::-webkit-scrollbar-thumb:hover{
+
+    background:rgba(255,255,255,.20);
+
+}
 
 /* ===========================
    Menu Item
@@ -336,6 +337,16 @@
 .menu-item:hover{
 
     background:rgba(255,255,255,.07);
+
+    transform:translateX(6px);
+
+}
+
+.menu-group-header:hover{
+
+    background:rgba(255,255,255,.07);
+
+    transform:translateX(6px);
 
 }
 
@@ -368,6 +379,10 @@
     color:#fff;
 
     flex-shrink:0;
+
+    transition:
+        transform .25s,
+        box-shadow .25s;
 
 }
 
@@ -443,7 +458,7 @@
 
 .menu-group{
 
-    margin-bottom:14px;
+    margin-bottom:18px;
 
 }
 
@@ -528,7 +543,7 @@
 
     padding-left:72px;
 
-    margin-top:8px;
+    margin-top:10px;
 
     max-height:0;
 
@@ -567,6 +582,8 @@
     padding:10px 0;
 
     transition:var(--transition);
+
+    margin:2px 0;
 
 }
 
@@ -782,5 +799,79 @@
 .sidebar.collapsed .submenu a::before{
 
     display:none;
+
+}
+
+/* ==========================================================
+   Active Indicator
+==========================================================*/
+
+.menu-item,
+.menu-group-header{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.menu-item.active::before,
+.menu-group.open>.menu-group-header::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:8px;
+    bottom:8px;
+
+    width:4px;
+
+    border-radius:10px;
+
+    background:#ffffff;
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,.6),
+        0 0 22px rgba(255,255,255,.35);
+
+}
+
+.menu-item:hover .menu-icon,
+.menu-group-header:hover .menu-icon{
+
+    transform:scale(1.08);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.menu-item.active .menu-icon{
+
+    transform:scale(1.08);
+
+    box-shadow:0 10px 25px rgba(255,255,255,.20);
+
+}
+
+.brand-info,
+.menu-title,
+.menu-badge,
+.group-arrow{
+
+    transition:
+        opacity .25s,
+        transform .25s;
+
+}
+
+.sidebar.collapsed .brand-info,
+.sidebar.collapsed .menu-title,
+.sidebar.collapsed .menu-badge,
+.sidebar.collapsed .group-arrow{
+
+    opacity:0;
+
+    transform:translateX(-10px);
 
 }
