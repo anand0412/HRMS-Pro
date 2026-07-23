@@ -53,23 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         header.addEventListener("click", () => {
 
-                if(sidebar.classList.contains("collapsed")){
-                    return;
+            const group = header.parentElement;
+
+            document.querySelectorAll(".menu-group").forEach(item => {
+
+                if(item !== group){
+                    item.classList.remove("open");
                 }
 
-                const group = header.parentElement;
-
-                document.querySelectorAll(".menu-group").forEach(item => {
-
-                    if(item !== group){
-                        item.classList.remove("open");
-                    }
-
-                });
-
-                group.classList.toggle("open");
-
             });
+
+            group.classList.toggle("open");
+
+        });
 
     });
 
