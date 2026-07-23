@@ -494,17 +494,11 @@
 .submenu a{
 
     position:relative;
-
     color:#475569;
-
     font-size:14px;
-
     padding:10px 0;
-
     transition:var(--transition);
-
     margin:2px 0;
-
 }
 
 .submenu a:hover{
