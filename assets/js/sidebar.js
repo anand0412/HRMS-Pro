@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const sidebar = document.getElementById("sidebar");
-    const toggle = document.getElementById("sidebarToggle");
     const mobileToggle = document.getElementById("mobileSidebarToggle");
 
     /* Navigation */
@@ -11,40 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     /* Accordion */
 
     const groupHeaders = document.querySelectorAll(".menu-group-header");
-
-    /* ===========================
-       Restore Collapse State
-    =========================== */
-
-    if (localStorage.getItem("sidebarCollapsed") === "true") {
-        sidebar.classList.add("collapsed");
-    }
-
-    if(sidebar.classList.contains("collapsed")){
-        document.body.classList.add("sidebar-collapsed");
-    }
-
-    /* ===========================
-       Collapse Toggle
-    =========================== */
-
-    if (toggle) {
-
-        toggle.addEventListener("click", () => {
-
-            sidebar.classList.toggle("collapsed");
-            document.body.classList.toggle(
-                "sidebar-collapsed",
-                sidebar.classList.contains("collapsed")
-            );
-            localStorage.setItem(
-                "sidebarCollapsed",
-                sidebar.classList.contains("collapsed")
-            );
-
-        });
-
-    }
 
     /* ===========================
        Mobile Sidebar
