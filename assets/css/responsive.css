@@ -55,7 +55,7 @@
    Tablet
 ==========================================*/
 
-@media (max-width:992px){
+@media (max-width:640px){
 
     :root{
 
@@ -65,27 +65,9 @@
 
     }
 
-    .sidebar{
-
-        left:-100%;
-
-    }
-
-    .sidebar.show{
-
-        left:0;
-
-    }
-
     .main-wrapper{
 
         margin-left:0 !important;
-
-    }
-
-    #mobileSidebarToggle{
-
-        display:flex;
 
     }
 
