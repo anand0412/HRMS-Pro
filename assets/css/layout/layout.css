@@ -39,12 +39,6 @@
 
 }
 
-body.sidebar-collapsed .main-content{
-
-    margin-left:var(--sidebar-width-collapsed);
-
-}
-
 /* ----------------------------------------------------------
    Page Wrapper
 ---------------------------------------------------------- */
