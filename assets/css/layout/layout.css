@@ -31,7 +31,17 @@
 
     width:100%;
 
-    transition:all var(--transition);
+    margin-left:var(--sidebar-width);
+
+    transition:
+        margin-left var(--transition),
+        width var(--transition);
+
+}
+
+body.sidebar-collapsed .main-content{
+
+    margin-left:var(--sidebar-width-collapsed);
 
 }
 

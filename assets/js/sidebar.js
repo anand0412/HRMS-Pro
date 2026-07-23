@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
         sidebar.classList.add("collapsed");
     }
 
+    if(sidebar.classList.contains("collapsed")){
+        document.body.classList.add("sidebar-collapsed");
+    }
+
     /* ===========================
        Collapse Toggle
     =========================== */
@@ -29,7 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
         toggle.addEventListener("click", () => {
 
             sidebar.classList.toggle("collapsed");
-
+            document.body.classList.toggle(
+                "sidebar-collapsed",
+                sidebar.classList.contains("collapsed")
+            );
             localStorage.setItem(
                 "sidebarCollapsed",
                 sidebar.classList.contains("collapsed")
