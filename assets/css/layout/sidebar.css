@@ -581,11 +581,13 @@
 
 }
 
+/* Active Submenu */
+
 .submenu-item.active{
 
-    color:#fff;
+    color:#1E3A8A;
 
-    font-weight:600;
+    font-weight:700;
 
 }
 
