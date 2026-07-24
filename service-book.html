@@ -52,10 +52,10 @@
     <link rel="stylesheet"
           href="assets/css/widget.css">
 
+    <link rel="stylesheet" href="assets/css/pages/service-book.css">">
+    
     <link rel="stylesheet"
         href="assets/css/pages/employees.css">
-
-    <link rel="stylesheet" href="assets/css/pages/service-book.css">">    
 
     <link rel="stylesheet"
           href="assets/css/responsive.css">
@@ -626,7 +626,7 @@
 
             </button>
 
-            <button class="primary-btn" id="addEmployeeBtn">
+            <button class="primary-btn" id="createServiceBookBtn">
 
                 <span class="material-symbols-rounded">
                     event_available
@@ -728,32 +728,33 @@
             <select>
 
                 <option>Designations</option>
-                <option>Casual Leave</option>
-                <option>Sick Leave</option>
-                <option>Earned Leave</option>
-                <option>Maternity Leave</option>
-                <option>Paternity Leave</option>
-                <option>Comp Off</option>
+                <option>HR Manager</option>
+                <option>HR Executive</option>
+                <option>Software Engineer</option>
+                <option>Accountant</option>
+                <option>Sales Executive</option>
     
             </select>
 
             <select>
 
                 <option>Employment Type</option>
-                <option>Pending</option>
-                <option>Approved</option>
-                <option>Rejected</option>
-                <option>Cancelled</option>
+                <option>Permanent</option>
+                <option>Probation</option>
+                <option>Contract</option>
+                <option>Temporary</option>
+                <option>Intern</option>
 
             </select>
 
             <select>
                 
                 <option>Service Status</option>
-                <option>Half Day</option>
-                <option>1 Day</option>
-                <option>2–5 Days</option>
-                <option>More than 5 Days</option>
+                <option>Active Verified</option>
+                <option>Pending Verification</option>
+                <option>Retired</option>
+                <option>Resigned</option>
+                <option>Transferred</option>
 
             </select>
 
@@ -841,6 +842,8 @@
 
                     <td>HR Manager</td>
 
+                    <td>12 Jul 2018</td>
+
                     <td>
 
                         <span class="status-badge Verified">
@@ -850,8 +853,6 @@
                         </span>
 
                     </td>
-
-                    <td>12 Jul 2018</td>
 
                     <td>
 
@@ -899,6 +900,8 @@
 
                     <td>Senior Accountant</td>
 
+                     <td>20 Feb 2020</td>
+
                     <td>
 
                         <span class="status-badge Pending">
@@ -908,8 +911,6 @@
                         </span>
 
                     </td>
-
-                    <td>20 Feb 2020</td>
 
                     <td>
 
@@ -957,6 +958,8 @@
 
                     <td>Software Engineer</td>
 
+                    <td>10 Jan 2019</td>
+
                     <td>
 
                         <span class="status-badge Verified">
@@ -966,8 +969,6 @@
                         </span>
 
                     </td>
-
-                    <td>10 Jan 2019</td>
 
                     <td>
 
@@ -993,7 +994,7 @@
 
         <div class="pagination-info">
 
-            Showing <strong>1–5</strong> of <strong>328</strong> Leave Requests
+            Showing <strong>1–5</strong> of <strong>328</strong> Service Book
 
         </div>
 
@@ -1565,7 +1566,7 @@
         Create Service Book Modal
     ========================================================= -->
 
-    <div class="employee-modal-overlay" id="employeeModalOverlay">
+    <div class="service-book-modal-overlay" id="serviceBookModalOverlay">
 
         <div class="employee-modal">
 
@@ -1576,7 +1577,7 @@
                     <h2>Create Service Book</h2>
 
                     <p class="modal-subtitle">
-                        Create a leave request on behalf of an employee.
+                        Create a new Service Book for an employee.
                     </p>
 
                 </div>
@@ -1595,7 +1596,7 @@
                 <!-- ==========================================================
                 Enterprise Leave Request Form
                 =========================================================== -->
-                <form class="employee-form">
+                <form class="service-book-form">
 
                     <div class="form-section">
                         <div class="section-header">

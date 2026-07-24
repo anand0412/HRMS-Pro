@@ -399,3 +399,61 @@ textarea{
     line-height:1.5;
 
 }
+
+/* ==========================================================
+   SERVICE BOOK FILTER BAR
+========================================================== */
+
+.employee-filters{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.employee-filters .filter-left{
+
+    display:flex;
+
+    align-items:center;
+
+    flex:1;
+
+    gap:10px;
+
+    min-width:0;
+
+}
+
+.employee-filters .search-input{
+
+    flex:1;
+
+    min-width:180px;
+
+    max-width:230px;
+
+}
+
+.employee-filters .filter-left select{
+
+    width:145px;
+
+    min-width:145px;
+
+}
+
+.employee-filters .filter-right{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-left:auto;
+
+}
