@@ -86,43 +86,77 @@ const modalCloseBtn =
 const modalCancelBtn =
     document.querySelector(".modal-cancel");
 
-/* Open Modal */
+
+/*---------------------------------------------------------
+    OPEN MODAL
+---------------------------------------------------------*/
+
+function openEmployeeModal(){
+
+    if(employeeModal){
+
+        employeeModal.style.display = "flex";
+
+        document.body.style.overflow = "hidden";
+
+    }
+
+}
+
+
+/*---------------------------------------------------------
+    CLOSE MODAL
+---------------------------------------------------------*/
+
+function closeEmployeeModal(){
+
+    if(employeeModal){
+
+        employeeModal.style.display = "none";
+
+        document.body.style.overflow = "";
+
+    }
+
+}
+
+
+/*---------------------------------------------------------
+    ADD EMPLOYEE BUTTON
+---------------------------------------------------------*/
 
 if(addEmployeeBtn){
 
-    addEmployeeBtn.addEventListener("click", function(){
-
-       openEmployeeModal();
-
-    });
+    addEmployeeBtn.addEventListener("click", openEmployeeModal);
 
 }
 
-/* Close Button */
+
+/*---------------------------------------------------------
+    CLOSE BUTTON
+---------------------------------------------------------*/
 
 if(modalCloseBtn){
 
-    modalCloseBtn.addEventListener("click", function(){
-
-        closeEmployeeModal();
-
-    });
+    modalCloseBtn.addEventListener("click", closeEmployeeModal);
 
 }
 
-/* Cancel Button */
+
+/*---------------------------------------------------------
+    CANCEL BUTTON
+---------------------------------------------------------*/
 
 if(modalCancelBtn){
 
-    modalCancelBtn.addEventListener("click", function(){
-
-        closeEmployeeModal();
-
-    });
+    modalCancelBtn.addEventListener("click", closeEmployeeModal);
 
 }
 
-/* Click Outside */
+
+/*---------------------------------------------------------
+    CLICK OUTSIDE MODAL
+---------------------------------------------------------*/
 
 if(employeeModal){
 
@@ -138,11 +172,14 @@ if(employeeModal){
 
 }
 
-/* ESC Key */
+
+/*---------------------------------------------------------
+    ESC KEY
+---------------------------------------------------------*/
 
 document.addEventListener("keydown", function(e){
 
-    if(e.key === "Escape" && employeeModal){
+    if(e.key === "Escape"){
 
         closeEmployeeModal();
 
@@ -150,17 +187,17 @@ document.addEventListener("keydown", function(e){
 
 });
 
-/* ==========================================
-   Open Employee Form from Dashboard
-========================================== */
+
+/*---------------------------------------------------------
+    OPEN FROM DASHBOARD
+---------------------------------------------------------*/
 
 const params = new URLSearchParams(window.location.search);
 
-if (params.get("action") === "add") {
+if(params.get("action") === "add"){
 
     openEmployeeModal();
 
-    // Remove the query string so refresh doesn't reopen it
     history.replaceState(
         {},
         "",
