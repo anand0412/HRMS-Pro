@@ -1593,310 +1593,136 @@
             </div>
 
             
-                <!-- ==========================================================
+            <!-- ==========================================================
                 Enterprise Leave Request Form
-                =========================================================== -->
-                <form class="service-book-form">
+            =========================================================== -->
+            
 
-                    <div class="form-section">
-                        <div class="section-header">
-                            <span class="material-symbols-rounded">badge</span>
-                            <div>
-                                <h3>Employee Information</h3>
-                                <p>Select the employee for whom the leave request is being created.</p>
-                            </div>
-                        </div>
+                <div class="modal-header">
 
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label>Employee *</label>
-                                <select required>
-                                    <option value="" selected disabled>Select Employee</option>
-                                    <option>Rahul Sharma</option>
-                                    <option>Priya Singh</option>
-                                    <option>Amit Kumar</option>
-                                    <option>Anjali Verma</option>
-                                    <option>Rohit Gupta</option>
-                                </select>
+                    <div>
 
-                            </div>
+                        <h2>Create Service Book</h2>
 
-                            <div class="form-group">
+                        <p class="modal-subtitle">
+                            Create a new Service Book for an existing employee. Additional service records can be maintained after creation.
+                        </p>
 
-                                <label>Employee ID</label>
-
-                                <select disabled>
-                                    <option selected>EMP-10021</option>
-                                    <option selected>EMP-10022</option>
-                                    <option selected>EMP-10023</option>
-                                    <option selected>EMP-10024</option>
-                                    <option selected>EMP-10025</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Department</label>
-                                <input type="text" value="Human Resources" readonly>
-                            </div>
-
-                            <div class="form-group">
-
-                                <label>Designation</label>
-
-                                <select disabled>
-
-                                    <option selected>HR Executive</option>
-
-                                </select>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label>Reporting Manager</label>
-
-                                <select disabled>
-
-                                    <option selected>Anita Verma</option>
-
-                                </select>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label>Leave Balance</label>
-
-                                <select disabled>
-
-                                    <option selected>Casual : 8 | Earned : 14</option>
-
-                                </select>
-
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="form-section">
-                        <div class="section-header">
-                            <span class="material-symbols-rounded">event</span>
-                            <div>
-                                <h3>Leave Information</h3>
-                                <p>Specify leave type, category and duration.</p>
-                            </div>
-                        </div>
+                    <button class="modal-close">
 
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label>Leave Type *</label>
-                                <select>
-                                    <option value="" selected disabled>Select Leave Type</option>
-                                    <option>Casual Leave</option>
-                                    <option>Sick Leave</option>
-                                    <option>Earned Leave</option>
-                                    <option>Maternity Leave</option>
-                                    <option>Paternity Leave</option>
-                                    <option>Comp Off</option>
-                                </select>
-                            </div>
+                        <span class="material-symbols-rounded">
 
-                            <div class="form-group">
-                                <label>Leave Category</label>
-                                <select>
-                                    <option value="" selected disabled>Select Leave Category</option>
-                                    <option>Paid Leave</option>
-                                    <option>Unpaid Leave</option>
-                                    <option>Compensatory</option>
-                                </select>
-                            </div>
+                            close
 
-                            <div class="form-group">
-                                <label>From Date *</label>
-                                <input type="date">
-                            </div>
+                        </span>
 
-                            <div class="form-group">
-                                <label>To Date *</label>
-                                <input type="date">
-                            </div>
+                    </button>
 
-                            <div class="form-group">
-                                <label>Duration</label>
-                                <input type="text" value="Auto Calculated" readonly>
-                            </div>
+                </div>
+            <form class="service-book-form">
+               
+                <div class="form-section">
 
-                            <div class="form-group">
-                                <label class="checkbox-row">
-                                    <input type="checkbox">
-                                    <span>Half Day</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="section-header">
 
-                    <div class="form-section">
-                        <div class="section-header">
-                            <span class="material-symbols-rounded">description</span>
-                            <div>
-                                <h3>Additional Details</h3>
-                                <p>Provide supporting information.</p>
-                            </div>
-                            </div>
+                        <span class="material-symbols-rounded">
+                            badge
+                        </span>
 
-                            <div class="form-grid">
-                            <div class="form-group">
-                                <label>Reason *</label>
-                                <textarea rows="6"></textarea>
-                            </div>
+                        <div>
 
-                            <div class="form-group">
+                            <h3>Employee Information</h3>
 
-                                <label>Supporting Document</label>
-
-                                <div class="upload-box">
-
-                                    <span class="material-symbols-rounded upload-icon">
-
-                                        cloud_upload
-
-                                    </span>
-
-                                    <h4>Drag/Drop files here</h4>
-
-                                    <span class="upload-format">
-
-                                        PDF, JPG or PNG • Max 5 MB
-
-                                    </span>
-
-                                    <input type="file">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-section">
-
-                        <div class="section-header">
-
-                            <span class="material-symbols-rounded">
-                                approval
-                            </span>
-
-                            <div>
-
-                                <h3>Approval Options</h3>
-
-                                <p>
-                                    Configure approval workflow.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="form-grid">
-
-                            <!-- Approver -->
-
-                            <div class="form-group">
-
-                                <label>Approver *</label>
-
-                                <select required>
-
-                                    <option value="" selected disabled>Select Approver</option>
-
-                                    <option>Reporting Manager</option>
-
-                                    <option>HR Manager</option>
-
-                                    <option>Department Head</option>
-
-                                </select>
-
-                            </div>
-
-                            <!-- Priority -->
-
-                            <div class="form-group">
-
-                                <label>Priority *</label>
-
-                                <select required>
-
-                                    <option value="" selected disabled>Select Priority</option>
-
-                                    <option>Normal</option>
-
-                                    <option>High</option>
-
-                                    <option>Emergency</option>
-
-                                </select>
-
-                            </div>
-
-                            <!-- Comments -->
-
-                            <div class="form-group full-width">
-
-                                <label>Comments</label>
-
-                                <textarea rows="4"
-                                        placeholder="Add remarks for the approver..."></textarea>
-
-                            </div>
-
-                            <!-- Notify -->
-
-                            <div class="form-group full-width">
-
-                                <div class="toggle-container">
-
-                                    <div>
-
-                                        <label class="toggle-title">
-
-                                            Notify Reporting Manager
-
-                                        </label>
-
-                                        <p class="toggle-description">
-
-                                            Send an email notification after creating the leave request.
-
-                                        </p>
-
-                                    </div>
-
-                                    <label class="switch">
-
-                                        <input type="checkbox" checked>
-
-                                        <span class="slider"></span>
-
-                                    </label>
-
-                                </div>
-
-                            </div>
+                            <p>
+                                Select the employee for whom the Service Book is being created.
+                            </p>
 
                         </div>
 
                     </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="secondary-btn">Cancel</button>
-                        <button type="submit" class="primary-btn">
-                            <span class="material-symbols-rounded">event_available</span>
-                            Create Service Book
-                        </button>
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Employee <span class="required">*</span></label>
+
+                            <select required>
+
+                                <option selected disabled>Select Employee</option>
+
+                                <option>Rahul Sharma</option>
+
+                                <option>Priya Singh</option>
+
+                                <option>Amit Kumar</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Employee ID</label>
+
+                            <input
+                                type="text"
+                                value="Auto Generated"
+                                readonly>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Department</label>
+
+                            <input
+                                type="text"
+                                value="Auto Filled"
+                                readonly>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Designation</label>
+
+                            <input
+                                type="text"
+                                value="Auto Filled"
+                                readonly>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Branch</label>
+
+                            <input
+                                type="text"
+                                value="Auto Filled"
+                                readonly>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Employment Type</label>
+
+                            <input
+                                type="text"
+                                value="Auto Filled"
+                                readonly>
+
+                        </div>
+
                     </div>
 
-                </form>
+                </div>   
+
+            </form>
 
         </div>
 
