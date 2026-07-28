@@ -647,3 +647,31 @@ textarea{
     line-height:1.6;
 
 }
+
+/* ==========================================================
+   Modal Footer
+========================================================== */
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:32px;
+
+    padding-top:24px;
+
+    border-top:1px solid var(--border-color);
+
+}
+
+.modal-footer .btn{
+
+    min-width:180px;
+
+}
