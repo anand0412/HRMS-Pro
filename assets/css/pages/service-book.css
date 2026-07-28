@@ -660,11 +660,11 @@ textarea{
 
     align-items:center;
 
-    gap:12px;
+    gap:14px;
 
     margin-top:32px;
 
-    padding-top:24px;
+    padding:24px 0 16px;
 
     border-top:1px solid var(--border-color);
 
@@ -673,5 +673,39 @@ textarea{
 .modal-footer .btn{
 
     min-width:180px;
+
+    height:48px;
+
+}
+
+.modal-cancel{
+
+    min-width:140px;
+
+    height:48px;
+
+    border:1px solid var(--border-color);
+
+    background:#fff;
+
+    color:var(--text-primary);
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.modal-cancel:hover{
+
+    background:#F8FAFC;
+
+    border-color:var(--primary-color);
+
+    color:var(--primary-color);
 
 }
