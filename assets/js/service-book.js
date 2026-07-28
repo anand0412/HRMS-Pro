@@ -5,8 +5,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    initDrawerTabs();
-
     initServiceBookModal();
 
 });
