@@ -709,3 +709,45 @@ textarea{
     color:var(--primary-color);
 
 }
+
+.service-book-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.table-stack{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.table-stack strong{
+
+    font-weight:600;
+
+}
+
+.table-stack small{
+
+    color:var(--text-secondary);
+
+}
+
+.table-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}

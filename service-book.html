@@ -795,24 +795,70 @@
             <table class="employee-table">
 
                 <thead>
-
                     <tr>
 
-                        <th>Employee</th>
-                        <th>Employee ID</th>
-                        <th>Department</th>
-                        <th>Designation</th>
-                        <th>Joining Date</th>
-                        <th>Service Status</th>
-                        <th>Actions</th>
+                        <th style="width:50px;">
+                            <input type="checkbox">
+                        </th>
+
+                        <th style="width:220px;">
+                            Service Book
+                        </th>
+
+                        <th>
+                            Employee
+                        </th>
+
+                        <th>
+                            Organization
+                        </th>
+
+                        <th>
+                            Service
+                        </th>
+
+                        <th>
+                            Opening Date
+                        </th>
+
+                        <th>
+                            Last Updated
+                        </th>
+
+                        <th style="width:90px;">
+                            Actions
+                        </th>
 
                     </tr>
-
                 </thead>
 
                 <tbody>
 
                     <tr class="employee-row">
+
+                        <td>
+
+                            <input type="checkbox">
+
+                        </td>
+
+                        <!-- Service Book -->
+
+                        <td>
+
+                            <div class="service-book-info">
+
+                                <strong>SB-2026-000124</strong>
+
+                                <span class="status-badge Active">
+                                    Active
+                                </span>
+
+                            </div>
+
+                        </td>
+
+                        <!-- Employee -->
 
                         <td>
 
@@ -828,7 +874,7 @@
 
                                     <strong>Rahul Sharma</strong>
 
-                                    <small>rahul@hrmspro.com</small>
+                                    <small>EMP-00124</small>
 
                                 </div>
 
@@ -836,35 +882,77 @@
 
                         </td>
 
-                        <td>EMP-001</td>
-
-                        <td>Human Resources</td>
-
-                        <td>HR Manager</td>
-
-                        <td>12 Jul 2018</td>
+                        <!-- Organization -->
 
                         <td>
 
-                            <span class="status-badge Verified">
+                            <div class="table-stack">
 
-                                verified
+                                <strong>Human Resources</strong>
 
-                            </span>
+                                <small>HR Manager</small>
+
+                            </div>
 
                         </td>
 
+                        <!-- Service -->
+
                         <td>
 
-                            <button class="table-action">
+                            <div class="table-stack">
 
-                                <span class="material-symbols-rounded">
+                                <strong>Permanent</strong>
 
-                                    more_vert
+                                <small>Regular Service</small>
 
-                                </span>
+                            </div>
 
-                            </button>
+                        </td>
+
+                        <!-- Opening -->
+
+                        <td>
+
+                            28 Jul 2026
+
+                        </td>
+
+                        <!-- Updated -->
+
+                        <td>
+
+                            2 hours ago
+
+                        </td>
+
+                        <!-- Actions -->
+
+                        <td>
+
+                            <div class="table-actions">
+
+                                <button class="table-action">
+
+                                    <span class="material-symbols-rounded">
+
+                                        visibility
+
+                                    </span>
+
+                                </button>
+
+                                <button class="table-action">
+
+                                    <span class="material-symbols-rounded">
+
+                                        more_vert
+
+                                    </span>
+
+                                </button>
+
+                            </div>
 
                         </td>
 
