@@ -68,4 +68,17 @@ function initServiceBookModal(){
 
     }
 
+    const uploadBtn = document.querySelector(".upload-link");
+    const uploadInput = document.getElementById("serviceBookDocuments");
+
+    if (uploadBtn && uploadInput) {
+
+        uploadBtn.addEventListener("click", () => {
+
+            uploadInput.click();
+
+        });
+
+    }
+
 }

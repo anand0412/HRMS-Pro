@@ -567,3 +567,83 @@ textarea{
     white-space:nowrap;
 
 }
+
+/* ==========================================================
+   Upload Box
+========================================================== */
+
+.upload-box{
+
+    border:2px dashed var(--border-color);
+
+    border-radius:16px;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:#FAFBFC;
+
+    transition:.25s;
+
+}
+
+.upload-box:hover{
+
+    border-color:var(--primary-color);
+
+    background:#F8FBFF;
+
+}
+
+.upload-icon{
+
+    font-size:48px;
+
+    color:var(--primary-color);
+
+    margin-bottom:12px;
+
+}
+
+.upload-box h4{
+
+    margin-bottom:8px;
+
+}
+
+.upload-box p{
+
+    margin-bottom:12px;
+
+    color:var(--text-secondary);
+
+}
+
+.upload-link{
+
+    background:none;
+
+    border:none;
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    padding:0;
+
+}
+
+.upload-box small{
+
+    display:block;
+
+    margin-top:12px;
+
+    color:var(--text-secondary);
+
+    line-height:1.6;
+
+}
