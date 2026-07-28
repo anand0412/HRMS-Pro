@@ -513,3 +513,57 @@ textarea{
     max-height:calc(90vh - 90px);
 
 }
+
+/* Input with Unit */
+
+.input-with-unit{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid var(--border-color);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    background:#fff;
+
+}
+
+.input-with-unit input{
+
+    border:none;
+
+    flex:1;
+
+    box-shadow:none;
+
+}
+
+.input-with-unit input:focus{
+
+    outline:none;
+
+    box-shadow:none;
+
+}
+
+.input-unit{
+
+    padding:0 16px;
+
+    background:#F8FAFC;
+
+    border-left:1px solid var(--border-color);
+
+    color:var(--text-secondary);
+
+    font-size:.875rem;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
