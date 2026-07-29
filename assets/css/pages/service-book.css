@@ -851,3 +851,91 @@ textarea{
     background:#fff;
 
 }
+
+/* ==========================================================
+   Overview Cards
+========================================================== */
+
+.tab-content{
+
+    padding:24px;
+
+}
+
+.info-card{
+
+    background:#fff;
+
+    border:1px solid var(--border-color);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    margin-bottom:24px;
+
+}
+
+.info-card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:22px;
+
+}
+
+.info-card-header span{
+
+    color:var(--primary-color);
+
+    font-size:24px;
+
+}
+
+.info-card-header h3{
+
+    margin:0;
+
+    font-size:1.1rem;
+
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px 28px;
+
+}
+
+.info-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.info-item label{
+
+    font-size:.82rem;
+
+    color:var(--text-secondary);
+
+    margin-bottom:6px;
+
+}
+
+.info-item span{
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+}
