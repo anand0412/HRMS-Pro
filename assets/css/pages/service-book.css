@@ -939,3 +939,137 @@ textarea{
     color:var(--text-primary);
 
 }
+
+/* ==========================================================
+   Service Timeline
+========================================================== */
+
+.timeline{
+
+    position:relative;
+
+    margin-left:14px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:10px;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+    background:#E5E7EB;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    display:flex;
+
+    gap:22px;
+
+    padding-bottom:28px;
+
+}
+
+.timeline-dot{
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    border:4px solid #fff;
+
+    box-shadow:0 0 0 2px currentColor;
+
+    flex-shrink:0;
+
+    margin-top:3px;
+
+    z-index:2;
+
+}
+
+.timeline-dot.success{
+
+    color:#22C55E;
+
+}
+
+.timeline-dot.primary{
+
+    color:var(--primary-color);
+
+}
+
+.timeline-dot.warning{
+
+    color:#F59E0B;
+
+}
+
+.timeline-dot.purple{
+
+    color:#8B5CF6;
+
+}
+
+.timeline-dot.info{
+
+    color:#06B6D4;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+    background:#F8FAFC;
+
+    border:1px solid var(--border-color);
+
+    border-radius:14px;
+
+    padding:18px;
+
+}
+
+.timeline-date{
+
+    color:var(--text-secondary);
+
+    font-size:.85rem;
+
+    margin-bottom:8px;
+
+}
+
+.timeline-content h4{
+
+    margin:0 0 8px;
+
+    font-size:1rem;
+
+}
+
+.timeline-content p{
+
+    margin:0;
+
+    color:var(--text-secondary);
+
+    line-height:1.6;
+
+}
