@@ -918,25 +918,11 @@ textarea{
 
 }
 
-.tab-btn:hover{
-
-    background:#EEF4FF;
-
-    color:var(--primary-color);
-
-}
-
 .tab-btn.active{
 
     background:var(--primary-color);
 
     color:#fff;
-
-}
-
-.tab-btn span{
-
-    font-size:20px;
 
 }
 
@@ -1220,18 +1206,42 @@ textarea{
 
 }
 
-.drawer{
+.service-book-drawer-overlay{
 
-    width:42%;
+    position:fixed;
 
-    min-width:700px;
+    inset:0;
+
+    background:rgba(15,23,42,.35);
+
+    backdrop-filter:blur(4px);
+
+    display:none;
+
+    justify-content:flex-end;
+
+    align-items:stretch;
+
+    z-index:5000;
 
 }
 
-.employee-drawer{
+.service-book-drawer{
 
-    width:1000px;
+    width:760px;
 
     max-width:95vw;
+
+    height:100vh;
+
+    background:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    box-shadow:-20px 0 50px rgba(15,23,42,.18);
+
+    animation:drawerSlide .30s ease;
 
 }
