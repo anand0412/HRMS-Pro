@@ -838,35 +838,99 @@ textarea{
 
 }
 
+/*========================================================*/
+
+.service-book-layout{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    min-height:650px;
+
+}
+
+/*========================================================*/
+
+.service-book-sidebar{
+
+    border-right:1px solid var(--border-color);
+
+    background:#FAFBFD;
+
+    padding:24px 18px;
+
+}
+
+/*========================================================*/
+
 .service-book-tabs{
 
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+/*========================================================*/
+
+.service-book-content{
+
+    padding:28px;
+
+    overflow-y:auto;
+
+}
+
 .tab-btn{
+
+    width:100%;
 
     display:flex;
 
     align-items:center;
 
-    gap:8px;
+    gap:12px;
 
-    padding:10px 18px;
+    padding:14px 16px;
 
     border:none;
 
-    flex-shrink: 0;
-    
-    white-space: nowrap;
-
-    border-radius:12px;
+    border-radius:14px;
 
     background:transparent;
 
-    color:var(--text-secondary);
+    color:#64748B;
 
     font-weight:600;
 
     cursor:pointer;
 
     transition:.25s;
+
+}
+
+.tab-btn:hover{
+
+    background:#EEF4FF;
+
+    color:var(--primary-color);
+
+}
+
+.tab-btn.active{
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+}
+
+.tab-btn span{
+
+    font-size:20px;
 
 }
 
@@ -1155,5 +1219,13 @@ textarea{
     width:42%;
 
     min-width:700px;
+
+}
+
+.employee-drawer{
+
+    width:780px;
+
+    max-width:95vw;
 
 }
