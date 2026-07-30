@@ -842,9 +842,9 @@ textarea{
 
 .service-book-layout{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:220px 1fr;
+    align-items:stretch;
 
     min-height:650px;
 
@@ -854,11 +854,15 @@ textarea{
 
 .service-book-sidebar{
 
+    width:220px;
+
+    flex-shrink:0;
+
     border-right:1px solid var(--border-color);
 
     background:#FAFBFD;
 
-    padding:24px 18px;
+    padding:22px 18px;
 
 }
 
@@ -878,7 +882,9 @@ textarea{
 
 .service-book-content{
 
-    padding:28px;
+    flex:1;
+
+    padding:26px;
 
     overflow-y:auto;
 
@@ -1224,7 +1230,7 @@ textarea{
 
 .employee-drawer{
 
-    width:780px;
+    width:1000px;
 
     max-width:95vw;
 
