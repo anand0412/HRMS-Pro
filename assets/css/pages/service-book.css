@@ -868,18 +868,6 @@ textarea{
 
 /*========================================================*/
 
-.service-book-tabs{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:8px;
-
-}
-
-/*========================================================*/
-
 .service-book-content{
 
     flex:1;
@@ -887,70 +875,6 @@ textarea{
     padding:26px;
 
     overflow-y:auto;
-
-}
-
-.tab-btn{
-
-    width:100%;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    padding:14px 16px;
-
-    border:none;
-
-    border-radius:14px;
-
-    background:transparent;
-
-    color:#64748B;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-}
-
-.tab-btn.active{
-
-    background:var(--primary-color);
-
-    color:#fff;
-
-}
-
-.tab-btn span{
-
-    font-size:20px;
-
-}
-
-.tab-btn:hover{
-
-    background:#F3F6FB;
-
-    color:var(--primary-color);
-
-}
-
-.tab-btn.active{
-
-    background:var(--primary-color);
-
-    color:#fff;
-
-}
-
-.tab-btn.active span{
-
-    color:#fff;
 
 }
 
@@ -1243,5 +1167,95 @@ textarea{
     box-shadow:-20px 0 50px rgba(15,23,42,.18);
 
     animation:drawerSlide .30s ease;
+
+}
+
+/* ==========================================================
+   Tabs
+========================================================== */
+
+.service-book-tabs{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:0 0 24px;
+
+    margin-bottom:28px;
+
+    border-bottom:1px solid var(--border-color);
+
+    overflow-x:auto;
+
+    scrollbar-width:none;
+
+}
+
+.service-book-tabs::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.tab-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:transparent;
+
+    color:#64748B;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    white-space:nowrap;
+
+    flex-shrink:0;
+
+}
+
+.tab-btn:hover{
+
+    background:#EEF4FF;
+
+    color:var(--primary-color);
+
+}
+
+.tab-btn.active{
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+    box-shadow:0 10px 24px rgba(37,99,235,.20);
+
+}
+
+.tab-btn.active span{
+
+    color:#fff;
+
+}
+
+.tab-btn span{
+
+    font-size:20px;
 
 }
